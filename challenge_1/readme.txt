@@ -1,0 +1,5 @@
+- Run server.exe
+- A HTTP server is started at port 8080 (i.e. http://localhost:8080)
+- User can login to the server via endpoint "/login"
+- Password contains 12 digits
+- Flag is the password and the flag has a score of 8

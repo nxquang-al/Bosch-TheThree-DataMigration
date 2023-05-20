@@ -1,0 +1,27 @@
+[
+    {
+        "plaintext": "706c61696e746578746d657373616765",
+        "ciphertext": "2b0efff297bdf32067cc9aa53b324613",
+        "iv": "000102030405060708090A0B0C0D0E0F"
+    },
+    {
+        "plaintext": "980c5e4ec748c22aa31f25f3b8712114",
+        "ciphertext": "64d48777e832980cae17975801b3fe96",
+        "iv": "32a29ec5731afb72b33f248bb7072f9e"
+    },
+    {
+        "plaintext": "001333b95c1edb3ef145a4a9f52f7b9a",
+        "ciphertext": "b28b7e3f49355b7a236ad2745d69cb25",
+        "iv": "70359350f329603f0da99a1f9151d844"
+    },
+    {
+        "plaintext": "adece6e6b586b65bdae673c053e38672",
+        "ciphertext": "b54a0be8cd563dad8fa0d523edca27a0",
+        "iv": "e0ae88c71b2163be2b39df72d0338815"
+    },
+    {
+        "plaintext": "7fa1dcdd8a624a3fd6f1b7bfe22bcc7a",
+        "ciphertext": "e99e1a597c8cb7ddef0671d7948ba764",
+        "iv": "54e5551853b9c1db2b9f871758bffcc3"
+    }
+]
