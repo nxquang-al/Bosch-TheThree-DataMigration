@@ -35,7 +35,7 @@ Data: 4869205468657265
 
 # Explanation
 
-- We following the description of the problem:
+- We follow the description of the problem:
 
   - `Step 1`: If the length of K = B: set Ko = K. Go to step 4.
   - `Step 2`: If the length of K > B: hash K to obtain an L byte string, then append (B-L) zeros to create a B-byte string Ko (i.e., Ko = H(K) Il 00 .00). Go to step 4.
@@ -47,4 +47,4 @@ Data: 4869205468657265
   - `Step 8`: Append the result from step 6 to step 7: (Ko `(+)` opad) `||` H((Ko `(+)` ipad) `||` text).
   - `Step 9`: Apply H to the result from step 8: H (K6 `(+)` opad OIL H((K `(+)` ipad) `||` text)).
 
-> All function are already noted from the file `algorithm.py`
+> All functions are already noted from the file `algorithm.py`
