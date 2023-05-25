@@ -1,6 +1,8 @@
 """
 To build an HTML to RST parser, we inherit and modify the class HTMLParser
 from the module html, which serves as the basis for parsing files formated in HTML
+
+Some sections are borrowed from: https://github.com/averagehuman/python-html2rest
 """
 
 from html.parser import HTMLParser
@@ -276,7 +278,7 @@ class MyHTMLParser(HTMLParser):
         """
         href = dict(attributes).get('href', None)
         if not href or href.startswith('#'):
-            # There is no href or href link to the top of the current page
+            # There is no href or the href links to the top of the current page
             return
         else:
             if self.relative_root and self.relative_dir:
