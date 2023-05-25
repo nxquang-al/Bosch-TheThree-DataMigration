@@ -1,0 +1,139 @@
+{
+  "Module Name": "ECU_Requirement",
+  "Module Type": "MO_RS",
+  "List Artifact Info": [
+    {
+      "Attribute Type": "Heading",
+      "Description": "",
+      "Identifier": 629021,
+      "Creator": "kit7fe",
+      "Contributor": "kit7fe",
+      "Title": "General Overview / Document Scope",
+      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"General Overview / Document Scope\"></div>",
+      "Created On": "2019-10-08T06:18:45.677Z",
+      "Modified On": "2019-10-08T06:18:45.677Z"
+    },
+    {
+      "Attribute Type": "Heading",
+      "Description": "",
+      "Identifier": 629020,
+      "Creator": "kit7fe",
+      "Contributor": "kit7fe",
+      "Title": "Document Scope",
+      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"Document Scope\"></div>",
+      "Modified On": "2019-10-08T06:18:45.662Z",
+      "Created On": "2019-10-08T06:18:45.662Z"
+    },
+    {
+      "Attribute Type": "Information",
+      "Description": "",
+      "Identifier": 629016,
+      "Creator": "kit7fe",
+      "Contributor": "kit7fe",
+      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"<put below a first description of the scope for ECU requirement specification>\"></div>",
+      "Title": "<put below a first description of the scope for software requirement specification>",
+      "Modified On": "2019-10-08T06:18:45.662Z",
+      "Created On": "2019-10-08T06:18:45.662Z"
+    },
+    {
+      "Attribute Type": "Heading",
+      "Description": "",
+      "Identifier": 629012,
+      "Creator": "kit7fe",
+      "Contributor": "kit7fe",
+      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"Document Specific Glossary\"></div>",
+      "Title": "Document Specific Glossary",
+      "Created On": "2019-10-08T06:18:45.662Z",
+      "Modified On": "2019-10-08T06:18:45.662Z"
+    },
+    {
+      "Attribute Type": "Information",
+      "Description": "",
+      "Identifier": 629013,
+      "Creator": "kit7fe",
+      "Contributor": "kit7fe",
+      "Title": "<put below a definition of first glossary specific terms>",
+      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"<put below a definition of first glossary specific terms>\"></div>",
+      "Modified On": "2019-10-08T06:18:45.677Z",
+      "Created On": "2019-10-08T06:18:45.677Z"
+    },
+    {
+      "Attribute Type": "Heading",
+      "Description": "",
+      "Identifier": 629019,
+      "Creator": "kit7fe",
+      "Contributor": "kit7fe",
+      "Title": "System Requirement",
+      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"System Requirements\"></div>",
+      "Created On": "2019-10-08T06:18:45.662Z",
+      "Modified On": "2019-10-08T06:18:45.662Z"
+    },
+    {
+      "Attribute Type": "Information",
+      "Description": "",
+      "Identifier": 629017,
+      "Creator": "kit7fe",
+      "Contributor": "kit7fe",
+      "Title": "<infos relevant for the complete chapter>",
+      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"{'br': [None, None], '#text': '<infos relevant for the complete chapter>Note to the template:- the example requirements below are independent of each other and are showing the different possibilities of the requirements structure'}\"></div>",
+      "Created On": "2019-10-08T06:18:45.677Z",
+      "Modified On": "2019-10-08T06:18:45.677Z"
+    },
+    {
+      "Attribute Type": "Heading",
+      "Description": "",
+      "Identifier": 629022,
+      "Creator": "kit7fe",
+      "Contributor": "kit7fe",
+      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"ECU 1st Requirement\"></div>",
+      "Title": "ECU 1st Requirement",
+      "Modified On": "2019-10-08T06:18:45.646Z",
+      "Created On": "2019-10-08T06:18:45.646Z"
+    },
+    {
+      "Attribute Type": "MO_FUNC_REQ",
+      "Description": "",
+      "VAR_FUNC_SYS": "VAR_Func_sys value",
+      "Verification Criteria": "Test Environment:\nTest Bench/Lab-car with hardware setup\n\nSuccess Criteria: Verify whether the signal value is correct or not",
+      "Allocation": "SW Allocation",
+      "CRQ": "RQONE03587423",
+      "Identifier": 629015,
+      "Creator": "kit7fe",
+      "Contributor": "MIG1COB",
+      "Safety Classification": "ASIL A",
+      "Status": "NEW/CHANGED",
+      "Title": "<description of the requirement in requirements language>",
+      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"['<description of the requirement in requirements language>', {'b': ['VEHICLE_SYSTEM_BEHAVIOUR', 'CONSTRAINT', 'IMPACT', 'INFO', 'ASSUMPTION'], 'br': [None, None, None, None, None, None, None, None, None, None, None, None, None, None], '#text': '<Optional: description of desired vehicle behaviour (\"development target\")>\\xa0\\xa0 \\xa0 \\xa0<Optional: constraints on the solution space for the requirement>\\xa0 \\xa0<Optional: description of possible cross-functional impact of the requirement, or impact on other components><Optional: additional informations about the requirement:- know-how- background- HW dependencies related to the system requirement- internal signals- etc><Optional: assumptions on the requirement>'}, None]\"></div>",
+      "Modified On": "2023-05-23T02:41:23.510Z",
+      "Created On": "2019-10-08T06:18:45.662Z"
+    },
+    {
+      "Attribute Type": "Heading",
+      "Description": "",
+      "Identifier": 629018,
+      "Creator": "kit7fe",
+      "Contributor": "kit7fe",
+      "Title": "System Non Fonctional Requirements",
+      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"System Non Functional Requirements\"></div>",
+      "Created On": "2019-10-08T06:18:45.677Z",
+      "Modified On": "2019-10-08T06:18:45.677Z"
+    },
+    {
+      "Attribute Type": "MO_NON_FUNC_REQ",
+      "Description": "",
+      "CRQ": "RQONE03587423",
+      "Allocation": "Non_Func Allocation",
+      "Verification Criteria": "Non Func Test Environment:\nTest Bench/Lab-car with hardware setup\n\nSuccess Criteria: Verify whether the signal value is correct or not",
+      "VAR_FUNC_SYS": "Var_func_sys value 2",
+      "Identifier": 629014,
+      "Creator": "kit7fe",
+      "Contributor": "MIG1COB",
+      "Safety Classification": "ASIL B",
+      "Status": "NEW/CHANGED",
+      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"<description of the non functional requirement in requirements language>\"></div>",
+      "Title": "<description of the non functional requirement in requirements language>",
+      "Created On": "2019-10-08T06:18:45.677Z",
+      "Modified On": "2023-05-23T02:56:54.487Z"
+    }
+  ]
+}
