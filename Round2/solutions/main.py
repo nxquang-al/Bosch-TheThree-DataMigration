@@ -104,15 +104,14 @@ def find_title_and_text(spec_attr, attr_xhtml):
                 match attr.get('@LONG-NAME'):
                     case 'ReqIF.Text':
                         key = 'ReqIF.Text'
-                        _value = convert_to_html(_value)
+                        _value = xmltodict.unparse(_value, pretty=True)[39:]
 
                     case 'ReqIF.Name':
                         key = 'Title'
                         _value = _value['div']['#text']
                     case 'ReqIF.ChapterName':
                         key = 'ReqIF.Text'
-                        _value = convert_to_html(_value)
-                        # _value = dict2xml(_value, )
+                        _value = xmltodict.unparse(_value, pretty=True)[39:]
 
                 if key != '':
                     res.append({key: _value})

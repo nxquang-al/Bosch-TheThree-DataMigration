@@ -9,7 +9,7 @@
       "Creator": "kit7fe",
       "Contributor": "kit7fe",
       "Title": "General Overview / Document Scope",
-      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"General Overview / Document Scope\"></div>",
+      "ReqIF.Text": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t<p>General Overview / Document Scope</p>\n</div>",
       "Created On": "2019-10-08T06:18:45.677Z",
       "Modified On": "2019-10-08T06:18:45.677Z"
     },
@@ -20,7 +20,7 @@
       "Creator": "kit7fe",
       "Contributor": "kit7fe",
       "Title": "Document Scope",
-      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"Document Scope\"></div>",
+      "ReqIF.Text": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t<p>Document Scope</p>\n</div>",
       "Modified On": "2019-10-08T06:18:45.662Z",
       "Created On": "2019-10-08T06:18:45.662Z"
     },
@@ -30,7 +30,7 @@
       "Identifier": 629016,
       "Creator": "kit7fe",
       "Contributor": "kit7fe",
-      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"<put below a first description of the scope for ECU requirement specification>\"></div>",
+      "ReqIF.Text": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t<p>&lt;put below a first description of the scope for ECU requirement specification&gt;</p>\n</div>",
       "Title": "<put below a first description of the scope for software requirement specification>",
       "Modified On": "2019-10-08T06:18:45.662Z",
       "Created On": "2019-10-08T06:18:45.662Z"
@@ -41,7 +41,7 @@
       "Identifier": 629012,
       "Creator": "kit7fe",
       "Contributor": "kit7fe",
-      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"Document Specific Glossary\"></div>",
+      "ReqIF.Text": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t<p>Document Specific Glossary</p>\n</div>",
       "Title": "Document Specific Glossary",
       "Created On": "2019-10-08T06:18:45.662Z",
       "Modified On": "2019-10-08T06:18:45.662Z"
@@ -53,7 +53,7 @@
       "Creator": "kit7fe",
       "Contributor": "kit7fe",
       "Title": "<put below a definition of first glossary specific terms>",
-      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"<put below a definition of first glossary specific terms>\"></div>",
+      "ReqIF.Text": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t<p>&lt;put below a definition of first glossary specific terms&gt;</p>\n</div>",
       "Modified On": "2019-10-08T06:18:45.677Z",
       "Created On": "2019-10-08T06:18:45.677Z"
     },
@@ -64,7 +64,7 @@
       "Creator": "kit7fe",
       "Contributor": "kit7fe",
       "Title": "System Requirement",
-      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"System Requirements\"></div>",
+      "ReqIF.Text": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t<p>System Requirements</p>\n</div>",
       "Created On": "2019-10-08T06:18:45.662Z",
       "Modified On": "2019-10-08T06:18:45.662Z"
     },
@@ -75,7 +75,7 @@
       "Creator": "kit7fe",
       "Contributor": "kit7fe",
       "Title": "<infos relevant for the complete chapter>",
-      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"{'br': [None, None], '#text': '<infos relevant for the complete chapter>Note to the template:- the example requirements below are independent of each other and are showing the different possibilities of the requirements structure'}\"></div>",
+      "ReqIF.Text": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t<p>\n\t\t<br></br>\n\t\t<br></br>\n&lt;infos relevant for the complete chapter&gt;Note to the template:- the example requirements below are independent of each other and are showing the different possibilities of the requirements structure\t</p>\n</div>",
       "Created On": "2019-10-08T06:18:45.677Z",
       "Modified On": "2019-10-08T06:18:45.677Z"
     },
@@ -85,7 +85,7 @@
       "Identifier": 629022,
       "Creator": "kit7fe",
       "Contributor": "kit7fe",
-      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"ECU 1st Requirement\"></div>",
+      "ReqIF.Text": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t<p>ECU 1st Requirement</p>\n</div>",
       "Title": "ECU 1st Requirement",
       "Modified On": "2019-10-08T06:18:45.646Z",
       "Created On": "2019-10-08T06:18:45.646Z"
@@ -103,7 +103,7 @@
       "Safety Classification": "ASIL A",
       "Status": "NEW/CHANGED",
       "Title": "<description of the requirement in requirements language>",
-      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"['<description of the requirement in requirements language>', {'b': ['VEHICLE_SYSTEM_BEHAVIOUR', 'CONSTRAINT', 'IMPACT', 'INFO', 'ASSUMPTION'], 'br': [None, None, None, None, None, None, None, None, None, None, None, None, None, None], '#text': '<Optional: description of desired vehicle behaviour (\"development target\")>\\xa0\\xa0 \\xa0 \\xa0<Optional: constraints on the solution space for the requirement>\\xa0 \\xa0<Optional: description of possible cross-functional impact of the requirement, or impact on other components><Optional: additional informations about the requirement:- know-how- background- HW dependencies related to the system requirement- internal signals- etc><Optional: assumptions on the requirement>'}, None]\"></div>",
+      "ReqIF.Text": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t<p>&lt;description of the requirement in requirements language&gt;</p>\n\t<p>\n\t\t<b>VEHICLE_SYSTEM_BEHAVIOUR</b>\n\t\t<b>CONSTRAINT</b>\n\t\t<b>IMPACT</b>\n\t\t<b>INFO</b>\n\t\t<b>ASSUMPTION</b>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n&lt;Optional: description of desired vehicle behaviour (\"development target\")&gt;\u00a0\u00a0 \u00a0 \u00a0&lt;Optional: constraints on the solution space for the requirement&gt;\u00a0 \u00a0&lt;Optional: description of possible cross-functional impact of the requirement, or impact on other components&gt;&lt;Optional: additional informations about the requirement:- know-how- background- HW dependencies related to the system requirement- internal signals- etc&gt;&lt;Optional: assumptions on the requirement&gt;\t</p>\n\t<p></p>\n</div>",
       "Modified On": "2023-05-23T02:41:23.510Z",
       "Created On": "2019-10-08T06:18:45.662Z"
     },
@@ -114,7 +114,7 @@
       "Creator": "kit7fe",
       "Contributor": "kit7fe",
       "Title": "System Non Fonctional Requirements",
-      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"System Non Functional Requirements\"></div>",
+      "ReqIF.Text": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t<p>System Non Functional Requirements</p>\n</div>",
       "Created On": "2019-10-08T06:18:45.677Z",
       "Modified On": "2019-10-08T06:18:45.677Z"
     },
@@ -130,7 +130,7 @@
       "Contributor": "MIG1COB",
       "Safety Classification": "ASIL B",
       "Status": "NEW/CHANGED",
-      "ReqIF.Text": "<div @xmlns=\"http://www.w3.org/1999/xhtml\" p=\"<description of the non functional requirement in requirements language>\"></div>",
+      "ReqIF.Text": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t<p>&lt;description of the non functional requirement in requirements language&gt;</p>\n</div>",
       "Title": "<description of the non functional requirement in requirements language>",
       "Created On": "2019-10-08T06:18:45.677Z",
       "Modified On": "2023-05-23T02:56:54.487Z"
