@@ -1,3 +1,8 @@
+"""
+To build an HTML to RST parser, we inherit and modify the class HTMLParser
+from the module html, which serves as the basis for parsing files formated in HTML
+"""
+
 from html.parser import HTMLParser
 from io import StringIO
 from textwrap import TextWrapper
