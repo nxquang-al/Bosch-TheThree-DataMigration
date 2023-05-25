@@ -19,18 +19,14 @@ def find_keys(node, kv):
 def find_type_spec(spec_type, ref):
     for type in spec_type:
         if type['@IDENTIFIER'] == ref:
-            # return type.keys()
             return type
 
 
 def find_title_spec(xhtml):
-
     if '#text' in list(xhtml[2]['THE-VALUE']['div'].keys()):
-
         return xhtml[2]['THE-VALUE']['div']['#text']
 
     if 'p' in list(xhtml[2]['THE-VALUE']['div'].keys()):
-
         return xhtml[2]['THE-VALUE']['div']['p']
 
 
@@ -167,27 +163,6 @@ def zip_artifact(spec_object):
 
     return res
 
-    # "Title": find_title_spec(spec_object['VALUES']['ATTRIBUTE-VALUE-XHTML']),
-
-
-def convert_to_html(data):
-    if isinstance(data, str):
-        return html.escape(data)
-    elif isinstance(data, list):
-        return ''.join(convert_to_html(item) for item in data if item is not None)
-    elif isinstance(data, dict):
-        tag = list(data.keys())[0]
-        attributes = data[tag]
-        attributes_string = ' '.join(
-            f'{k}="{v}"' for k, v in attributes.items())
-        content = convert_to_html(attributes.get('#text'))
-        return f"<{tag} {attributes_string}>{content}</{tag}>"
-    else:
-        return ''
-
-
-data_dict = ""
-
 
 def get_spec_object_ref_hierarchy(data, hierarchy=None):
     if hierarchy is None:
@@ -196,11 +171,14 @@ def get_spec_object_ref_hierarchy(data, hierarchy=None):
     if isinstance(data, list):
         for item in data:
             get_spec_object_ref_hierarchy(item, hierarchy)
+
     elif isinstance(data, dict):
         object_ref = data.get("OBJECT", {}).get("SPEC-OBJECT-REF")
         if object_ref:
             hierarchy.append(object_ref)
+
         children = data.get("CHILDREN")
+
         if children:
             get_spec_object_ref_hierarchy(
                 children.get('SPEC-HIERARCHY'), hierarchy)
@@ -209,48 +187,33 @@ def get_spec_object_ref_hierarchy(data, hierarchy=None):
 
 
 if __name__ == '__main__':
-    with open("example.xml") as xml_file:
+    data_dict = xmltodict.parse(open("example.xml").read())
 
-        data_dict = xmltodict.parse(xml_file.read())
-        # xml_file.close()
+    spec = list(find_keys(data_dict, 'SPECIFICATIONS'))[0]['SPECIFICATION']
 
-        # generate the object using json.dumps()
-        # corresponding to json data
+    module_name = spec['@LONG-NAME']
 
-        spec = list(find_keys(data_dict, 'SPECIFICATIONS'))[0]['SPECIFICATION']
+    module_type = list(
+        find_keys(dict(data_dict), 'SPECIFICATION-TYPE'))[0]['@LONG-NAME']
 
-        module_name = spec['@LONG-NAME']
+    spec_objects = list(
+        find_keys(dict(data_dict), 'SPEC-OBJECTS'))[0]['SPEC-OBJECT']
 
-        module_type = list(
-            find_keys(dict(data_dict), 'SPECIFICATION-TYPE'))[0]['@LONG-NAME']
+    list_artifact_info = []
 
-        spec_objects = list(
-            find_keys(dict(data_dict), 'SPEC-OBJECTS'))[0]['SPEC-OBJECT']
+    data = get_spec_object_ref_hierarchy(
+        spec['CHILDREN']['SPEC-HIERARCHY'])
 
-        list_artifact_info = []
+    for id in data:
+        for obj in spec_objects:
+            if id == obj['@IDENTIFIER']:
+                list_artifact_info.append(zip_artifact(obj))
 
-        # print(list_hierarchy)
+    json_data = json.dumps({
+        "Module Name": module_name,
+        "Module Type": module_type,
+        "List Artifact Info": list_artifact_info
+    })
 
-        data = get_spec_object_ref_hierarchy(
-            spec['CHILDREN']['SPEC-HIERARCHY'])
-
-        for id in data:
-
-            for obj in spec_objects:
-                if id == obj['@IDENTIFIER']:
-                    # print(zip_artifact(obj))
-                    list_artifact_info.append(zip_artifact(obj))
-
-        json_data = json.dumps({
-            "Module Name": module_name,
-            "Module Type": module_type,
-            "List Artifact Info": list_artifact_info
-        })
-
-        # json_data = json.dumps(data_dict)
-
-        # Write the json data to output
-        # json file
-        with open("test.json", "w") as json_file:
-            json_file.write(json_data)
-            # json_file.close()
+    with open("test.json", "w") as json_file:
+        json_file.write(json_data)
