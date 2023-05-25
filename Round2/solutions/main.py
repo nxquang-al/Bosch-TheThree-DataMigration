@@ -1,7 +1,5 @@
 import json
 import xmltodict
-import html
-
 
 def find_keys(node, kv):
     if isinstance(node, list):
@@ -20,14 +18,6 @@ def find_type_spec(spec_type, ref):
     for type in spec_type:
         if type['@IDENTIFIER'] == ref:
             return type
-
-
-def find_title_spec(xhtml):
-    if '#text' in list(xhtml[2]['THE-VALUE']['div'].keys()):
-        return xhtml[2]['THE-VALUE']['div']['#text']
-
-    if 'p' in list(xhtml[2]['THE-VALUE']['div'].keys()):
-        return xhtml[2]['THE-VALUE']['div']['p']
 
 
 def find_enum_spec(type_object, spec_object):
