@@ -104,7 +104,7 @@
       "VAR_FUNC_SYS": "VAR_Func_sys value",
       "ReqIF.Text": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<p dir=\"ltr\" id=\"_1452523253207\">&lt;description of the requirement in requirements language&gt;</p>\r\n<p dir=\"ltr\" id=\"_1459329778761\"><b>VEHICLE_SYSTEM_BEHAVIOUR</b><br>&lt;Optional: description of desired vehicle behaviour (\"development target\")&gt;&nbsp;&nbsp; &nbsp;<br><b>CONSTRAINT&nbsp;&nbsp;</b> &nbsp;<br>&lt;Optional: constraints on the solution space for the requirement&gt;<br><b>IMPACT&nbsp;</b>&nbsp; &nbsp;<br>&lt;Optional: description of possible cross-functional impact of the requirement, or impact on other components&gt;<br><b>INFO</b><br>&lt;Optional: additional informations about the requirement:<br>- know-how<br>- background<br>- HW dependencies related to the system requirement<br>- internal signals<br>- etc&gt;<br><b>ASSUMPTION</b><br>&lt;Optional: assumptions on the requirement&gt;</p>\r\n<p dir=\"ltr\" id=\"_1461748314913\">&nbsp;</p>\r\n</div>",
       "Identifier": 629015,
-	  "Allocation": "SW Allocation",
+      "Allocation": "SW Allocation",
       "Safety Classification": "ASIL A"
     },
     {
@@ -132,7 +132,7 @@
       "VAR_FUNC_SYS": "Var_func_sys value 2",
       "ReqIF.Text": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<p dir=\"ltr\" id=\"_1454505869759\">&lt;description of the non functional requirement in requirements language&gt;</p>\r\n</div>",
       "Identifier": 629014,
-	  "Allocation": "Non_Func Allocation",
+      "Allocation": "Non_Func Allocation",
       "Safety Classification": "ASIL B"
     }
   ]

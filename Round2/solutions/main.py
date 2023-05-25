@@ -1,9 +1,8 @@
+import argparse
 import json
+
 import xmltodict
-
-
-INP_SRC = 'example.xml'
-OUT_SRC = 'test.json'
+from tqdm import tqdm
 
 IDENTIFIER_TAG = '@IDENTIFIER'
 NAME_TAG = '@LONG-NAME'
@@ -44,7 +43,6 @@ def refactor_key_value(key, value, attr_name, attr):
         case 'ReqIF.ChapterName':
             key = 'ReqIF.Text'
             value = xmltodict.unparse(value, pretty=True)[39:]
-            print(value)
 
         # DATE
         case 'ReqIF.ForeignCreatedOn':
@@ -236,7 +234,9 @@ def find_list_artifact_info(data):
     ref_hierarchy = get_spec_object_ref_hierarchy(
         spec['CHILDREN']['SPEC-HIERARCHY'])
 
-    for ref in ref_hierarchy:
+    for idx in tqdm(range(len(ref_hierarchy))):
+        ref = ref_hierarchy[idx]
+
         for obj in spec_objects:
             if ref == obj.get(IDENTIFIER_TAG):
                 result.append(zip_artifact(obj, spec_type))
@@ -244,7 +244,21 @@ def find_list_artifact_info(data):
     return result
 
 
+def init_argument():
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument(
+        "-i", "--input_file", help="Directory to input file. Accepts file *.reqif or *.xml only")
+    parser.add_argument("-o", "--output_file",
+                        help="Directory to output *.json file.")
+
+    args = parser.parse_args()
+
+    return args.input_file, args.output_file
+
+
 if __name__ == '__main__':
+    INP_SRC, OUT_SRC = init_argument()
 
     # Reading an XML file specified by URL, parsing it into a Python dictionary using the `xmltodict` library
     data_dict = xmltodict.parse(open(INP_SRC).read())
