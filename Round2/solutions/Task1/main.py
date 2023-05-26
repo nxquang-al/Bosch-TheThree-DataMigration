@@ -270,7 +270,7 @@ if __name__ == '__main__':
         "Module Name": find_name_module(data_dict),
         "Module Type": find_type_module(data_dict),
         "List Artifact Info": find_list_artifact_info(data_dict)
-    })
+    }, indent=4)
 
     with open(OUT_SRC, "w") as json_file:
         json_file.write(json_data)
