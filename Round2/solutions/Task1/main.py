@@ -39,10 +39,13 @@ def refactor_key_value(key, value, attr_name, attr):
             value = xmltodict.unparse(value, pretty=True)[39:]
         case 'ReqIF.Name':
             key = 'Title'
-            value = value['div']['#text']
+            value = value.get('div', {}).get('#text', '')
         case 'ReqIF.ChapterName':
             key = 'ReqIF.Text'
             value = xmltodict.unparse(value, pretty=True)[39:]
+        case 'ReqIF.Description':
+            key = 'Description'
+            value = value.get('div', {}).get('#text', '')
 
         # DATE
         case 'ReqIF.ForeignCreatedOn':
@@ -151,7 +154,7 @@ def zip_artifact(spec_object, spec_type):
     type_object = find_type_spec(spec_type, type_ref)
 
     artifact_info.update(
-        {"Attribute Type": type_object.get(NAME_TAG), 'Description': ''})
+        {"Attribute Type": type_object.get(NAME_TAG)})
 
     for key in spec_object['VALUES'].keys():
         spec_attrs = type_object['SPEC-ATTRIBUTES']
