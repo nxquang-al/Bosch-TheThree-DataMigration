@@ -13,6 +13,7 @@ import html
 IGNORE_TAGS = ['title', 'style', 'script']
 UNDERLINES = list('=-~`+;')
 
+
 class LineBuffer(object):
     def __init__(self):
         self._lines = []
@@ -34,7 +35,7 @@ class LineBuffer(object):
         return '\n'.join(self._lines)
 
     def write(self, s):
-        #normalise whitespace
+        # normalise whitespace
         s = ' '.join(s.split())
         self._lines.extend(self._wrapper.wrap(s))
 
@@ -53,6 +54,7 @@ class LineBuffer(object):
         linebuf = self._lines
         for i in range(len(linebuf)):
             linebuf[i] = linebuf[i].lstrip()
+
 
 class MyHTMLParser(HTMLParser):
     def __init__(self, relative_root=None, relative_dir=None):
@@ -76,7 +78,8 @@ class MyHTMLParser(HTMLParser):
             if self.inblock > 1:
                 indent = 4 * (self.inblock - 1)
                 self.lineBuffer.indent(indent)
-            self.res += html.unescape(self.lineBuffer.read()) # unescape() converts ascii to symbol
+            # unescape() converts ascii to symbol
+            self.res += html.unescape(self.lineBuffer.read())
             self.lineBuffer.clear()
 
     def flush_stringbuffer(self):
@@ -91,24 +94,23 @@ class MyHTMLParser(HTMLParser):
         else:
             self.lineBuffer.write(sbuf)
         self.clear_stringbuffer()
-    
+
     def clear_stringbuffer(self):
         self.stringBuffer.seek(0)
         self.stringBuffer.truncate()
-    
+
     def write_to_buffer(self, text):
         """
         Write a string to stringBuffer
         """
         self.stringBuffer.write(text)
 
-    
-    def merge_with_newline(self, text =''):
+    def merge_with_newline(self, text=''):
         """
         Writeline: Write with an extra endline
         """
         return self.merge(text + '\n')
-    
+
     def merge(self, text=''):
         """
         Write: flush content from buffer to self.res and append the given text
@@ -164,7 +166,7 @@ class MyHTMLParser(HTMLParser):
                 self.write_startblock()
 
         return
-    
+
     def handle_endtag(self, tag: str) -> None:
         """
         A built-in method to handle the end tag of an element
@@ -205,6 +207,7 @@ class MyHTMLParser(HTMLParser):
                     self.merge_with_newline()
 
         return
+
     def handle_data(self, data: str) -> None:
         """
         A method to process arbitrary data between the start tag and end tag
@@ -229,13 +232,13 @@ class MyHTMLParser(HTMLParser):
                 # At the end display all the hrefs with their corresponding data
                 self.merge_with_newline('.. _{}: {}'.format(link, href))
         return self.res
-    
+
     def handle_start_p(self):
         """ Handle the <p> tag
         """
         if not self.inblock:
             self.merge_with_newline()
-    
+
     def handle_end_p(self):
         """ Handle the </p> tag
         """
@@ -247,17 +250,17 @@ class MyHTMLParser(HTMLParser):
         """ <em> tag
         """
         self.write_to_buffer('*')
-    
+
     def handle_end_em(self):
         """ </em> tag
         """
         self.write_to_buffer('*')
-    
+
     def handle_start_b(self):
         """ <b> tag
         """
         self.write_to_buffer('**')
-    
+
     def handle_end_b(self):
         """ </b> tag
         """
@@ -267,12 +270,12 @@ class MyHTMLParser(HTMLParser):
         """ <code> tag
         """
         self.write_to_buffer('``')
-    
+
     def handle_end_code(self):
         """ </code> tag
         """
         self.write_to_buffer('``')
-    
+
     def handle_start_a(self, attributes):
         """  <a> tag
         """
@@ -287,7 +290,8 @@ class MyHTMLParser(HTMLParser):
                 elif '://' not in href:
                     href = self.relative_dir + href
         self.write_to_buffer('`')
-        self.links['waiting_data'] = href  # waiting for the data stored between <a> and </a>
+        # waiting for the data stored between <a> and </a>
+        self.links['waiting_data'] = href
         return
 
     def handle_end_a(self):
@@ -296,9 +300,10 @@ class MyHTMLParser(HTMLParser):
         """
         if 'waiting_data' in self.links:
             self.write_to_buffer('`_')
-            del self.links['waiting_data']  # When data is mapped to self.links[href], delete the waiting
+            # When data is mapped to self.links[href], delete the waiting
+            del self.links['waiting_data']
         return
-    
+
     def handle_start_br(self):
         """ <br> tag, just a line break
         """
@@ -307,7 +312,7 @@ class MyHTMLParser(HTMLParser):
             # self.merge('| ')
         else:
             self.write_to_buffer(' ')
-    
+
     def handle_start_ul(self):
         """ <ul> tag, start of an unordered list
         """
@@ -316,7 +321,7 @@ class MyHTMLParser(HTMLParser):
         self.merge_with_newline()
         self.lists.append('* ')
         self.inblock += 1                   # Count for indentation
-    
+
     def handle_end_ul(self):
         """ </ul> tag
         """
@@ -327,7 +332,7 @@ class MyHTMLParser(HTMLParser):
             self.merge_with_newline()
         else:
             self.write_endblock()
-    
+
     def handle_start_ol(self):
         """ <ol> tag, start of an ordered list
         """
@@ -336,7 +341,7 @@ class MyHTMLParser(HTMLParser):
         self.merge_with_newline()
         self.lists.append('#. ')
         self.inblock += 1
-    
+
     def handle_end_ol(self):
         """ </ol> tag
         """
@@ -364,7 +369,7 @@ class MyHTMLParser(HTMLParser):
             start_index = 0
         self.lineBuffer.indent(len(self.lists[-1]), start=start_index)
         self.merge()
-    
+
     def handle_end_body(self):
         """ </body> tag
         """
@@ -376,22 +381,3 @@ class MyHTMLParser(HTMLParser):
 
     def close(self):
         HTMLParser.close(self)
-        
-
-
-########################################################################################
-### To test the parser, uncomment and run the below script
-
-
-# if __name__=='__main__':
-#     text = '<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<p dir=\"ltr\" id=\"_1452523253207\">&lt;description of the requirement in requirements language&gt;</p>\r\n<p dir=\"ltr\" id=\"_1459329778761\"><b>VEHICLE_SYSTEM_BEHAVIOUR</b><br>&lt;Optional: description of desired vehicle behaviour (\"development target\")&gt;&nbsp;&nbsp; &nbsp;<br><b>CONSTRAINT&nbsp;&nbsp;</b> &nbsp;<br>&lt;Optional: constraints on the solution space for the requirement&gt;<br><b>IMPACT&nbsp;</b>&nbsp; &nbsp;<br>&lt;Optional: description of possible cross-functional impact of the requirement, or impact on other components&gt;<br><b>INFO</b><br>&lt;Optional: additional informations about the requirement:<br>- know-how<br>- background<br>- HW dependencies related to the system requirement<br>- internal signals<br>- etc&gt;<br><b>ASSUMPTION</b><br>&lt;Optional: assumptions on the requirement&gt;</p>\r\n<p dir=\"ltr\" id=\"_1461748314913\">&nbsp;</p>\r\n</div>'
-#     # text = '<ul><li>Coffee</li><li>Tea</li><li>Milk</li></ul>'
-#     # text = '<ol><li>Coffee<ul><li>Arabica</li><li>Robusta</li></ul></li><li>Tea</li><li>Milk</li></ol>'
-#     # text = '<a href="https://www.w3schools.com">Visit W3Schools.com!</a>'
-#     # text = '<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<p dir=\"ltr\" id=\"_1454497260221\"><a href="https://www.w3schools.com">System Non Functional Requirements</a></p>\r\n</div>'
-#     parser = MyHTMLParser()
-#     parser.feed(text)
-#     print(parser.get_rst())
-#     parser.close()
-
-########################################################################################

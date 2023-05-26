@@ -1,18 +1,10 @@
-# Data Migration - Round 2 - TheThree
+# Data Migration - Round 2
 
-## Installation
-
-## Task 1: Reqif to Json
-
-```bash
-
-```
-
-## Task 2: Json to RST
+## Team TheThree - Task 2
 
 ### a) HTML to RST parser
 
-- We implemented a class `MyHTMLParser` by inheriting from the `html.parser.HTMLParser` and overridden its handler methods to carry out the desired behavior when start tags, end tags, and data are encounterd.
+- We implemented a class `MyHTMLParser` by inheriting from the `html.parser.HTMLParser` and overridden its handler methods to carry out the desired behavior when start tags, end tags, and data are encountered.
 
 - List of tags that our parser can handle:
 
