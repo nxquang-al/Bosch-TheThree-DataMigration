@@ -1,0 +1,65 @@
+module:
+  datatype: object
+  name:
+    datatype: string
+    key: "Module Name"
+    value:
+      node: SPECIFICATION
+      attribute: LONG_NAME
+  type:
+    datatype: string
+    key: "Module Type"
+    value:
+      node: SPECIFICATION-TYPE
+      attribute: LONG_NAME
+  artifact:
+    datatype: array
+    key: "List Artifact Info"
+    value:
+      node: SPEC-OBJECT
+      attribute: VALUES
+      hierarchy: CHILDREN.SPEC-HIERARCHY
+      element:
+        datatype: object
+        type:
+          datatype: string
+          key: "Attribute Type"
+        _attributeS:
+          key:
+          value:
+          mapping:
+            string:
+              ReqIF.ForeignID:
+                as: Identifier
+                value:
+                  datatype: number
+              ReqIF.ForeignCreatedBy:
+                as: Creator
+              ReqIF.ForeignModifiedBy:
+                as: Contributor
+
+            date:
+              ReqIF.ForeignCreatedOn:
+                as: Created On
+              ReqIF.ForeignModifiedOn:
+                as: Modified On
+
+            xhtml:
+              ReqIF.Text:
+                value:
+                  datatype: html_string
+              ReqIF.Name:
+                as: Title
+              ReqIF.ChapterName:
+                as: ReqIF.Text
+                value:
+                  datatype: html_string
+              ReqIF.Description:
+                as: Description
+
+            boolean:
+
+            enumeration:
+              value: ##finding the value
+              Artifact Format:
+                ignore: true

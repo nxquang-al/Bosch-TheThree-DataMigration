@@ -1,0 +1,44 @@
+module:
+  name:
+    key: Module Name
+  type:
+    key: Module Type
+  artifacts:
+    datatype: array
+    key: List Artifact Info
+    value:
+      element:
+        type:
+          key: Attribute Type
+        mapping:
+          string:
+            ReqIF.ForeignID:
+              datatype: number
+              key: Identifier
+            ReqIF.ForeignCreatedBy:
+              key: Creator
+            ReqIF.ForeignModifiedBy:
+              key: Contributor
+
+          date:
+            ReqIF.ForeignCreatedOn:
+              key: Created On
+            ReqIF.ForeignModifiedOn:
+              key: Modified On
+
+          xhtml:
+            ReqIF.Text:
+              datatype: html_string
+            ReqIF.Name:
+              key: Title
+            ReqIF.ChapterName:
+              key: ReqIF.Text
+              datatype: html_string
+            ReqIF.Description:
+              key: Description
+
+          boolean:
+
+          enumeration:
+            Artifact Format:
+              ignore: true
