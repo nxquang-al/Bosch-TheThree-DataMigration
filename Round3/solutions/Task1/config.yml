@@ -44,5 +44,6 @@ module:
               value:
                 NEW/CHANGED:
                   as: New/Changed
+                default:
             Artifact Format:
               ignore: true

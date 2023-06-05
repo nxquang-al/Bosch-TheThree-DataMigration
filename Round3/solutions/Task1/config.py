@@ -81,6 +81,10 @@ def refactor_key_value(key, value, attr_name):
         if mapping_value is not None:
             if value in mapping_value.keys():
                 value = mapping_value.get(value).get('as')
+            else:
+                if 'default' in mapping_value.keys():
+                    value = '' if mapping_value.get(
+                        'default') is None else mapping_value.get('default')
 
         if type_value is not None:
             match type_value:
