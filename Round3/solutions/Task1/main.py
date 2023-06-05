@@ -1,11 +1,8 @@
 import json
-from tqdm import tqdm
 
 from config import *
+from tqdm import tqdm
 from utils import *
-
-IDENTIFIER_TAG = '@IDENTIFIER'
-NAME_TAG = '@LONG-NAME'
 
 
 def find_type_spec(spec_type, ref):
@@ -69,14 +66,14 @@ def zip_artifact(spec_object, spec_type):
     about the artifact's values based on the mapping function. The dictionary is sorted by key.
     """
 
-    artifact_info = {}
+    artifacts = {}
 
     type_ref = spec_object['TYPE']['SPEC-OBJECT-TYPE-REF']
     type_object = find_type_spec(spec_type, type_ref)
 
     artifact_config = load_artifact_config(CONFIG_SRC)
 
-    artifact_info.update(
+    artifacts.update(
         {artifact_config.get('type').get('key', 'type'): type_object.get(NAME_TAG)})
 
     for key in spec_object['VALUES'].keys():
@@ -84,9 +81,9 @@ def zip_artifact(spec_object, spec_type):
         spec_obj_values = spec_object['VALUES']
 
         for info in mapping_attr_definition(spec_attrs, spec_obj_values,  attr_key=key):
-            artifact_info.update(info)
+            artifacts.update(info)
 
-    return dict(sorted(artifact_info.items()))
+    return dict(sorted(artifacts.items()))
 
 
 def find_name_module(data):
@@ -101,7 +98,7 @@ def find_type_module(data):
         find_keys(dict(data), 'SPECIFICATION-TYPE'))[0].get(NAME_TAG)
 
 
-def find_list_artifact_info(data):
+def find_list_artifacts(data):
     result = []
 
     spec = list(find_keys(data, 'SPECIFICATIONS'))[0]['SPECIFICATION']
@@ -131,12 +128,10 @@ if __name__ == '__main__':
     config_module = {key: value.get(
         'key', key) for key, value in load_config(CONFIG_SRC).items()}
 
-    print(config_module)
-
     json_data = json.dumps({
         config_module.get('name'): find_name_module(data_dict),
         config_module.get('type'): find_type_module(data_dict),
-        config_module.get('artifacts'): find_list_artifact_info(data_dict)
+        config_module.get('artifacts'): find_list_artifacts(data_dict)
     }, indent=4)
 
     with open(OUT_SRC, "w") as json_file:

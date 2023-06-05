@@ -1,48 +1,22 @@
 import xmltodict
 import yaml
-
 from utils import *
 
 IDENTIFIER_TAG = '@IDENTIFIER'
 NAME_TAG = '@LONG-NAME'
 
 
-def refactor_key_value(key, value, attr_name):
-
-    _, _, CONFIG_SRC = init_argument()
-
-    mapping = load_artifact_config(CONFIG_SRC).get(
-        'mapping', {}).get(attr_name.lower())
-
-    if key in mapping.keys():
-
-        config_attribute = mapping.get(key)
-
-        if config_attribute.get('ignore') == True:
-            return None, None
-
-        type_value = config_attribute.get('datatype')
-
-        if isinstance(value, dict) and (type_value is None or type_value == 'string'):
-            value = value.get('div', {}).get('#text', '')
-        key = config_attribute.get('key', key)
-
-        if type_value is not None:
-            match type_value:
-                case 'number':
-                    value = int(value)
-                case 'html_string':
-                    value = xmltodict.unparse(value, pretty=True)[39:]
-
-    return key, value
-
-
 def load_config(filename):
 
-    with open(filename, 'r') as file:
-        config = yaml.safe_load(file).get('module', {})
+    if not is_locked(filename):
 
-    return config
+        with open(filename, 'r') as file:
+            config = yaml.safe_load(file).get('module', {})
+
+        return config
+
+    else:
+        raise Exception('Could not load file ', filename)
 
 
 def load_artifact_config(filename):
@@ -50,7 +24,10 @@ def load_artifact_config(filename):
 
 
 def load_data(filename):
-    return xmltodict.parse(open(filename).read())
+    if not is_locked(filename):
+        return xmltodict.parse(open(filename).read())
+    else:
+        raise Exception('Could not load file ', filename)
 
 
 def find_enum_value(ref_value):
@@ -77,6 +54,36 @@ def find_enum_value(ref_value):
     for value in values:
         if value.get(IDENTIFIER_TAG) == ref_value:
             return value.get(NAME_TAG)
+
+
+def refactor_key_value(key, value, attr_name):
+    
+    _, _, CONFIG_SRC = init_argument()
+
+    mapping = load_artifact_config(CONFIG_SRC).get(
+        'mapping', {}).get(attr_name.lower())
+
+    if key in mapping.keys():
+
+        config_attribute = mapping.get(key)
+
+        if config_attribute.get('ignore') == True:
+            return None, None
+
+        type_value = config_attribute.get('datatype')
+
+        if isinstance(value, dict) and (type_value is None or type_value == 'string'):
+            value = value.get('div', {}).get('#text', '')
+        key = config_attribute.get('key', key)
+
+        if type_value is not None:
+            match type_value:
+                case 'number':
+                    value = int(value)
+                case 'html_string':
+                    value = xmltodict.unparse(value, pretty=True)[39:]
+
+    return key, value
 
 
 def mapping_attr_definition(spec_attrs, spec_obj_values, attr_key):

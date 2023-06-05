@@ -1,7 +1,8 @@
-import psutil
-import os
-import re
 import argparse
+import os
+import platform
+
+import psutil
 
 
 def init_argument():
@@ -42,63 +43,54 @@ def find_keys(node, kv):
                 yield x
 
 
-def check_file_is_running(filename):
-    system = 'Linux'
+def is_locked(filename):
+    system = platform.system()
 
     full_path = os.path.abspath(filename)
 
-    if system:
-        return file_running_in_Linux(full_path)
+    if system == 'Linux':
+        return is_locked_in_Linux(full_path)
     elif system == 'Windows':
-        return has_handle_in_Windows(full_path)
+        return is_locked_in_Windows(full_path)
 
 
-def iterate_fds(pid):
-    dir = '/proc/'+str(pid)+'/fd'
-    if not os.access(dir, os.R_OK | os.X_OK):
-        return
-
-    for fds in os.listdir(dir):
-        for fd in fds:
-            full_name = os.path.join(dir, fd)
-            try:
-                file = os.readlink(full_name)
-                if file == '/dev/null' or \
-                        re.match(r'pipe:\[\d+\]', file) or \
-                        re.match(r'socket:\[\d+\]', file):
-                    file = None
-            except OSError as err:
-                if err.errno == 2:
-                    file = None
-                else:
-                    raise (err)
-
-            yield (fd, file)
-
-
-def has_handle_in_Windows(full_path):
+def is_locked_in_Windows(full_path):
     for proc in psutil.process_iter():
         try:
             for item in proc.open_files():
                 if full_path == item.path:
                     return True
         except Exception:
-            pass
+            print(full_path, '-> Failed to open file')
 
     return False
 
 
-def file_running_in_Linux(full_path):
-    wildcard = "/proc/*/fd/*"
-    lfds = glob.glob(wildcard)
-    for fds in lfds:
-        try:
-            file = os.readlink(fds)
-            if file == full_path:
-                return True
-        except OSError as err:
-            if err.errno == 2:
-                file = None
-            else:
-                raise (err)
-    return False
+def is_file_locked(path):
+    try:
+        # Open the file in exclusive mode
+        with open(path, 'r') as file:
+            return False
+    except IOError:
+        # File is locked by another process
+        return True
+
+
+def is_directory_locked(path):
+    try:
+        # Attempt to rename the directory
+        os.rename(path, path)
+        return False
+    except OSError:
+        # Directory is locked by another process
+        return True
+
+
+def is_locked_in_Linux(path):
+    if os.path.isfile(path):
+        return is_file_locked(path)
+    elif os.path.isdir(path):
+        return is_directory_locked(path)
+    else:
+        print("The specified path does not exist.")
+        return None
