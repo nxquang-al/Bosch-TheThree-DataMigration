@@ -1,0 +1,86 @@
+module:
+  name:
+    key: Module Name
+    value_type: string
+    value_mapping:
+      abc: xyx
+    rst_type: heading
+
+  type:
+    key: Module Type
+    value_type: string
+    value_mapping:
+      abc: xyx
+    default_value: xyz
+
+  artifacts:
+    key: List Artifact Info
+    value_type: array
+    artifact:
+      __type__:
+        key: Attribute Type
+        value_type: string
+        value_mapping:
+          Heading: Title
+          Information: Data
+          MO_FUNC_REQ: MO_FUNC_REQ1
+        default_value: xyz
+
+      __rst__:
+        Title:
+          rst_type: subheading
+          key: Title
+        Data:
+          rst_type: information
+          directives: 
+            - name: sw_req
+              attributes:
+                id: Identifier
+                artifact_type: Information
+        __other__:
+          rst_type: requirement
+          directives: 
+            - name: sw_req
+              attributes:
+                id: Identifier
+                artifact_type: Description
+                crq: crq
+              directives:
+              - name: subdirective1
+                attributes:
+                  id: Identifier
+                  artifact_type: Description
+                  crq: crq
+              - name: subdirective2
+                attributes:
+                  id: Identifier
+                  artifact_type: Description
+                  crq: crq
+                  
+      ReqIF.ForeignID:
+        key: Identifier
+        value_type: number
+      ReqIF.ForeignCreatedBy:
+        key: Creator
+        value_type: string
+      ReqIF.ForeignModifiedBy:
+        key: Contributor
+        value_type: string
+      ReqIF.ForeignCreatedOn:
+        key: Created On
+        value_type: date
+      ReqIF.ForeignModifiedOn:
+        key: Modified On
+        value_type: date
+      ReqIF.Text:
+        key: ReqIF.Text
+        value_type: html_string
+      ReqIF.Name:
+        key: Title
+        value_type: html_string
+      ReqIF.ChapterName:
+        key: ReqIF.Text
+        value_type: html_string
+      ReqIF.Description:
+        key: Description
+        value_type: html_string
