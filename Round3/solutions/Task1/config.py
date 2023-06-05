@@ -57,7 +57,7 @@ def find_enum_value(ref_value):
 
 
 def refactor_key_value(key, value, attr_name):
-    
+
     _, _, CONFIG_SRC = init_argument()
 
     mapping = load_artifact_config(CONFIG_SRC).get(
@@ -74,7 +74,13 @@ def refactor_key_value(key, value, attr_name):
 
         if isinstance(value, dict) and (type_value is None or type_value == 'string'):
             value = value.get('div', {}).get('#text', '')
+
         key = config_attribute.get('key', key)
+        mapping_value = config_attribute.get('value')
+
+        if mapping_value is not None:
+            if value in mapping_value.keys():
+                value = mapping_value.get(value).get('as')
 
         if type_value is not None:
             match type_value:
