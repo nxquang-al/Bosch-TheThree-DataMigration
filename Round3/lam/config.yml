@@ -24,9 +24,12 @@ module:
           Information: Data
           MO_FUNC_REQ: MO_FUNC_REQ1
         default_value: xyz
+
       ReqIF.ForeignID:
         key: Identifier
         value_type: number
+        value_mapping:
+          abc: xyx
       ReqIF.ForeignCreatedBy:
         key: Creator
         value_type: string

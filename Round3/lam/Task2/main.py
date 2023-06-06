@@ -27,12 +27,17 @@ def find_property_have_key(obj: dict, target: str):
         if value.get('key') == target:
             return key, value
 
+def listify(obj):
+    '''
+    Returns a list of the object if it is not a list
+    '''
+    return obj if isinstance(obj, list) else [obj]
 
 def get_directives_data(artifact: dict, directives: list):
     '''
     Returns the directives data for the given artifact
     '''
-    for directive in directives:
+    for directive in listify(directives):
         for key, value in directive.get('attributes', {}).items():
             attr = find_property_have_key(config['artifacts']['artifact'], value)
             if attr is not None:
@@ -57,7 +62,6 @@ def get_rst_type(artifact_type, rst_config):
     if artifact_type == rst_config['information']['atifact_type']:
         return 'information'
     return 'other'
-
 
 def build_rst_artifacts(rst, artifacts: list, config: dict):
     rst_config = config['__rst__']
