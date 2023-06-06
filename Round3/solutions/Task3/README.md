@@ -16,7 +16,7 @@ AUTHENTICATION:
   TOKEN: <GitHub-Access-Token>
   USERNAME: <username>
 FILENAME: <filename>
-MESSAGE: <commit message>
+MESSAGE: <commit-message>
 REPOSITORY:
   BRANCH: <name-of-branch>
   NAME: <name-of-repo>
