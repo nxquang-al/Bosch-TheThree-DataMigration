@@ -1,3 +1,4 @@
+
 ===============
 ECU_Requirement
 ===============
@@ -6,6 +7,7 @@ ECU_Requirement
    :id: 629014
    :artifact_type: <div xmlns="http://www.w3.org/1999/xhtml"></div>
    :crq: crq
+   :createdOn: 2019-10-08T06:18:45.677Z
    .. subdirective1::
       :id: 629014
       :artifact_type: <div xmlns="http://www.w3.org/1999/xhtml"></div>
@@ -19,6 +21,7 @@ ECU_Requirement
    :id: 629014
    :artifact_type: <div xmlns="http://www.w3.org/1999/xhtml"></div>
    :crq: crq
+   :createdOn: 2019-10-08T06:18:45.677Z
    .. subdirective1::
       :id: 629014
       :artifact_type: <div xmlns="http://www.w3.org/1999/xhtml"></div>
