@@ -1,3 +1,4 @@
 xmltodict
 tqdm
 argparse
+pyyaml

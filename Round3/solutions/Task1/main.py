@@ -1,24 +1,174 @@
 import json
+import xmltodict
 
 from config import *
 from tqdm import tqdm
 from utils import *
 
+NAME_TAG = '@LONG-NAME'
 
-def find_type_spec(spec_type, ref):
-    """
-    The function searches for a specific type in a list of types based on its identifier and returns it.
 
-    :param spec_type: It is a list of dictionaries that contains information about different types. Each
-    dictionary represents a type and has a key '@IDENTIFIER' that uniquely identifies the type
-    :param ref: The parameter "ref" is a string that represents the identifier of a type that we want to
-    find in a list of type specifications
-    :return: the dictionary object of the type that has an '@IDENTIFIER' key matching the 'ref'
-    parameter.
+def init_argument():
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument(
+        "-i", "--input_file", help="Directory to input file. Accepts file *.reqif or *.xml only")
+    parser.add_argument("-o", "--output_file",
+                        help="Directory to output *.json file.")
+    parser.add_argument("-s", "--settings",
+                        help="Directory to configure settings *.yml file")
+
+    args = parser.parse_args()
+
+    return args.input_file, args.output_file, args.settings
+
+
+def listify(obj):
     """
-    for type in spec_type:
-        if ref == type.get(IDENTIFIER_TAG):
-            return type
+    Returns a list of the object if it is not a list
+    """
+    return obj if isinstance(obj, list) else [obj]
+
+
+def find_ref_object(source: list | dict, ref: str) -> dict:
+    """
+    Returns the object with the given ref
+    """
+    return [obj for obj in listify(source) if obj['@IDENTIFIER'] == ref][0]
+
+
+def get_module_name(reqif: dict) -> str:
+    """
+    Returns the name of the reqif
+    """
+    return list(find_keys(reqif, 'SPECIFICATION'))[0][NAME_TAG]
+
+
+def get_module_type(reqif: dict) -> str:
+    """
+    Returns the type of the reqif
+    """
+    ref = list(find_keys(reqif, 'SPECIFICATION-TYPE-REF'))[0]
+    return find_ref_object(reqif['SPEC-TYPES']['SPECIFICATION-TYPE'], ref)[NAME_TAG]
+
+
+def get_artifact_definition(spec_object: dict) -> str:
+    """
+    Returns the artifact definition of the spec object
+    """
+    ref = list(find_keys(spec_object, 'SPEC-OBJECT-TYPE-REF'))[0]
+    definition = find_ref_object(
+        reqif['SPEC-TYPES']['SPEC-OBJECT-TYPE'], ref)
+    return definition
+
+
+def find_enum_value(ref_value):
+    """
+    The function finds the long name of an enum value given its identifier.
+
+    :param ref_value: The input parameter "ref_value" is a string representing the identifier of an
+    enumerated value that we want to find the corresponding long name for
+    :return: the `@LONG-NAME` attribute of the `ENUM-VALUE` element in the `SPECIFIED-VALUES` element of
+    the `DATATYPE-DEFINITION-ENUMERATION` element that has an `@IDENTIFIER` attribute equal to the
+    `ref_value` parameter passed to the function.
+    """
+
+    INP_SRC, _, _ = init_argument()
+
+    dt_def_enum = list(
+        find_keys(load_reqif(INP_SRC), 'DATATYPE-DEFINITION-ENUMERATION'))[0]
+
+    values = []
+    for dt in dt_def_enum:
+        for dump in dt['SPECIFIED-VALUES']['ENUM-VALUE']:
+            values.append(dump)
+
+    for value in values:
+        if value.get('@IDENTIFIER') == ref_value:
+            return value.get(NAME_TAG)
+
+
+def find_name_value_attribute(attr, definition, type_name):
+    # get the source and ref of the attribute
+    source_tag = 'ATTRIBUTE-DEFINITION-' + type_name
+    ref_tag = source_tag + '-REF'
+
+    source = definition['SPEC-ATTRIBUTES'][source_tag]
+    ref = attr['DEFINITION'][ref_tag]
+
+    # get the name and value of the attribute
+    attr_name = find_ref_object(source, ref)[NAME_TAG]
+
+    if type_name == 'enumeration'.upper():
+        attr_value = find_enum_value(attr['VALUES']['ENUM-VALUE-REF'])
+    else:
+        attr_value = attr.get(
+            '@THE-VALUE', attr.get('THE-VALUE'))
+
+    return attr_name, attr_value
+
+
+def get_artifact_attributes(spec_object: dict, definition: dict, config: dict) -> dict:
+    """
+    Returns the artifact attributes of the spec object
+    """
+    attributes = dict()
+    for attr_type_tag in spec_object['VALUES']:
+        type_name = attr_type_tag.split('-')[-1]
+
+        for attr in listify(spec_object['VALUES'][attr_type_tag]):
+
+            attr_name, attr_value = find_name_value_attribute(
+                attr, definition, type_name)
+
+            if attr_value is None:
+                continue
+
+            if attr_name in config:
+                if config.get(attr_name).get('ignore') == True:
+                    continue
+                set_value(attributes, attr_value,
+                          config[attr_name], attr_name=attr_name)
+            else:
+                attributes[attr_name] = attr_value
+
+    return attributes
+
+
+def get_artifact(spec_object: dict, config: dict) -> dict:
+    """
+    Returns the artifact of the spec object
+    """
+    artifact = dict()
+
+    definition = get_artifact_definition(spec_object)
+    artifact_type = definition[NAME_TAG]
+    set_value(artifact, artifact_type, config['type'])
+
+    attributes = get_artifact_attributes(spec_object, definition, config)
+
+    artifact.update(attributes)
+
+    return dict(sorted(artifact.items()))
+
+
+def get_artifacts(reqif: dict, config: dict) -> list:
+    """
+    Returns the artifacts of the reqif
+    """
+    artifacts = []
+
+    ref_hierarchy = get_spec_object_ref_hierarchy(
+        list(find_keys(reqif, 'SPEC-HIERARCHY'))[0])
+
+    for idx in tqdm(range(len(ref_hierarchy))):
+        ref = ref_hierarchy[idx]
+
+        for spec_object in reqif['SPEC-OBJECTS']['SPEC-OBJECT']:
+            if ref == spec_object.get('@IDENTIFIER'):
+                artifacts.append(get_artifact(spec_object, config))
+
+    return artifacts
 
 
 def get_spec_object_ref_hierarchy(data, hierarchy=None):
@@ -53,86 +203,43 @@ def get_spec_object_ref_hierarchy(data, hierarchy=None):
     return hierarchy
 
 
-def zip_artifact(spec_object, spec_type):
+def build_json(reqif: dict, config: dict) -> dict:
     """
-    The function takes a specification object and type, and returns a dictionary of artifact
-    information.
-
-    :param spec_object: The spec_object parameter is a dictionary that represents a specification
-    object. It contains information about the object's type, values, and other attributes
-    :param spec_type: The type of specification being used (e.g. "DOORS", "SysML", etc.)
-    :return: a dictionary containing information about an artifact specified by the input `spec_object`
-    and `spec_type`. The dictionary includes the attribute type and description, as well as information
-    about the artifact's values based on the mapping function. The dictionary is sorted by key.
+    Builds the json from the reqif and config
     """
+    json_dict = dict()
+    set_value(json_dict, get_module_name(reqif), config['name'])
+    set_value(json_dict, get_module_type(reqif), config['type'])
 
-    artifacts = {}
+    artifacts = get_artifacts(reqif, config['artifacts']['artifact'])
+    set_value(json_dict, artifacts, config['artifacts'])
 
-    type_ref = spec_object['TYPE']['SPEC-OBJECT-TYPE-REF']
-    type_object = find_type_spec(spec_type, type_ref)
-
-    artifact_config = load_artifact_config(CONFIG_SRC)
-
-    artifacts.update(
-        {artifact_config.get('type').get('key', 'type'): type_object.get(NAME_TAG)})
-
-    for key in spec_object['VALUES'].keys():
-        spec_attrs = type_object['SPEC-ATTRIBUTES']
-        spec_obj_values = spec_object['VALUES']
-
-        for info in mapping_attr_definition(spec_attrs, spec_obj_values,  attr_key=key):
-            artifacts.update(info)
-
-    return dict(sorted(artifacts.items()))
+    return json_dict
 
 
-def find_name_module(data):
-    spec = list(find_keys(data, 'SPECIFICATIONS'))[0]['SPECIFICATION']
-
-    return spec.get(NAME_TAG)
-
-
-def find_type_module(data):
-
-    return list(
-        find_keys(dict(data), 'SPECIFICATION-TYPE'))[0].get(NAME_TAG)
-
-
-def find_list_artifacts(data):
-    result = []
-
-    spec = list(find_keys(data, 'SPECIFICATIONS'))[0]['SPECIFICATION']
-    spec_type = list(find_keys(dict(data_dict), 'SPEC-OBJECT-TYPE'))[0]
-    spec_objects = list(
-        find_keys(dict(data_dict), 'SPEC-OBJECTS'))[0]['SPEC-OBJECT']
-
-    ref_hierarchy = get_spec_object_ref_hierarchy(
-        spec['CHILDREN']['SPEC-HIERARCHY'])
-
-    for idx in tqdm(range(len(ref_hierarchy))):
-        ref = ref_hierarchy[idx]
-
-        for obj in spec_objects:
-            if ref == obj.get(IDENTIFIER_TAG):
-                result.append(zip_artifact(obj, spec_type))
-
-    return result
+def load_reqif(filename: str) -> dict:
+    """
+    Loads the reqif file and returns the reqif content
+    """
+    if is_locked(filename) is not True:
+        return xmltodict.parse(open(filename).read())['REQ-IF']['CORE-CONTENT']['REQ-IF-CONTENT']
+    else:
+        raise KeyError(
+            'File %s is locked, please end to write the file and close the file' % filename)
 
 
 if __name__ == '__main__':
+
     INP_SRC, OUT_SRC, CONFIG_SRC = init_argument()
 
-    # Reading an XML file specified by URL, parsing it into a Python dictionary using the `xmltodict` library
-    data_dict = load_data(INP_SRC)
+    print(INP_SRC, OUT_SRC, CONFIG_SRC)
 
-    config_module = {key: value.get(
-        'key', key) for key, value in load_config(CONFIG_SRC).items()}
+    reqif = load_reqif(INP_SRC)
+    config = load_config(CONFIG_SRC)
 
-    json_data = json.dumps({
-        config_module.get('name'): find_name_module(data_dict),
-        config_module.get('type'): find_type_module(data_dict),
-        config_module.get('artifacts'): find_list_artifacts(data_dict)
-    }, indent=4)
-
-    with open(OUT_SRC, "w") as json_file:
-        json_file.write(json_data)
+    if is_locked(OUT_SRC) is not True:
+        json.dump(build_json(reqif, config), open(
+            OUT_SRC, 'w'), indent=4)
+    else:
+        raise KeyError(
+            'File %s is locked, please end to write the file and close the file' % OUT_SRC)

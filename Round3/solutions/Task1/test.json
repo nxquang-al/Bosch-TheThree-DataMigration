@@ -1,6 +1,6 @@
 {
   "Module Name": "ECU_Requirement",
-  "Module Type": "MO_RS",
+  "Module Type": "empty",
   "List Artifact Info": [
     {
       "Attribute Type": "Heading",
@@ -91,8 +91,8 @@
       "Title": "ECU 1st Requirement"
     },
     {
-      "Attribute Type": "MO_FUNC_REQ",
       "Allocation": "SW Allocation",
+      "Attribute Type": "MO_FUNC_REQ",
       "CRQ": "RQONE03587423",
       "Contributor": "MIG1COB",
       "Created On": "2019-10-08T06:18:45.662Z",
@@ -119,8 +119,8 @@
       "Title": "System Non Fonctional Requirements"
     },
     {
-      "Attribute Type": "MO_NON_FUNC_REQ",
       "Allocation": "Non_Func Allocation",
+      "Attribute Type": "MO_NON_FUNC_REQ",
       "CRQ": "RQONE03587423",
       "Contributor": "MIG1COB",
       "Created On": "2019-10-08T06:18:45.677Z",

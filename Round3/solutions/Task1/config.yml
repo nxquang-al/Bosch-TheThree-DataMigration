@@ -1,48 +1,72 @@
 module:
   name:
     key: Module Name
+
   type:
     key: Module Type
+
   artifacts:
-    datatype: array
     key: List Artifact Info
-    value:
-      element:
-        type:
-          key: Attribute Type
-        mapping:
-          string:
-            ReqIF.ForeignID:
-              datatype: number
-              key: Identifier
-            ReqIF.ForeignCreatedBy:
-              key: Creator
-            ReqIF.ForeignModifiedBy:
-              key: Contributor
+    value_type: array
+    artifact:
+      type:
+        key: Attribute Type
+      ReqIF.ForeignID:
+        key: Identifier
+        value_type: number
+      ReqIF.ForeignCreatedBy:
+        key: Creator
+      ReqIF.ForeignModifiedBy:
+        key: Contributor
+      ReqIF.ForeignCreatedOn:
+        key: Created On
+        value_type: date
+      ReqIF.ForeignModifiedOn:
+        key: Modified On
+        value_type: date
+      ReqIF.Text:
+        value_type: html_string
+      ReqIF.Name:
+        key: Title
+      ReqIF.ChapterName:
+        key: ReqIF.Text
+        value_type: html_string
+      ReqIF.Description:
+        key: Description
 
-          date:
-            ReqIF.ForeignCreatedOn:
-              key: Created On
-            ReqIF.ForeignModifiedOn:
-              key: Modified On
+      Status:
+        value_mapping:
+          NEW/CHANGED: New/Changed
+      Artifact Format:
+        ignore: True
 
-          xhtml:
-            ReqIF.Text:
-              datatype: html_string
-            ReqIF.Name:
-              key: Title
-            ReqIF.ChapterName:
-              key: ReqIF.Text
-              datatype: html_string
-            ReqIF.Description:
-              key: Description
-
-          boolean:
-
-          enumeration:
-            Status:
-              value:
-                NEW/CHANGED:
-                  as: New/Changed
-            Artifact Format:
-              ignore: true
+      __rst__:
+        heading:
+          artifact_type: Title
+          value: Title
+        information:
+          artifact_type: Data
+          directives:
+            - name: sw_req
+              attributes:
+                id: Identifier
+                artifact_type: Information
+        other:
+          directives:
+            - name: sw_req
+              attributes:
+                id: Identifier
+                artifact_type: Description
+                crq: crq
+                createdOn: Created On
+              directives:
+                - name: subdirective1
+                  attributes:
+                    id: Identifier
+                    artifact_type: Description
+                    crq: crq
+                - name: subdirective2
+                  attributes:
+                    id: Identifier
+                    artifact_type: Description
+                    crq: crq

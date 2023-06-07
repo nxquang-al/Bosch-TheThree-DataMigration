@@ -3,6 +3,7 @@
 ECU_Requirement
 ===============
 
+<<<<<<< HEAD
 General Overview / Document Scope
 *********************************
 
@@ -104,4 +105,3 @@ Test Bench/Lab-car with hardware setup
 Success Criteria: Verify whether the signal value is correct or not
    .. safety_level::
 ASIL B
-
