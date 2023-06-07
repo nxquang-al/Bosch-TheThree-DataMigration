@@ -17,17 +17,24 @@ def init_arguments():
     parser.add_argument(
         "-i",
         "--input_file",
-        default="config.yaml",
-        help="Path to config file. Accepts file *.yaml only",
+        default="sample.rst",
+        help="Directory to input file need to push to Github. Accepts file *.rst only",
+    )
+
+    parser.add_argument(
+        "-s",
+        "--settings",
+        default='config.yaml',
+        help="Directory to configure config yaml settings. Accepts file *.yaml only"
     )
 
     args = parser.parse_args()
-    return args.input_file
+    return args.input_file, args.settings
 
 
 def retrieve_SHA(url, headers, branch, filename):
     """
-    Query GitHub to retreive SHA for file.
+    Query GitHub to retrieve SHA for file.
     If file exists on the branch, then return its current SHA
     If file does note exist, the SHA will be None
 
@@ -64,7 +71,7 @@ def upload(url, headers, branch, message, filename, sha=None):
         :sha: the current SHA value of the file.
     .. Outputs:
         :200: if file exists and overwrite it successfully
-        :201: if file doesnot exist and push it successfully
+        :201: if file does not exist and push it successfully
         :401: action fail
     """
     url += filename
@@ -76,7 +83,8 @@ def upload(url, headers, branch, message, filename, sha=None):
         data = {
             "branch": branch,
             "message": message,
-            "content": encoded_data.decode("utf-8"),  # content of the commited file
+            # content of the committed file
+            "content": encoded_data.decode("utf-8"),
         }
         # if file exist, assign file's SHA as an attribute, else ignore
         if sha is not None:
@@ -93,9 +101,9 @@ def upload(url, headers, branch, message, filename, sha=None):
 
 
 if __name__ == "__main__":
-    INP_CONFIG = init_arguments()
+    INP_SRC, CONFIG_SRC = init_arguments()
 
-    config = load_config(INP_CONFIG)
+    config = load_config(CONFIG_SRC)
     assert config is not None  # To ensure INP_CONFIG is valid
 
     api_url = f"https://api.github.com/repos/{config['REPOSITORY']['OWNER']}/{config['REPOSITORY']['NAME']}/contents/"
@@ -108,7 +116,7 @@ if __name__ == "__main__":
         api_url,
         headers,
         branch=config["REPOSITORY"]["BRANCH"],
-        filename=config["FILENAME"],
+        filename=INP_SRC,
     )
 
     upload(
@@ -116,6 +124,6 @@ if __name__ == "__main__":
         headers,
         branch=config["REPOSITORY"]["BRANCH"],
         message=config["MESSAGE"],
-        filename=config["FILENAME"],
+        filename=INP_SRC,
         sha=sha,
     )
