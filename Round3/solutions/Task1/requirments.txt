@@ -1,3 +1,0 @@
-xmltodict
-tqdm
-argparse
