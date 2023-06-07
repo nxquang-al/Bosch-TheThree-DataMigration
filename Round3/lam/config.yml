@@ -56,11 +56,11 @@ module:
         information:
           atifact_type: Data
           directives:
-            - name: sw_req
-              attributes:
-                id: Identifier
-                artifact_type: Information
-              html_content: ReqIF.Text
+            name: sw_req
+            attributes:
+              id: Identifier
+              artifact_type: Information
+            html_content: ReqIF.Text
         other:
           directives:
             - name: sw_req
