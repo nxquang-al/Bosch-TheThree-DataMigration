@@ -1,8 +1,8 @@
 AUTHENTICATION:
   TOKEN: <GitHub-Access-Token>
   USERNAME: <username>
-MESSAGE: <commit-message>
+MESSAGE: test-github-access-token
 REPOSITORY:
-  BRANCH: <name-of-branch>
-  NAME: <name-of-repo>
-  OWNER: <repo-owner>
+  BRANCH: main
+  NAME: Bosch_CodeRace_TheThree
+  OWNER: nlthanhcse
