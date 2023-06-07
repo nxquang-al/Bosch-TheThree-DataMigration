@@ -1,16 +1,14 @@
 module:
   name:
     key: Module Name
-    value_type: string
     value_mapping:
       abc: xyx
 
   type:
     key: Module Type
-    value_type: string
     value_mapping:
-      abc: xyx
-    default_value: xyz
+      type1: something need mapping type
+      default_value: empty
 
   artifacts:
     key: List Artifact Info
@@ -18,24 +16,18 @@ module:
     artifact:
       type:
         key: Attribute Type
-        value_type: string
-        value_mapping:
-          Heading: Title
-          Information: Data
-          MO_FUNC_REQ: MO_FUNC_REQ1
-        default_value: xyz
-
+        # value_mapping:
+        #   Heading: Title
+        #   Information: Data
+        #   MO_FUNC_REQ: MO_FUNC_REQ1
+        # default_value: xyz
       ReqIF.ForeignID:
         key: Identifier
         value_type: number
-        value_mapping:
-          abc: xyx
       ReqIF.ForeignCreatedBy:
         key: Creator
-        value_type: string
       ReqIF.ForeignModifiedBy:
         key: Contributor
-        value_type: string
       ReqIF.ForeignCreatedOn:
         key: Created On
         value_type: date
@@ -43,17 +35,20 @@ module:
         key: Modified On
         value_type: date
       ReqIF.Text:
-        key: ReqIF.Text
         value_type: html_string
       ReqIF.Name:
         key: Title
-        value_type: html_string
       ReqIF.ChapterName:
         key: ReqIF.Text
         value_type: html_string
       ReqIF.Description:
         key: Description
-        value_type: html_string
+
+      Status:
+        value_mapping:
+          NEW/CHANGED: New/Changed
+      Artifact Format:
+        ignore: True
 
       __rst__:
         heading:
@@ -61,13 +56,13 @@ module:
           value: Title
         information:
           atifact_type: Data
-          directives: 
+          directives:
             - name: sw_req
               attributes:
                 id: Identifier
                 artifact_type: Information
         other:
-          directives: 
+          directives:
             - name: sw_req
               attributes:
                 id: Identifier
@@ -75,13 +70,13 @@ module:
                 crq: crq
                 createdOn: Created On
               directives:
-              - name: subdirective1
-                attributes:
-                  id: Identifier
-                  artifact_type: Description
-                  crq: crq
-              - name: subdirective2
-                attributes:
-                  id: Identifier
-                  artifact_type: Description
-                  crq: crq
+                - name: subdirective1
+                  attributes:
+                    id: Identifier
+                    artifact_type: Description
+                    crq: crq
+                - name: subdirective2
+                  attributes:
+                    id: Identifier
+                    artifact_type: Description
+                    crq: crq
