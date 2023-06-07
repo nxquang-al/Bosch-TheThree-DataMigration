@@ -20,8 +20,8 @@ module:
         key: Attribute Type
         value_type: string
         value_mapping:
-          Heading: Title
-          Information: Data
+          Heading: Head
+          Information: Info
           MO_FUNC_REQ: MO_FUNC_REQ1
         default_value: xyz
 
@@ -60,12 +60,13 @@ module:
           atifact_type: Title
           value: Title
         information:
-          atifact_type: Data
+          atifact_type: Info
           directives: 
             - name: sw_req
               attributes:
                 id: Identifier
                 artifact_type: Information
+              html_content: ReqIF.Text
         other:
           directives: 
             - name: sw_req
@@ -74,6 +75,7 @@ module:
                 artifact_type: Description
                 crq: crq
                 createdOn: Created On
+              html_content: ReqIF.Text
               directives:
               - name: subdirective1
                 attributes:
