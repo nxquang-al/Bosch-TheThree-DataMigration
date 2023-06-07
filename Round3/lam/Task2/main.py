@@ -1,5 +1,6 @@
 import yaml
 import json
+import copy
 from RstBuilder import RstBuilder
 from HTMLParser import MyHTMLParser
 
@@ -41,24 +42,30 @@ def get_directives_data(artifact: dict, directives: list):
     Returns the directives data for the given artifact
     """
     for directive in listify(directives):
+        # Attribute Value text
         for key, value in directive.get("attributes", {}).items():
             attr = find_property_have_key(config["artifacts"]["artifact"], value)
-            if attr is not None:
-                attr_type = attr[1].get("value_type", "")
-                if attr_type == "html_string":
-                    print("html_string  ")
 
-                    # value = xmltodict.unparse(artifact.get(value, value), pretty=True)[39:]
             directive["attributes"][key] = artifact.get(value, value)
 
+        # HTML Content
         content = directive.get("html_content", "")
         attr = find_property_have_key(config["artifacts"]["artifact"], content)
         if attr is not None:
-            print(attr)
             parser = MyHTMLParser()
             parser.feed(artifact.get(content, content))
             directive["html_content"] = parser.get_rst()
 
+        # Sub_directive, at the end of the rst
+        if "sub_directives" in directive.keys():
+            for key, value in directive.get("sub_directives", {}).items():
+                attr = find_property_have_key(config["artifacts"]["artifact"], value)
+
+                # If "value: ..." does not set in config list artifacts,
+                # then the value works as the key in Json, query directly from Json
+                directive["sub_directives"][key] = artifact.get(value, value)
+
+        # In case there are directives in directive
         if "directives" in directive:
             # recursively, directive in directive
             directive["directives"] = get_directives_data(
@@ -80,6 +87,7 @@ def get_rst_type(artifact_type, rst_config):
 
 def build_rst_artifacts(rst, artifacts: list, config: dict):
     rst_config = config["__rst__"]
+
     for artifact in artifacts:
         artifact_type = artifact[config["type"]["key"]]
         rst_type = get_rst_type(artifact_type, rst_config)
@@ -89,7 +97,9 @@ def build_rst_artifacts(rst, artifacts: list, config: dict):
             rst.subheading(artifact[attr_name])
             rst.newline()
         else:
-            directives_config = rst_config[rst_type].get("directives", [])
+            directives_config = copy.deepcopy(
+                rst_config[rst_type].get("directives", [])
+            )
             directives = get_directives_data(artifact, directives_config)
             rst.directives(directives)
             rst.newline()

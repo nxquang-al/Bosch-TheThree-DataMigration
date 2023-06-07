@@ -16,11 +16,11 @@ module:
     artifact:
       type:
         key: Attribute Type
-        # value_mapping:
-        #   Heading: Title
-        #   Information: Data
-        #   MO_FUNC_REQ: MO_FUNC_REQ1
-        # default_value: xyz
+        value_mapping:
+          Heading: Heading
+          Information: Information
+          MO_FUNC_REQ: MO_FUNC_REQ
+        default_value: xyz
       ReqIF.ForeignID:
         key: Identifier
         value_type: number
@@ -44,6 +44,7 @@ module:
       ReqIF.Description:
         key: Description
 
+
       Status:
         value_mapping:
           NEW/CHANGED: New/Changed
@@ -52,10 +53,10 @@ module:
 
       __rst__:
         heading:
-          atifact_type: Title
+          atifact_type: Heading
           value: Title
         information:
-          atifact_type: Data
+          atifact_type: Information
           directives:
             - name: sw_req
               attributes:
@@ -71,14 +72,6 @@ module:
                 crq: crq
                 createdOn: Created On
               html_content: ReqIF.Text
-              directives:
-                - name: subdirective1
-                  attributes:
-                    id: Identifier
-                    artifact_type: Description
-                    crq: crq
-                - name: subdirective2
-                  attributes:
-                    id: Identifier
-                    artifact_type: Description
-                    crq: crq
+              sub_directives:
+                verify: Verification Criteria
+                safety_level: Safety Classification
