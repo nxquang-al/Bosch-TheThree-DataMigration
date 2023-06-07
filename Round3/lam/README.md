@@ -64,13 +64,14 @@ module:
           {...other value mapping...}
           default_value: {default value}
       {reqif value}:
-        key: {json key of reqif value} # if not pas
+        key: {json key of reqif value} # if not pass default is reqif value
         value_type: {type}
         value_mapping:
           {old value}: {new value}
           {...other value mapping...}
           default_value: {default value}
       {...other reqif value mapping...}
+      # if not pass reqif config, it will default key
 ```
 Example config:
 ```yaml
