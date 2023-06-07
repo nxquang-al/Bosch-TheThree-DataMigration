@@ -42,39 +42,15 @@ parser.get_rst()
 
 ### b) JSON to RST parser
 
-- We implemented a class RstBuilder which have methods to write components to file
+- We implemented a class `RstBuilder` which have methods to write components to file
 
-- Here is our implement
-
-```python
-
-  class RstBuilder:
-  def **init**(self, out: typing.TextIO = sys.stdout) -> None:
-  self.\_out = out
-
-      def _add(self, content: str) -> None:
-          self._out.write(content + "\n")
-
-      def title(self, title: str, border: str = "=") -> None:
-          self._add(border * len(title))
-          self._add(title)
-          self._add(border * len(title))
-
-      def newline(self) -> None:
-          self._add("")
-
-      def heading(self, heading: str, underline: str = "*") -> None:
-          self._add(heading)
-          self._add(underline * len(heading))
-
-      def directive(self, name: str, fields: typing.List[typing.Tuple[str, str]]) -> None:
-          self._add(f".. {name}::")
-          for k, v in fields:
-              self._add(f"   :{k}: {v}")
-
-      def content(self, content: str) -> None:
-          self._add(content)
-```
+- `RstBuilder` have some method
+    * `heading(str)`: to add heading
+    * `newline()`: to add new line
+    * `subheading(str)`: to add subheading
+    * `directive(name, attributes)`: to add directive with name and its attributes
+    * `directives(directives)`: to add directives to rst
+    
 
 ### c) Usage
 
