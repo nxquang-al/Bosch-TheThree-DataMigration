@@ -69,10 +69,12 @@ options:
                         Directory to input file. Accepts file *.json only
   -o OUTPUT_FILE, --output_file OUTPUT_FILE
                         Directory to output *.rst file.
+  -s SETTINGS, --settings SETTINGS
+                        Directory to configure settings *.yml file
 ```
 
 Example command:
 
 ```cmd
-python main.py -i sample.json -o sample.rst
+python main.py -i Requirements.json -o Requirements.rst -s config.yml
 ```

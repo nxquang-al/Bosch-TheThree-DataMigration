@@ -1,10 +1,38 @@
 import yaml
 import json
 import copy
+import argparse
 from RstBuilder import RstBuilder
 from HTMLParser import MyHTMLParser
 
 NAME_TAG = "@LONG-NAME"
+
+
+def init_argument():
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument(
+        "-i",
+        "--input_file",
+        default="./Requirements.json",
+        help="Directory to input file. Accepts file *.json only",
+    )
+    parser.add_argument(
+        "-o",
+        "--output_file",
+        default="./Requirements.rst",
+        help="Directory to output *.rst file.",
+    )
+    parser.add_argument(
+        "-s",
+        "--settings",
+        default="./config.yml",
+        help="Directory to configure settings *.yml file",
+    )
+
+    args = parser.parse_args()
+
+    return args.input_file, args.output_file, args.settings
 
 
 def load_config(filename: str) -> dict:
@@ -106,10 +134,11 @@ def build_rst_artifacts(rst, artifacts: list, config: dict):
 
 
 if __name__ == "__main__":
-    config = load_config("./config.yml")
-    data = load_json("./Requirements.json")
+    INP_PATH, OUT_PATH, CFG_PATH = init_argument()
+    config = load_config(CFG_PATH)
+    data = load_json(INP_PATH)
 
-    rst = RstBuilder(open("./Requirements.rst", "w"))
+    rst = RstBuilder(open(OUT_PATH, "w"))
     rst.newline()
     rst.heading(data[config["name"]["key"]])
     rst.newline()
