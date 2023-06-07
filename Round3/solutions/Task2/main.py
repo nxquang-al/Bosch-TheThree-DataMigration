@@ -1,52 +1,117 @@
-import argparse
+import yaml
 import json
+import copy
 from RstBuilder import RstBuilder
 from HTMLParser import MyHTMLParser
-from tqdm import tqdm
 
-def init_argument():
-    parser = argparse.ArgumentParser()
+NAME_TAG = "@LONG-NAME"
 
-    parser.add_argument(
-        "-i", "--input_file", help="Directory to input file. Accepts file *.json only")
-    parser.add_argument("-o", "--output_file",
-                        help="Directory to output *.rst file.")
 
-    args = parser.parse_args()
+def load_config(filename: str) -> dict:
+    """
+    Loads the config file and returns the module config
+    """
+    return yaml.safe_load(open(filename, "r"))["module"]
 
-    return args.input_file, args.output_file
 
-if __name__ == '__main__':
-    INP_SRC, OUT_SRC = init_argument()
-    data = json.load(open(INP_SRC))
-    doc = RstBuilder(open(OUT_SRC, 'w'))
+def load_json(filename: str) -> dict:
+    """
+    Loads the json file and returns the json content
+    """
+    return json.load(open(filename))
 
-    doc.newline()
-    doc.title(data['Module Name'])
-    doc.newline()
 
-    for artifact in tqdm(data['List Artifact Info']):
-        if artifact['Attribute Type'] == 'Heading':
-            doc.heading(artifact['Title'])
-            doc.newline()
-        else:
-            fields = [
-                ('id', str(artifact['Identifier'])),
-                ('artifact_type', str(artifact['Attribute Type'])),
-            ]
-            if artifact['Attribute Type'] != 'Information':
-                fields.extend([
-                    ('crq', artifact['CRQ']),
-                    ('artifact_type', str(artifact['Attribute Type'])),
-                    ('variant', artifact['VAR_FUNC_SYS']),
-                    ('allocation', artifact['Allocation']),
-                    ('status', str(artifact['Status'])),
-                    ('safety_level', artifact['Safety Classification']),
-                    ('verify', artifact['Verification Criteria']),
-                ])
+def find_property_have_key(obj: dict, target: str):
+    """
+    Returns the property that have the given key
+    """
+    for key, value in obj.items():
+        if value.get("key") == target:
+            return key, value
 
-            doc.directive('sw_req', fields)
+
+def listify(obj):
+    """
+    Returns a list of the object if it is not a list
+    """
+    return obj if isinstance(obj, list) else [obj]
+
+
+def get_directives_data(artifact: dict, directives: list):
+    """
+    Returns the directives data for the given artifact
+    """
+    for directive in listify(directives):
+        # Attribute Value text
+        for key, value in directive.get("attributes", {}).items():
+            attr = find_property_have_key(config["artifacts"]["artifact"], value)
+
+            directive["attributes"][key] = artifact.get(value, value)
+
+        # HTML Content
+        content = directive.get("html_content", "")
+        attr = find_property_have_key(config["artifacts"]["artifact"], content)
+        if attr is not None:
             parser = MyHTMLParser()
-            parser.feed(artifact['ReqIF.Text'])
-            doc.content(parser.get_rst())
-            parser.close()
+            parser.feed(artifact.get(content, content))
+            directive["html_content"] = parser.get_rst()
+
+        # Sub_directive, at the end of the rst
+        if "sub_directives" in directive.keys():
+            for key, value in directive.get("sub_directives", {}).items():
+                attr = find_property_have_key(config["artifacts"]["artifact"], value)
+
+                # If "value: ..." does not set in config list artifacts,
+                # then the value works as the key in Json, query directly from Json
+                directive["sub_directives"][key] = artifact.get(value, value)
+
+        # In case there are directives in directive
+        if "directives" in directive:
+            # recursively, directive in directive
+            directive["directives"] = get_directives_data(
+                artifact, directive["directives"]
+            )
+    return directives
+
+
+def get_rst_type(artifact_type, rst_config):
+    """
+    Returns the rst type for the given artifact type
+    """
+    if artifact_type == rst_config["heading"]["atifact_type"]:
+        return "heading"
+    if artifact_type == rst_config["information"]["atifact_type"]:
+        return "information"
+    return "other"
+
+
+def build_rst_artifacts(rst, artifacts: list, config: dict):
+    rst_config = config["__rst__"]
+
+    for artifact in artifacts:
+        artifact_type = artifact[config["type"]["key"]]
+        rst_type = get_rst_type(artifact_type, rst_config)
+
+        if rst_type == "heading":
+            attr_name = rst_config[rst_type]["value"]
+            rst.subheading(artifact[attr_name])
+            rst.newline()
+        else:
+            directives_config = copy.deepcopy(
+                rst_config[rst_type].get("directives", [])
+            )
+            directives = listify(get_directives_data(artifact, directives_config))
+            rst.directives(directives)
+            rst.newline()
+
+
+if __name__ == "__main__":
+    config = load_config("../config.yml")
+    data = load_json("../Requirements.json")
+
+    rst = RstBuilder(open("../Requirements.rst", "w"))
+    rst.newline()
+    rst.heading(data[config["name"]["key"]])
+    rst.newline()
+    artifacts = data[config["artifacts"]["key"]]
+    build_rst_artifacts(rst, artifacts, config["artifacts"]["artifact"])

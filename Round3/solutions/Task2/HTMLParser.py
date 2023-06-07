@@ -10,8 +10,8 @@ from io import StringIO
 from textwrap import TextWrapper
 import html
 
-IGNORE_TAGS = ['title', 'style', 'script']
-UNDERLINES = list('=-~`+;')
+IGNORE_TAGS = ["title", "style", "script"]
+UNDERLINES = list("=-~`+;")
 
 
 class LineBuffer(object):
@@ -32,11 +32,11 @@ class LineBuffer(object):
         self._lines[:] = []
 
     def read(self):
-        return '\n'.join(self._lines)
+        return "\n".join(self._lines)
 
     def write(self, s):
         # normalise whitespace
-        s = ' '.join(s.split())
+        s = " ".join(s.split())
         self._lines.extend(self._wrapper.wrap(s))
 
     def rawwrite(self, s):
@@ -46,7 +46,7 @@ class LineBuffer(object):
         linebuf = self._lines
         n = len(linebuf)
         if n > start:
-            indent = ' ' * numspaces
+            indent = " " * numspaces
             for i in range(start, n):
                 linebuf[i] = indent + linebuf[i]
 
@@ -62,7 +62,7 @@ class MyHTMLParser(HTMLParser):
         self.stringBuffer = StringIO()
         self.lineBuffer = LineBuffer()
         self.inblock = 0
-        self.res = ''
+        self.res = ""
         self.ignoredata = False
         self.lists = []
         self.links = {}
@@ -105,13 +105,13 @@ class MyHTMLParser(HTMLParser):
         """
         self.stringBuffer.write(text)
 
-    def merge_with_newline(self, text=''):
+    def merge_with_newline(self, text=""):
         """
         Writeline: Write with an extra endline
         """
-        return self.merge(text + '\n')
+        return self.merge(text + "\n")
 
-    def merge(self, text=''):
+    def merge(self, text=""):
         """
         Write: flush content from buffer to self.res and append the given text
         """
@@ -119,13 +119,13 @@ class MyHTMLParser(HTMLParser):
         self.flush()
         self.res += html.unescape(text)
 
-    def write_startblock(self, text=''):
+    def write_startblock(self, text=""):
         if self.pending():
             self.merge_with_newline()
         self.merge_with_newline()
         self.merge_with_newline(text)
 
-    def write_endblock(self, text=''):
+    def write_endblock(self, text=""):
         self.merge_with_newline(text)
         self.merge_with_newline()
 
@@ -138,31 +138,31 @@ class MyHTMLParser(HTMLParser):
             tag: the name of the tag converted to lowercase
             attrs: a list of (name, value) pairs containing the attributes found inside the tag
         """
-        if tag == 'p':
+        if tag == "p":
             self.handle_start_p()
-        elif tag == 'em':
+        elif tag == "em":
             self.handle_start_em()
-        elif tag == 'b':
+        elif tag == "b":
             self.handle_start_b()
-        elif tag == 'code':
+        elif tag == "code":
             self.handle_start_code()
-        elif tag == 'br':
+        elif tag == "br":
             self.handle_start_br()
-        elif tag == 'ul':
+        elif tag == "ul":
             self.handle_start_ul()
-        elif tag == 'ol':
+        elif tag == "ol":
             self.handle_start_ol()
-        elif tag == 'li':
+        elif tag == "li":
             self.handle_start_li()
-        elif tag == 'a':
+        elif tag == "a":
             self.handle_start_a(attrs)
-        elif tag == 'span' or tag == 'body':
+        elif tag == "span" or tag == "body":
             pass
         else:
             # Unknown start tags
             if tag in IGNORE_TAGS:
                 self.ignoredata = True
-            elif len(tag) == 2 and tag[0] == 'h':
+            elif len(tag) == 2 and tag[0] == "h":
                 self.write_startblock()
 
         return
@@ -174,35 +174,35 @@ class MyHTMLParser(HTMLParser):
         Args:
             tag: the name of the tag converted
         """
-        if tag == 'p':
+        if tag == "p":
             self.handle_end_p()
-        elif tag == 'em':
+        elif tag == "em":
             self.handle_end_em()
-        elif tag == 'b':
+        elif tag == "b":
             self.handle_end_b()
-        elif tag == 'code':
+        elif tag == "code":
             self.handle_end_code()
-        elif tag == 'ul':
+        elif tag == "ul":
             self.handle_end_ul()
-        elif tag == 'ol':
+        elif tag == "ol":
             self.handle_end_ol()
-        elif tag == 'li':
+        elif tag == "li":
             self.handle_end_li()
-        elif tag == 'a':
+        elif tag == "a":
             self.handle_end_a()
-        elif tag == 'span':
+        elif tag == "span":
             pass
-        elif tag == 'body':
+        elif tag == "body":
             self.handle_end_body()
         else:
             # Unknown end tags
             self.ignoredata = False
-            if len(tag) == 2 and tag[0] == 'h':
+            if len(tag) == 2 and tag[0] == "h":
                 self.flush_stringbuffer()
                 if self.lineBuffer:
                     linebuf = self.lineBuffer
                     linebuf[-1] = linebuf[-1].strip()
-                    char = UNDERLINES[int(tag[1])-1]
+                    char = UNDERLINES[int(tag[1]) - 1]
                     linebuf.write(char * len(linebuf[-1]))
                     self.merge_with_newline()
 
@@ -215,10 +215,10 @@ class MyHTMLParser(HTMLParser):
         if self.ignoredata:
             return
         else:
-            if 'waiting_data' in self.links:
+            if "waiting_data" in self.links:
                 # Data between <a> and </a>, is mapped with href to display later
-                self.links[self.links['waiting_data']] = data
-            self.write_to_buffer(' '.join(data.splitlines()))
+                self.links[self.links["waiting_data"]] = data
+            self.write_to_buffer(" ".join(data.splitlines()))
 
     def get_rst(self):
         """
@@ -228,103 +228,91 @@ class MyHTMLParser(HTMLParser):
             The converted rst
         """
         for href, link in self.links.items():
-            if href[0] != '#':
+            if href[0] != "#":
                 # At the end display all the hrefs with their corresponding data
-                self.merge_with_newline('.. _{}: {}'.format(link, href))
+                self.merge_with_newline(".. _{}: {}".format(link, href))
         return self.res
 
     def handle_start_p(self):
-        """ Handle the <p> tag
-        """
+        """Handle the <p> tag"""
         if not self.inblock:
             self.merge_with_newline()
 
     def handle_end_p(self):
-        """ Handle the </p> tag
-        """
+        """Handle the </p> tag"""
         if not self.inblock:
             self.lineBuffer.lstrip()
             self.merge_with_newline()
 
     def handle_start_em(self):
-        """ <em> tag
-        """
-        self.write_to_buffer('*')
+        """<em> tag"""
+        self.write_to_buffer("*")
 
     def handle_end_em(self):
-        """ </em> tag
-        """
-        self.write_to_buffer('*')
+        """</em> tag"""
+        self.write_to_buffer("*")
 
     def handle_start_b(self):
-        """ <b> tag
-        """
-        self.write_to_buffer('**')
+        """<b> tag"""
+        self.write_to_buffer("**")
 
     def handle_end_b(self):
-        """ </b> tag
-        """
-        self.write_to_buffer('**')
+        """</b> tag"""
+        self.write_to_buffer("**")
 
     def handle_start_code(self):
-        """ <code> tag
-        """
-        self.write_to_buffer('``')
+        """<code> tag"""
+        self.write_to_buffer("``")
 
     def handle_end_code(self):
-        """ </code> tag
-        """
-        self.write_to_buffer('``')
+        """</code> tag"""
+        self.write_to_buffer("``")
 
     def handle_start_a(self, attributes):
-        """  <a> tag
-        """
-        href = dict(attributes).get('href', None)
-        if not href or href.startswith('#'):
+        """<a> tag"""
+        href = dict(attributes).get("href", None)
+        if not href or href.startswith("#"):
             # There is no href or the href links to the top of the current page
             return
         else:
             if self.relative_root and self.relative_dir:
-                if href.startswith('/'):
+                if href.startswith("/"):
                     href = self.relative_root + href
-                elif '://' not in href:
+                elif "://" not in href:
                     href = self.relative_dir + href
-        self.write_to_buffer('`')
+        self.write_to_buffer("`")
         # waiting for the data stored between <a> and </a>
-        self.links['waiting_data'] = href
+        self.links["waiting_data"] = href
         return
 
     def handle_end_a(self):
         """
         Handle the </a>
         """
-        if 'waiting_data' in self.links:
-            self.write_to_buffer('`_')
+        if "waiting_data" in self.links:
+            self.write_to_buffer("`_")
             # When data is mapped to self.links[href], delete the waiting
-            del self.links['waiting_data']
+            del self.links["waiting_data"]
         return
 
     def handle_start_br(self):
-        """ <br> tag, just a line break
-        """
+        """<br> tag, just a line break"""
         if not self.inblock:
             self.merge_with_newline()
             # self.merge('| ')
         else:
-            self.write_to_buffer(' ')
+            self.write_to_buffer(" ")
 
     def handle_start_ul(self):
-        """ <ul> tag, start of an unordered list
-        """
+        """<ul> tag, start of an unordered list"""
         if self.lists:
             self.handle_end_li()
         self.merge_with_newline()
-        self.lists.append('* ')
-        self.inblock += 1                   # Count for indentation
+        self.lists.append("* ")
+        self.inblock += 1  # Count for indentation
 
     def handle_end_ul(self):
-        """ </ul> tag
-        """
+        """</ul> tag"""
         self.handle_end_li()
         self.lists.pop()
         self.inblock -= 1
@@ -334,17 +322,15 @@ class MyHTMLParser(HTMLParser):
             self.write_endblock()
 
     def handle_start_ol(self):
-        """ <ol> tag, start of an ordered list
-        """
+        """<ol> tag, start of an ordered list"""
         if self.lists:
             self.handle_end_li()
         self.merge_with_newline()
-        self.lists.append('#. ')
+        self.lists.append("#. ")
         self.inblock += 1
 
     def handle_end_ol(self):
-        """ </ol> tag
-        """
+        """</ol> tag"""
         self.handle_end_li()
         self.lists.pop()
         self.inblock -= 1
@@ -354,16 +340,18 @@ class MyHTMLParser(HTMLParser):
             self.write_endblock()
 
     def handle_start_li(self):
-        """ <li> tag, each tag is an item of the <ul> or <ol> list
-        """
+        """<li> tag, each tag is an item of the <ul> or <ol> list"""
         self.merge_with_newline()
         self.write_to_buffer(self.lists[-1])
 
     def handle_end_li(self):
-        """ </li> tag
-        """
+        """</li> tag"""
         self.flush_stringbuffer()
-        if self.lineBuffer and self.lineBuffer[0] and self.lineBuffer[0].lstrip()[:2] in ['* ', '#.']:
+        if (
+            self.lineBuffer
+            and self.lineBuffer[0]
+            and self.lineBuffer[0].lstrip()[:2] in ["* ", "#."]
+        ):
             start_index = 1
         else:
             start_index = 0
@@ -371,8 +359,7 @@ class MyHTMLParser(HTMLParser):
         self.merge()
 
     def handle_end_body(self):
-        """ </body> tag
-        """
+        """</body> tag"""
         if self.inblock:
             return
         else:
