@@ -1,0 +1,76 @@
+module:
+  name:
+    key: Module Name
+    value_mapping:
+      abc: xyx
+
+  type:
+    key: Module Type
+    value_mapping:
+      type1: something need mapping type
+      default_value: empty
+
+  artifacts:
+    key: List Artifact Info
+    artifact:
+      type:
+        key: Attribute Type
+        value_mapping:
+          Heading: Heading
+          Information: Information
+          MO_FUNC_REQ: MO_FUNC_REQ
+        default_value: xyz
+      ReqIF.ForeignID:
+        key: Identifier
+        value_type: number
+      ReqIF.ForeignCreatedBy:
+        key: Creator
+      ReqIF.ForeignModifiedBy:
+        key: Contributor
+      ReqIF.ForeignCreatedOn:
+        key: Created On
+        value_type: date
+      ReqIF.ForeignModifiedOn:
+        key: Modified On
+        value_type: date
+      ReqIF.Text:
+        value_type: html_string
+      ReqIF.Name:
+        key: Title
+      ReqIF.ChapterName:
+        key: ReqIF.Text
+        value_type: html_string
+      ReqIF.Description:
+        key: Description
+
+
+      Status:
+        value_mapping:
+          NEW/CHANGED: New/Changed
+      Artifact Format:
+        ignore: True
+
+      __rst__:
+        heading:
+          atifact_type: Heading
+          value: Title
+        information:
+          atifact_type: Information
+          directives:
+            name: sw_req
+            attributes:
+              id: Identifier
+              artifact_type: Information
+            html_content: ReqIF.Text
+        other:
+          directives:
+            - name: sw_req
+              attributes:
+                id: Identifier
+                artifact_type: Description
+                crq: crq
+                createdOn: Created On
+              html_content: ReqIF.Text
+              sub_directives:
+                verify: Verification Criteria
+                safety_level: Safety Classification

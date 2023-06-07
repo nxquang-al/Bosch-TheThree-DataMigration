@@ -34,10 +34,9 @@ System Requirement
    :id: 629017
    :artifact_type: Information
 
-
-
-<infos relevant for the complete chapter>Note to the template:- the
-example requirements below are independent of each other and are
+<infos relevant for the complete chapter>
+Note to the template:
+- the example requirements below are independent of each other and are
 showing the different possibilities of the requirements structure
 
 
@@ -52,28 +51,23 @@ ECU 1st Requirement
 
 <description of the requirement in requirements language>
 
-**VEHICLE_SYSTEM_BEHAVIOUR** **CONSTRAINT** **IMPACT** **INFO**
-**ASSUMPTION**
-
-
-
-
-
-
-
-
-
-
-
-
-
+**VEHICLE_SYSTEM_BEHAVIOUR**
 <Optional: description of desired vehicle behaviour ("development
-target")> <Optional: constraints on the solution space for the
-requirement> <Optional: description of possible cross-functional
-impact of the requirement, or impact on other components><Optional:
-additional informations about the requirement:- know-how- background-
-HW dependencies related to the system requirement- internal signals-
-etc><Optional: assumptions on the requirement>
+target")>
+**CONSTRAINT **
+<Optional: constraints on the solution space for the requirement>
+**IMPACT **
+<Optional: description of possible cross-functional impact of the
+requirement, or impact on other components>
+**INFO**
+<Optional: additional informations about the requirement:
+- know-how
+- background
+- HW dependencies related to the system requirement
+- internal signals
+- etc>
+**ASSUMPTION**
+<Optional: assumptions on the requirement>
 
 
 

@@ -106,10 +106,10 @@ def build_rst_artifacts(rst, artifacts: list, config: dict):
 
 
 if __name__ == "__main__":
-    config = load_config("../config.yml")
-    data = load_json("../Requirements.json")
+    config = load_config("./config.yml")
+    data = load_json("./Requirements.json")
 
-    rst = RstBuilder(open("../Requirements.rst", "w"))
+    rst = RstBuilder(open("./Requirements.rst", "w"))
     rst.newline()
     rst.heading(data[config["name"]["key"]])
     rst.newline()
