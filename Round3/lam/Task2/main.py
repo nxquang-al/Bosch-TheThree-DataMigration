@@ -56,7 +56,7 @@ def get_directives_data(artifact: dict, directives: list):
             parser.feed(artifact.get(content, content))
             directive["html_content"] = parser.get_rst()
 
-        # Sub_directive, at the end of the rst
+        # Sub_directive, under attribute_text and html_content
         if "sub_directives" in directive.keys():
             for key, value in directive.get("sub_directives", {}).items():
                 attr = find_property_have_key(config["artifacts"]["artifact"], value)
