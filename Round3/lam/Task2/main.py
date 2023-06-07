@@ -1,5 +1,6 @@
 import yaml
 import json
+import copy
 from RstBuilder import RstBuilder
 from HTMLParser import MyHTMLParser
 
@@ -89,7 +90,7 @@ def build_rst_artifacts(rst, artifacts: list, config: dict):
             rst.subheading(artifact[attr_name])
             rst.newline()
         else:
-            directives_config = rst_config[rst_type].get("directives", [])
+            directives_config = copy.deepcopy(rst_config[rst_type].get("directives", []))
             directives = get_directives_data(artifact, directives_config)
             rst.directives(directives)
             rst.newline()

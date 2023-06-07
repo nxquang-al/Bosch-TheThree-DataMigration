@@ -12,7 +12,6 @@ module:
 
   artifacts:
     key: List Artifact Info
-    value_type: array
     artifact:
       type:
         key: Attribute Type
