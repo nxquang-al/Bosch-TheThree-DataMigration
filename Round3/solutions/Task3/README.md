@@ -28,8 +28,8 @@ pip install -r requirements.txt
 
 ## Getting Started
 
-```cmd
-python main.py -i sample.rst -s config.yaml
+```bash
+$ python main.py -i sample.rst -s config.yaml
 ```
 
 ## Technical Overview
@@ -45,7 +45,7 @@ python main.py -i sample.rst -s config.yaml
 The program have `2 arguments`. You can check the documentation by using the command
 
 ```bash
-python main.py -h
+$ python main.py -h
 ```
 
 ```bash
@@ -62,7 +62,7 @@ options:
 Example command:
 
 ```bash
-python main.py -i sample.rst -s config.yaml
+$ python main.py -i sample.rst -s config.yaml
 ```
 
 - **Step 1:** Modify the `/Task3/config.yaml`
@@ -81,5 +81,5 @@ REPOSITORY:
 - **Step 2:** run the `main.py` to start uploading
 
 ```bash
-$ python main.py -i config.yaml
+$ python main.py -i sample.rst -s config.yaml
 ```

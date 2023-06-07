@@ -7,10 +7,6 @@ from utils import load_config
 def init_arguments():
     """
     This function is used to get arguments from the command line.
-    .. Flags:
-        :-i, --input_file: path to config file
-    .. Returns:
-        :args.input_file: path to config yaml
     """
     parser = argparse.ArgumentParser()
 

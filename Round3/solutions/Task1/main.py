@@ -147,9 +147,9 @@ def get_artifact(spec_object: dict, config: dict) -> dict:
 
     attributes = get_artifact_attributes(spec_object, definition, config)
 
-    artifact.update(dict(sorted(attributes.items())))
+    artifact.update(attributes)
 
-    return artifact
+    return dict(sorted(artifact.items()))
 
 
 def get_artifacts(reqif: dict, config: dict) -> list:

@@ -1,14 +1,9 @@
 module:
   name:
     key: Module Name
-    value_mapping:
-      abc: xyx
 
   type:
     key: Module Type
-    value_mapping:
-      type1: something need mapping type
-      default_value: empty
 
   artifacts:
     key: List Artifact Info
@@ -16,11 +11,6 @@ module:
     artifact:
       type:
         key: Attribute Type
-        # value_mapping:
-        #   Heading: Title
-        #   Information: Data
-        #   MO_FUNC_REQ: MO_FUNC_REQ1
-        # default_value: xyz
       ReqIF.ForeignID:
         key: Identifier
         value_type: number

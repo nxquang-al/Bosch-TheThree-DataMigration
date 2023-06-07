@@ -1,72 +1,48 @@
 # Team TheThree - Task 1
 
-Transform the ReqIf (Requirements Interchange Format) file to json format
+Allow users to configure the way to mapping the attribute name and its value
 
 ## Requirements
 
-Write a command line program by java or python, the program allows to transform requirements from ReqIf file to JSON file and preserve the values of attributes and object hierarchy.
+Write a java/python command line application to parse the input and write to JSON file with configured file.
 
-> Input: Reqif file as sample attachment (Requirements.reqif file)
+> Input: `ReqIf file` (same as previous round) and configuration file (can be use single configuration file for task 1 and task 2)
 
-> Output: JSON file as sample attachment (Json_Output_Sample.json) and program source
-> code
-
-<br>
+> Output: `JSON file` with mapped content
 
 ## Evaluation
 
-- `[x]` Module Info
+- `[x]` Array mapping
 
-- `[x]` All requirements and order
+- `[x]` Attribute name and the same value
 
-- `[x]` Mandatory attributes
+- `[x]` Attribute name and customize value
 
 - `[x]` Clean code
 
 ## Installation
 
-- Python version required `>=3.10`
-
-  - Check your python version:
-
-  ```cmd
-  python --version
-  ```
-
-- Upgrade python version:
-
-  > `MacOS` : https://macosx-faq.com/how-to-update-python-terminal/
-
-  > `Linux` : https://cloudbytes.dev/snippets/upgrade-python-to-latest-version-on-ubuntu-linux
-
-  > `Windows`: https://www.geeksforgeeks.org/how-to-update-python-on-windows/
-
-  <br>
-
 Install the required packages by using `pip`
 
-```cmd
-pip install -r requirements.txt
+```bash
+$ pip install -r requirements.txt
 ```
-
-<br>
-<br>
 
 ## Getting Started
 
-```cmd
-python main.py -i Requirements.reqif -o Json_Output.json
+```bash
+$ python main.py -i Requirements.reqif -o test.json -s config.yml
 ```
 
 ## Usage
 
-The program have `2 arguments`. You can check the documentation by using the command
+The program have `3 arguments`. You can check the documentation by using the command
 
-```cmd
-python main.py -h
+```bash
+$ python main.py -h
 ```
 
-```cmd
+```bash
 usage: main.py [-h] [-i INPUT_FILE] [-o OUTPUT_FILE]
 
 options:
@@ -75,248 +51,203 @@ options:
                         Directory to input file. Accepts file *.reqif or *.xml only
   -o OUTPUT_FILE, --output_file OUTPUT_FILE
                         Directory to output *.json file.
+  -s SETTINGS, --settings SETTINGS
+                        Directory to configure settings *.yml file
 ```
 
 Example command:
 
-```cmd
-python main.py -i Requirements.reqif -o Json_Output.json
+```bash
+$ python main.py -i Requirements.reqif -o test.json -s config.yml
 ```
 
 ## Experiment
 
-> In first step
+> Keep in mind that the input file will not changed. So way to crawl and get the information in the input file will not changed.
 
-We read and load the file `*.reqif` which such as file `*.xml` by using 3rd party libraries `xmltodict`
+In the previous round, we were able to crawl the data from `.reqif` files and export to file json format with hard code mapping `key` and `value` which is contained in `.reqif` file and mapping to new `key` and `value` by rule can extract by looking file sample output `.json`.
 
-> Next step is reading `module info`
+In this round, we were able to mapping with definitions in configuring file. We choose to `yaml` format to explore the configuration. Here is our configuration to got the output like as the previous round.
 
-We find the following information by using these functions:
+```yaml
+module:
+  name:
+    key: Module Name
+
+  type:
+    key: Module Type
+
+  artifacts:
+    key: List Artifact Info
+    value_type: array
+    artifact:
+      type:
+        key: Attribute Type
+      ReqIF.ForeignID:
+        key: Identifier
+        value_type: number
+      ReqIF.ForeignCreatedBy:
+        key: Creator
+      ReqIF.ForeignModifiedBy:
+        key: Contributor
+      ReqIF.ForeignCreatedOn:
+        key: Created On
+        value_type: date
+      ReqIF.ForeignModifiedOn:
+        key: Modified On
+        value_type: date
+      ReqIF.Text:
+        value_type: html_string
+      ReqIF.Name:
+        key: Title
+      ReqIF.ChapterName:
+        key: ReqIF.Text
+        value_type: html_string
+      ReqIF.Description:
+        key: Description
+
+      Status:
+        value_mapping:
+          NEW/CHANGED: New/Changed
+      Artifact Format:
+        ignore: True
+
+     ...
+```
+
+For more details about guidelines of the configuration file, see the documentation `Configure.pdf`.
+
+Just looking the configuration for `Task 1`. After parser the configuration we got the rule of array mapping for attribute name and attribute value.
 
 ```python
-def find_name_module(data):
-    spec = list(find_keys(data, 'SPECIFICATIONS'))[0]['SPECIFICATION']
-
-    return spec.get(NAME_TAG)
-
-
-def find_type_module(data):
-
-    return list(
-        find_keys(dict(data), 'SPECIFICATION-TYPE'))[0].get(NAME_TAG)
+ if attr_name in config:
+    if config.get(attr_name).get('ignore') == True:
+        continue
+    set_value(attributes, attr_value,
+              config[attr_name], attr_name=attr_name)
 ```
-
-We see that:
-
-- The information `Module Name` is stored in `SPECIFICATION`
-
-```xml
-	<SPECIFICATIONS>
-			<SPECIFICATION LONG-NAME="ECU_Requirement" LAST-CHANGE="2023-05-22T03:17:41.877Z" IDENTIFIER="_8f06d09f-ce45-4c07-9d71-a656c6e5c3aa">
-	</SPECIFICATIONS>
-```
-
-- The information `Module Type` is stored in `SPECIFICATION-TYPE`
-
-```xml
-  <SPECIFICATION-TYPE LONG-NAME="MO_RS" LAST-CHANGE="2020-12-16T04:03:43.649Z" IDENTIFIER="_8e22da9e-0198-40c8-b577-02cca0635202" DESC="Module for MO Requirements  PTSA 2.0">
-  </SPECIFICATION-TYPE>
-```
-
-- Both functions have the same parameters is the data which load in the first step
-
-> Next is find the `List Artifact Info`
-
-- The requirements said that
-
-```text
-The hierarchy of the objects is defined in section `SPEC-HIERARCHY`.
-```
-
-- Look at more details we can see that
-  The top-level element is `CHILDREN,` which contains a list of `SPEC-HIERARCHY` elements.
-  - Each `SPEC-HIERARCHY` element represents a level in the hierarchy and contains the following properties:
-  - `@LAST-CHANGE`: Represents the timestamp of the last change made to the element.
-  - `@IDENTIFIER`: Unique identifier for the element.
-  - `OBJECT`: Contains an object with a `SPEC-OBJECT-REF` property, which likely references another object.
-  - `CHILDREN`: May contain nested `SPEC-HIERARCHY` elements or a single `SPEC-HIERARCHY` element.
-- The structure seems to be recursive, as `SPEC-HIERARCHY` elements can contain more `SPEC-HIERARCHY` elements within their `CHILDREN` property.
-
-- In the implementation, we get the `SPEC-OBJECT-REF` as a list followed by the `SPEC-HIERARCHY` order element
 
 ```python
-def get_spec_object_ref_hierarchy(data, hierarchy=None):
-    if hierarchy is None:
-        hierarchy = []
+def load_config(filename: str) -> dict:
+    """
+    Loads the config file and returns the module config
+    """
+    if is_locked(filename) is not True:
+        return yaml.safe_load(open(filename, 'r'))['module']
+    else:
+        raise KeyError(
+            'File %s is locked, please end to write the file and close the file' % filename)
 
-    if isinstance(data, list):
-        for item in data:
-            get_spec_object_ref_hierarchy(item, hierarchy)
 
-    elif isinstance(data, dict):
-        object_ref = data.get("OBJECT", {}).get("SPEC-OBJECT-REF")
-        if object_ref:
-            hierarchy.append(object_ref)
+def map_value(config: dict, value):
+    """
+    Maps the value to the config value mapping
+    """
+    if 'value_mapping' in config:
+        default_value = config.get('default_value', value)
+        value = config['value_mapping'].get(value, default_value)
+    return value
 
-        children = data.get("CHILDREN")
 
-        if children:
-            get_spec_object_ref_hierarchy(
-                children.get('SPEC-HIERARCHY'), hierarchy)
+def format_value(config: dict, value):
+    """
+    Formats the value according to the config
+    """
+    value_type = config.get('value_type')
 
-    return hierarchy
+    if isinstance(value, dict) and (value_type is None or value_type == 'string'):
+        value = value.get('div', {}).get('#text', '')
+
+    if value_type == 'number':
+        value = int(value)
+    elif value_type == 'html_string':
+        value = xmltodict.unparse(value, pretty=True)[39:]
+
+    return value
+
+
+def set_value(data: dict, value, config: dict, attr_name='') -> None:
+    """
+    Sets the value in the data dict according to the config
+    """
+    value = map_value(config, value)
+    value = format_value(config, value)
+    data[config.get('key', attr_name)] = value
 ```
 
-- After got the hierarchy of the objects, we can iterate over all the content of the objects which contain in the `SPEC-OBJECTS`
+## Fixing some problems in previous rounds
 
-- We can got the type of the `SPEC-OBJECT` which stored in the
-
-```xml
-<TYPE>
-    <SPEC-OBJECT-TYPE-REF>
-        {REFERENCE}
-    </SPEC-OBJECT-TYPE-REF>
-</TYPE>
-```
-
-and easily mapping the `{REFERENCE}` by looking up the `SPEC-OBJECT-TYPE`
-
-<br>
-
-In each `SPEC-OBJECT` it have 4 `VALUES` attributes is
-
-- `ATTRIBUTE-VALUE-XHTML`
-- `ATTRIBUTE-VALUE-DATE`
-- `ATTRIBUTE-VALUE-STRING`
-- `ATTRIBUTE-VALUE-ENUMERATION`
-
-<br>
-<br>
-<br>
-
-And following the description:
-
-```
-Attributes are specified in sub section {SPEC-OBJECT-TYPE} of {SPEC-TYPES}, the name is defined in {LONG-NAME}. Each attribute consists of {DEFINITION} and {THE-VALUE}. The {DEFINITION} references to section {DATATYPES}. {THE-VALUE} contains the value of attribute
-```
-
-<br>
-<br>
-
-For each `ATTRIBUTE`, we mapping the `VALUE` and the `DEFINITION` by the function with parameters is `spec_attrs` is the `SPEC-ATTRIBUTES` in the `SPEC-OBJECT-TYPE` abd `spec_obj_values` is the `VALUE` of the `SPEC-OBJECT`
+In previous rounds, we got some feedback from organizers that we would not check the file is handled or not by other processes before open that file or write that file. So in this round we update condition check that file `is_locked` or not.
 
 ```python
-def mapping_attr_definition(spec_attrs, spec_obj_values, attr_key):
-    result = []
+def is_locked(filename):
+    system = platform.system()
 
-    attrs = spec_obj_values.get(attr_key)
-    attr_name = attr_key.split('-')[-1]
+    full_path = os.path.abspath(filename)
 
-    DEFINITION_TAG = f'ATTRIBUTE-DEFINITION-{attr_name}'
-
-    if isinstance(attrs, dict):
-        attrs = [attrs]
-
-    for attr in attrs:
-        for def_attr in spec_attrs.get(DEFINITION_TAG):
-            attr_ref = attr['DEFINITION'][f'{DEFINITION_TAG}-REF']
-
-            if attr_ref == def_attr.get(IDENTIFIER_TAG):
-                key = def_attr.get(NAME_TAG)
-                value = attr.get('THE-VALUE')
-
-                if value is None:
-                    value = attr.get('@THE-VALUE')
-
-                key, value = refactor_key_value(key, value, attr_name, attr)
-
-                if key is not None:
-                    result.append({key: value})
-
-    return result
+    if system == 'Linux':
+        return is_locked_in_Linux(full_path)
+    elif system == 'Windows':
+        return is_locked_in_Windows(full_path)
 ```
 
-<br>
-<br>
-
-Parallel with mapping `VALUE` and `DEFINITION` attributes we also refactor the `key` and `value` attributes which will save in the result.
+- Condition for `Windows OS` system:
 
 ```python
-def refactor_key_value(key, value, attr_name, attr):
-    match key:
-        # XHTML
-        # - ReqIF.ChapterName is ReqIF.Text in the "Heading"
-        case 'ReqIF.Text':
-            key = 'ReqIF.Text'
-            value = xmltodict.unparse(value, pretty=True)[39:]
-        case 'ReqIF.Name':
-            key = 'Title'
-            value = value.get('div', {}).get('#text', '')
-        case 'ReqIF.ChapterName':
-            key = 'ReqIF.Text'
-            value = xmltodict.unparse(value, pretty=True)[39:]
-        case 'ReqIF.Description':
-            key = 'Description'
-            value = value.get('div', {}).get('#text', '')
+def is_locked_in_Windows(full_path):
+    for proc in psutil.process_iter():
+        try:
+            for item in proc.open_files():
+                if full_path == item.path:
+                    return True
+        except Exception:
+            print(full_path, '-> Failed to open file')
 
-        # DATE
-        case 'ReqIF.ForeignCreatedOn':
-            key = 'Created On'
-        case 'ReqIF.ForeignModifiedOn':
-            key = 'Modified On'
-
-        # STRING
-        case 'ReqIF.ForeignID':
-            key = 'Identifier'
-            value = int(value)
-        case 'ReqIF.ForeignCreatedBy':
-            key = 'Creator'
-        case 'ReqIF.ForeignModifiedBy':
-            key = 'Contributor'
-
-        # ENUMERATION
-        # - Artifact Format not needed to collect
-        case 'Artifact Format':
-            key = None
-
-        # OTHERWISE
-        case _:
-            if attr_name == 'STRING':
-                key = key
-
-            elif attr_name == 'ENUMERATION':
-                value = find_enum_value(
-                    attr['VALUES']['ENUM-VALUE-REF'])
-
-            else:
-                key = None
-
-    return key, value
+    return False
 ```
 
-> Finally
-
-Store the result in file `*.json` by calling `json.dump()`
+- Condition for `Linux OS` system:
 
 ```python
-  json_data = json.dumps({
-        "Module Name": find_name_module(data_dict),
-        "Module Type": find_type_module(data_dict),
-        "List Artifact Info": find_list_artifact_info(data_dict)
-    })
 
-    with open(OUT_SRC, "w") as json_file:
-        json_file.write(json_data)
+def is_file_locked(path):
+    try:
+        # Open the file in exclusive mode
+        with open(path, 'r') as file:
+            return False
+    except IOError:
+        # File is locked by another process
+        return True
+
+
+def is_directory_locked(path):
+    try:
+        # Attempt to rename the directory
+        os.rename(path, path)
+        return False
+    except OSError:
+        # Directory is locked by another process
+        return True
+
+
+def is_locked_in_Linux(path):
+    if os.path.isfile(path):
+        return is_file_locked(path)
+    elif os.path.isdir(path):
+        return is_directory_locked(path)
+    else:
+        print("The specified path does not exist.")
+        return None
 ```
 
 ## Demo
 
-Here is our result which runs in the sample file `Requirements.reqif`
+Here is our result which runs in the sample file `Requirements.reqif` and with configures file `config.yml`.
 
 ```json
 {
   "Module Name": "ECU_Requirement",
-  "Module Type": "MO_RS",
+  "Module Type": "empty",
   "List Artifact Info": [
     {
       "Attribute Type": "Heading",
@@ -418,7 +349,7 @@ Here is our result which runs in the sample file `Requirements.reqif`
       "Modified On": "2023-05-23T02:41:23.510Z",
       "ReqIF.Text": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t<p>&lt;description of the requirement in requirements language&gt;</p>\n\t<p>\n\t\t<b>VEHICLE_SYSTEM_BEHAVIOUR</b>\n\t\t<b>CONSTRAINT</b>\n\t\t<b>IMPACT</b>\n\t\t<b>INFO</b>\n\t\t<b>ASSUMPTION</b>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n\t\t<br></br>\n&lt;Optional: description of desired vehicle behaviour (\"development target\")&gt;\u00a0\u00a0 \u00a0 \u00a0&lt;Optional: constraints on the solution space for the requirement&gt;\u00a0 \u00a0&lt;Optional: description of possible cross-functional impact of the requirement, or impact on other components&gt;&lt;Optional: additional informations about the requirement:- know-how- background- HW dependencies related to the system requirement- internal signals- etc&gt;&lt;Optional: assumptions on the requirement&gt;\t</p>\n\t<p></p>\n</div>",
       "Safety Classification": "ASIL A",
-      "Status": "NEW/CHANGED",
+      "Status": "New/Changed",
       "Title": "<description of the requirement in requirements language>",
       "VAR_FUNC_SYS": "VAR_Func_sys value",
       "Verification Criteria": "Test Environment:\nTest Bench/Lab-car with hardware setup\n\nSuccess Criteria: Verify whether the signal value is correct or not"
@@ -446,7 +377,7 @@ Here is our result which runs in the sample file `Requirements.reqif`
       "Modified On": "2023-05-23T02:56:54.487Z",
       "ReqIF.Text": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t<p>&lt;description of the non functional requirement in requirements language&gt;</p>\n</div>",
       "Safety Classification": "ASIL B",
-      "Status": "NEW/CHANGED",
+      "Status": "New/Changed",
       "Title": "<description of the non functional requirement in requirements language>",
       "VAR_FUNC_SYS": "Var_func_sys value 2",
       "Verification Criteria": "Non Func Test Environment:\nTest Bench/Lab-car with hardware setup\n\nSuccess Criteria: Verify whether the signal value is correct or not"
@@ -455,4 +386,4 @@ Here is our result which runs in the sample file `Requirements.reqif`
 }
 ```
 
-- And same as file `Json_Output_Sample.json`.
+- And same as file `Json_Output_Sample.json` or output of the `Task1` in `Round 2`.

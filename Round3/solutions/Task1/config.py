@@ -20,7 +20,7 @@ def map_value(config: dict, value):
     Maps the value to the config value mapping
     """
     if 'value_mapping' in config:
-        default_value = config.get('default_value', value)
+        default_value = config['value_mapping'].get('default_value', value)
         value = config['value_mapping'].get(value, default_value)
     return value
 
