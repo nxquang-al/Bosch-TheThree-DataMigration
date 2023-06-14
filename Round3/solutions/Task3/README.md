@@ -40,6 +40,12 @@ $ python main.py -i sample.rst -s config.yaml
 - Of course, you must provide your personal `access token` and this token must be authorized to access the resources.
 - For more detail, please refer to [GitHub REST API documentation](https://docs.github.com/en/rest?apiVersion=2022-11-28)
 
+## Generative Access Token
+
+- You can following this [guidelines](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) to generate your own `access_token`
+
+- Note that make sure that your `access token` have scope and expiration dates specified enough time and have valid credentials to `read` and `write` the repo
+
 ## Usage
 
 The program have `2 arguments`. You can check the documentation by using the command
@@ -76,6 +82,21 @@ REPOSITORY:
   BRANCH: <name-of-branch>
   NAME: <name-of-repo>
   OWNER: <repo-owner>
+```
+
+> Note that the repository must have the branch before pushing.
+
+Example configuration for a [repository](https://github.com/nlthanhcse/Bosch_CodeRace_TheThree):
+
+```yaml
+AUTHENTICATION:
+  TOKEN: <GitHub-Access-Token>
+  USERNAME: <username>
+MESSAGE: test-github-access-token
+REPOSITORY:
+  BRANCH: main
+  NAME: Bosch_CodeRace_TheThree
+  OWNER: nlthanhcse
 ```
 
 - **Step 2:** run the `main.py` to start uploading

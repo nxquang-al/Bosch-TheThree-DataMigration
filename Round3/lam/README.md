@@ -7,7 +7,9 @@ This guide provides instructions on how to use the atribute name and attribute v
 The module configuration section allows you to define different modules with their associated properties.
 
 ### Module Name
+
 Format config:
+
 ```yaml
 module:
   name:
@@ -18,7 +20,9 @@ module:
       {...other value mapping...}
       default_value: {default value}
 ```
+
 Example config:
+
 ```yaml
 module:
   name:
@@ -29,7 +33,9 @@ module:
 ```
 
 ### Module Type
+
 Format config:
+
 ```yaml
 module:
   type:
@@ -40,7 +46,9 @@ module:
       {...other value mapping...}
       default_value: {default value}
 ```
+
 Example config:
+
 ```yaml
 module:
   type:
@@ -49,14 +57,17 @@ module:
       type1: type2
       default_value: empty
 ```
+
 ### Artifacts
+
 Format config:
+
 ```yaml
 module:
   artifacts:
     key: {json key of artifacts}
     artifact:
-      type: 
+      type:
         key: {json key of atifact type}
         value_type: {type}
         value_mapping:
@@ -73,7 +84,9 @@ module:
       {...other reqif value mapping...}
       # if not pass reqif config, it will default key
 ```
+
 Example config:
+
 ```yaml
 module:
   artifacts:
@@ -87,18 +100,19 @@ module:
         MO_FUNC_REQ: MO_FUNC_REQ_new
         default_value: type
     ReqIF.ForeignID:
-        key: Identifier
-        value_type: number
+      key: Identifier
+      value_type: number
     ReqIF.ForeignCreatedBy:
-        key: Creator
+      key: Creator
     ReqIF.ForeignModifiedOn:
-        key: Modified On
-        value_type: date
+      key: Modified On
+      value_type: date
     ReqIF.Text:
-        value_type: html_string
+      value_type: html_string
 ```
 
 #### Value type:
+
 1. `string`
 2. `number`
 3. `date`
@@ -124,7 +138,7 @@ module:
             name: {name of directive}
             content: {}
             attributes:
-              {attribute name}: {attribute value} # can be a key in json or a raw string 
+              {attribute name}: {attribute value} # can be a key in json or a raw string
               {...other attribute config...}
             directives: # subdirective config. It can be an array of directive in yaml
               - name: {name of directive}
@@ -137,10 +151,11 @@ module:
                 attributes:
                 {attribute name}: {attribute value} # can be a key in json or a raw string
                 {...other attribute config...}
-            
+
 ```
 
-Example config: 
+Example config:
+
 ```yaml
 module:
   artifacts:

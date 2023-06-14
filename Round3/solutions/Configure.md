@@ -166,15 +166,7 @@ module:
                 crq: crq
                 createdOn: Created On
               html_content: ReqIF.Text
-              directives:
-                - name: subdirective1
-                  attributes:
-                    id: Identifier
-                    artifact_type: Description
-                    crq: crq
-                - name: subdirective2
-                  attributes:
-                    id: Identifier
-                    artifact_type: Description
-                    crq: crq
+              sub_directives:
+                verify: Verification Criteria
+                safety_level: Safety Classification
 ```
