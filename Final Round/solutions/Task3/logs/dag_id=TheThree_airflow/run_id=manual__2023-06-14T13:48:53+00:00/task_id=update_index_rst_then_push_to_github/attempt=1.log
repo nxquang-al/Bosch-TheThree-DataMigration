@@ -1,0 +1,13 @@
+[2023-06-14T20:49:32.680+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TheThree_airflow.update_index_rst_then_push_to_github manual__2023-06-14T13:48:53+00:00 [queued]>
+[2023-06-14T20:49:32.686+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TheThree_airflow.update_index_rst_then_push_to_github manual__2023-06-14T13:48:53+00:00 [queued]>
+[2023-06-14T20:49:32.686+0700] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2023-06-14T20:49:32.695+0700] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): update_index_rst_then_push_to_github> on 2023-06-14 13:48:53+00:00
+[2023-06-14T20:49:32.698+0700] {standard_task_runner.py:57} INFO - Started process 31359 to run task
+[2023-06-14T20:49:32.704+0700] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'TheThree_airflow', 'update_index_rst_then_push_to_github', 'manual__2023-06-14T13:48:53+00:00', '--job-id', '47', '--raw', '--subdir', 'DAGS_FOLDER/main_airflow.py', '--cfg-path', '/var/folders/v7/qsb_cvl92z92z6jf7g1jc0zr0000gn/T/tmpzebqc361']
+[2023-06-14T20:49:32.706+0700] {standard_task_runner.py:85} INFO - Job 47: Subtask update_index_rst_then_push_to_github
+[2023-06-14T20:49:32.756+0700] {task_command.py:410} INFO - Running <TaskInstance: TheThree_airflow.update_index_rst_then_push_to_github manual__2023-06-14T13:48:53+00:00 [running]> on host macbook-pro.local
+[2023-06-14T20:49:32.809+0700] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='TheThree_airflow' AIRFLOW_CTX_TASK_ID='update_index_rst_then_push_to_github' AIRFLOW_CTX_EXECUTION_DATE='2023-06-14T13:48:53+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-14T13:48:53+00:00'
+[2023-06-14T20:49:32.815+0700] {python.py:183} INFO - Done. Returned value was: None
+[2023-06-14T20:49:32.819+0700] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=TheThree_airflow, task_id=update_index_rst_then_push_to_github, execution_date=20230614T134853, start_date=20230614T134932, end_date=20230614T134932
+[2023-06-14T20:49:32.841+0700] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-14T20:49:32.860+0700] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

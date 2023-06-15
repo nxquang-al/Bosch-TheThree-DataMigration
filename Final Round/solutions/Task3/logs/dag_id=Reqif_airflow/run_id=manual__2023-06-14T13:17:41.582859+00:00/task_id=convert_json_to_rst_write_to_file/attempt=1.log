@@ -1,0 +1,13 @@
+[2023-06-14T20:17:55.645+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Reqif_airflow.convert_json_to_rst_write_to_file manual__2023-06-14T13:17:41.582859+00:00 [queued]>
+[2023-06-14T20:17:55.649+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Reqif_airflow.convert_json_to_rst_write_to_file manual__2023-06-14T13:17:41.582859+00:00 [queued]>
+[2023-06-14T20:17:55.650+0700] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2023-06-14T20:17:55.657+0700] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): convert_json_to_rst_write_to_file> on 2023-06-14 13:17:41.582859+00:00
+[2023-06-14T20:17:55.659+0700] {standard_task_runner.py:57} INFO - Started process 26120 to run task
+[2023-06-14T20:17:55.664+0700] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Reqif_airflow', 'convert_json_to_rst_write_to_file', 'manual__2023-06-14T13:17:41.582859+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/var/folders/v7/qsb_cvl92z92z6jf7g1jc0zr0000gn/T/tmp17df5415']
+[2023-06-14T20:17:55.666+0700] {standard_task_runner.py:85} INFO - Job 28: Subtask convert_json_to_rst_write_to_file
+[2023-06-14T20:17:55.702+0700] {task_command.py:410} INFO - Running <TaskInstance: Reqif_airflow.convert_json_to_rst_write_to_file manual__2023-06-14T13:17:41.582859+00:00 [running]> on host macbook-pro.local
+[2023-06-14T20:17:55.752+0700] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Reqif_airflow' AIRFLOW_CTX_TASK_ID='convert_json_to_rst_write_to_file' AIRFLOW_CTX_EXECUTION_DATE='2023-06-14T13:17:41.582859+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-14T13:17:41.582859+00:00'
+[2023-06-14T20:17:55.754+0700] {python.py:183} INFO - Done. Returned value was: None
+[2023-06-14T20:17:55.758+0700] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=Reqif_airflow, task_id=convert_json_to_rst_write_to_file, execution_date=20230614T131741, start_date=20230614T131755, end_date=20230614T131755
+[2023-06-14T20:17:55.805+0700] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-14T20:17:55.834+0700] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check

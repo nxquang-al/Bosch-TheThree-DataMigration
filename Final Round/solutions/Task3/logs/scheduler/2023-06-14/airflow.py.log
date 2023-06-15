@@ -1,0 +1,28 @@
+[2023-06-14T20:37:27.572+0700] {processor.py:157} INFO - Started process (PID=29460) to work on /Users/lap14202/.airflow/dags/airflow.py
+[2023-06-14T20:37:27.573+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/airflow.py for tasks to queue
+[2023-06-14T20:37:27.573+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:37:27.573+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/airflow.py
+[2023-06-14T20:37:27.609+0700] {processor.py:836} INFO - DAG(s) dict_keys(['Reqif_airflow']) retrieved from /Users/lap14202/.airflow/dags/airflow.py
+[2023-06-14T20:37:28.461+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:37:28.461+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T20:37:28.473+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:37:28.473+0700] {dag.py:3486} INFO - Setting next_dagrun for Reqif_airflow to 2023-06-14T13:13:24.477688+00:00, run_after=2023-06-15T13:13:24.477688+00:00
+[2023-06-14T20:37:28.491+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/airflow.py took 0.919 seconds
+[2023-06-14T20:39:01.094+0700] {processor.py:157} INFO - Started process (PID=29637) to work on /Users/lap14202/.airflow/dags/airflow.py
+[2023-06-14T20:39:01.096+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/airflow.py for tasks to queue
+[2023-06-14T20:39:01.096+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:39:01.096+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/airflow.py
+[2023-06-14T20:39:01.124+0700] {processor.py:836} INFO - DAG(s) dict_keys(['Reqif_airflow']) retrieved from /Users/lap14202/.airflow/dags/airflow.py
+[2023-06-14T20:39:01.934+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:39:01.934+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T20:39:01.949+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:39:01.949+0700] {dag.py:3486} INFO - Setting next_dagrun for Reqif_airflow to 2023-06-14T13:13:24.477688+00:00, run_after=2023-06-15T13:13:24.477688+00:00
+[2023-06-14T20:39:01.964+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/airflow.py took 0.870 seconds
+[2023-06-14T20:40:49.822+0700] {processor.py:157} INFO - Started process (PID=29968) to work on /Users/lap14202/.airflow/dags/airflow.py
+[2023-06-14T20:40:49.823+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/airflow.py for tasks to queue
+[2023-06-14T20:40:49.823+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:40:49.823+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/airflow.py
+[2023-06-14T20:40:49.865+0700] {processor.py:836} INFO - DAG(s) dict_keys(['Reqif_airflow']) retrieved from /Users/lap14202/.airflow/dags/airflow.py
+[2023-06-14T20:40:50.669+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:40:50.668+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T20:40:50.683+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:40:50.683+0700] {dag.py:3486} INFO - Setting next_dagrun for Reqif_airflow to 2023-06-14T13:13:24.477688+00:00, run_after=2023-06-15T13:13:24.477688+00:00
+[2023-06-14T20:40:50.698+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/airflow.py took 0.877 seconds
+[2023-06-14T20:42:40.171+0700] {processor.py:157} INFO - Started process (PID=30278) to work on /Users/lap14202/.airflow/dags/airflow.py
+[2023-06-14T20:42:40.172+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/airflow.py for tasks to queue
+[2023-06-14T20:42:40.173+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:42:40.173+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/airflow.py
+[2023-06-14T20:42:40.201+0700] {processor.py:836} INFO - DAG(s) dict_keys(['Reqif_airflow']) retrieved from /Users/lap14202/.airflow/dags/airflow.py
+[2023-06-14T20:42:41.043+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:42:41.043+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T20:42:41.060+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:42:41.060+0700] {dag.py:3486} INFO - Setting next_dagrun for Reqif_airflow to 2023-06-14T13:13:24.477688+00:00, run_after=2023-06-15T13:13:24.477688+00:00
+[2023-06-14T20:42:41.075+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/airflow.py took 0.904 seconds

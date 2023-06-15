@@ -1,0 +1,8 @@
+AUTHENTICATION:
+  TOKEN: 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
+  USERNAME: nxquang-al
+MESSAGE: test-github-access-token
+REPOSITORY:
+  BRANCH: main
+  NAME: Test-github-api
+  OWNER: R2th

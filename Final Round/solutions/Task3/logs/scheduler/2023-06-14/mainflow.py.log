@@ -1,0 +1,1301 @@
+[2023-06-14T23:42:28.230+0700] {processor.py:157} INFO - Started process (PID=46116) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:42:28.231+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-14T23:42:28.231+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:42:28.231+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:42:28.258+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:42:28.993+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:42:28.992+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T23:42:29.005+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:42:29.004+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-14T23:42:29.020+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.791 seconds
+[2023-06-14T23:43:18.142+0700] {processor.py:157} INFO - Started process (PID=46234) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:43:18.142+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-14T23:43:18.143+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:43:18.143+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:43:18.167+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:43:18.862+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:43:18.862+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T23:43:18.875+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:43:18.875+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-14T23:43:18.889+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.747 seconds
+[2023-06-14T23:44:55.206+0700] {processor.py:157} INFO - Started process (PID=46445) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:44:55.208+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-14T23:44:55.208+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:44:55.208+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:44:55.234+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:44:55.950+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:44:55.950+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T23:44:55.963+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:44:55.963+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-14T23:44:55.983+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.778 seconds
+[2023-06-14T23:46:34.678+0700] {processor.py:157} INFO - Started process (PID=46680) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:46:34.679+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-14T23:46:34.679+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:46:34.679+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:46:34.708+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:46:35.494+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:46:35.494+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T23:46:35.509+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:46:35.509+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-14T23:46:35.523+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.847 seconds
+[2023-06-14T23:48:16.050+0700] {processor.py:157} INFO - Started process (PID=46970) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:48:16.051+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-14T23:48:16.052+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:48:16.052+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:48:16.135+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:48:16.887+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:48:16.887+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T23:48:16.901+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:48:16.901+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-14T23:48:16.919+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.870 seconds
+[2023-06-14T23:49:54.198+0700] {processor.py:157} INFO - Started process (PID=47260) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:49:54.199+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-14T23:49:54.200+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:49:54.200+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:49:54.250+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:49:54.951+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:49:54.951+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T23:49:54.963+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:49:54.963+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-14T23:49:54.978+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.781 seconds
+[2023-06-14T23:51:30.653+0700] {processor.py:157} INFO - Started process (PID=47535) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:51:30.653+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-14T23:51:30.654+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:51:30.653+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:51:30.697+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:51:31.390+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:51:31.390+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T23:51:31.402+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:51:31.402+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-14T23:51:31.416+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.764 seconds
+[2023-06-14T23:53:08.836+0700] {processor.py:157} INFO - Started process (PID=47839) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:53:08.837+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-14T23:53:08.838+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:53:08.838+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:53:08.868+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:53:08.866+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src.read_reqif import load_reqif
+ImportError: cannot import name 'load_reqif' from 'src.read_reqif' (/Users/lap14202/.airflow/dags/src/read_reqif.py)
+[2023-06-14T23:53:08.868+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:53:09.517+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.682 seconds
+[2023-06-14T23:54:49.768+0700] {processor.py:157} INFO - Started process (PID=48158) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:54:49.769+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-14T23:54:49.770+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:54:49.770+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:54:49.825+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:54:50.555+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:54:50.554+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T23:54:50.568+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:54:50.568+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-14T23:54:50.587+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.819 seconds
+[2023-06-14T23:56:28.366+0700] {processor.py:157} INFO - Started process (PID=48478) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:56:28.366+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-14T23:56:28.367+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:56:28.367+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:56:28.415+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:56:29.305+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:56:29.305+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T23:56:29.320+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:56:29.320+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-14T23:56:29.336+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.970 seconds
+[2023-06-14T23:58:07.548+0700] {processor.py:157} INFO - Started process (PID=48814) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:58:07.549+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-14T23:58:07.550+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:58:07.550+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:58:07.628+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:58:08.401+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:58:08.401+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T23:58:08.413+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:58:08.413+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-14T23:58:08.427+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.880 seconds
+[2023-06-14T23:59:50.516+0700] {processor.py:157} INFO - Started process (PID=49084) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:59:50.518+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-14T23:59:50.518+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:59:50.518+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:59:50.582+0700] {logging_mixin.py:149} INFO - [2023-06-14T23:59:50.580+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 10, in <module>
+    from src.build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-14T23:59:50.582+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-14T23:59:51.332+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.816 seconds
+[2023-06-15T00:01:30.196+0700] {processor.py:157} INFO - Started process (PID=49396) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:01:30.198+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:01:30.199+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:01:30.198+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:01:30.220+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:01:30.218+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src.load_reqif import load_reqif
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 1, in <module>
+    from load_reqif import load_reqif
+ModuleNotFoundError: No module named 'load_reqif'
+[2023-06-15T00:01:30.221+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:01:30.919+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.724 seconds
+[2023-06-15T00:03:09.058+0700] {processor.py:157} INFO - Started process (PID=49656) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:03:09.058+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:03:09.059+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:03:09.059+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:03:09.083+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:03:09.082+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 1, in <module>
+    from load_reqif import load_reqif
+ModuleNotFoundError: No module named 'load_reqif'
+[2023-06-15T00:03:09.083+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:03:09.760+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.703 seconds
+[2023-06-15T00:04:44.121+0700] {processor.py:157} INFO - Started process (PID=49897) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:04:44.122+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:04:44.122+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:04:44.122+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:04:44.171+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:04:44.171+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:04:44.172+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:04:44.875+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.754 seconds
+[2023-06-15T00:06:25.017+0700] {processor.py:157} INFO - Started process (PID=50209) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:06:25.018+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:06:25.019+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:06:25.019+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:06:25.070+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:06:25.067+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 3, in <module>
+    from .build_json import build_json
+  File "/Users/lap14202/.airflow/dags/src/build_json.py", line 243
+    config = config['['module']']
+                    ^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[2023-06-15T00:06:25.070+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:06:25.728+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.712 seconds
+[2023-06-15T00:08:02.748+0700] {processor.py:157} INFO - Started process (PID=50527) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:08:02.749+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:08:02.749+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:08:02.749+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:08:02.816+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:08:02.813+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:08:02.817+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:08:03.472+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.725 seconds
+[2023-06-15T00:09:40.664+0700] {processor.py:157} INFO - Started process (PID=50714) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:09:40.665+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:09:40.666+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:09:40.666+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:09:40.722+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:09:40.718+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:09:40.723+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:09:41.522+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.859 seconds
+[2023-06-15T00:11:14.469+0700] {processor.py:157} INFO - Started process (PID=50930) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:11:14.470+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:11:14.471+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:11:14.471+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:11:14.517+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:11:14.515+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:11:14.517+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:11:15.143+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.674 seconds
+[2023-06-15T00:12:46.608+0700] {processor.py:157} INFO - Started process (PID=51066) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:12:46.609+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:12:46.609+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:12:46.609+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:12:46.651+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:12:46.650+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:12:46.652+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:12:47.281+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.674 seconds
+[2023-06-15T00:14:22.978+0700] {processor.py:157} INFO - Started process (PID=51286) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:14:22.978+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:14:22.979+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:14:22.979+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:14:23.017+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:14:23.017+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:14:23.018+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:14:23.685+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.708 seconds
+[2023-06-15T00:15:59.467+0700] {processor.py:157} INFO - Started process (PID=51485) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:15:59.468+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:15:59.468+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:15:59.468+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:15:59.504+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:15:59.503+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:15:59.505+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:16:00.123+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.657 seconds
+[2023-06-15T00:17:36.202+0700] {processor.py:157} INFO - Started process (PID=51650) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:17:36.202+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:17:36.203+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:17:36.203+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:17:36.241+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:17:36.240+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:17:36.241+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:17:36.874+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.672 seconds
+[2023-06-15T00:19:12.379+0700] {processor.py:157} INFO - Started process (PID=51886) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:19:12.380+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:19:12.380+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:19:12.380+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:19:12.430+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:19:12.429+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:19:12.431+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:19:13.049+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.670 seconds
+[2023-06-15T00:20:48.626+0700] {processor.py:157} INFO - Started process (PID=52026) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:20:48.627+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:20:48.627+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:20:48.627+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:20:48.664+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:20:48.663+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:20:48.664+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:20:49.279+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.653 seconds
+[2023-06-15T00:22:25.492+0700] {processor.py:157} INFO - Started process (PID=52235) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:22:25.493+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:22:25.493+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:22:25.493+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:22:25.529+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:22:25.528+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:22:25.530+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:22:26.145+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.653 seconds
+[2023-06-15T00:24:01.381+0700] {processor.py:157} INFO - Started process (PID=52426) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:24:01.382+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:24:01.383+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:24:01.382+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:24:01.419+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:24:01.418+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:24:01.419+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:24:02.040+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.659 seconds
+[2023-06-15T00:25:35.695+0700] {processor.py:157} INFO - Started process (PID=52588) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:25:35.696+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:25:35.696+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:25:35.696+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:25:35.732+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:25:35.731+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:25:35.733+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:25:36.362+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.667 seconds
+[2023-06-15T00:27:11.921+0700] {processor.py:157} INFO - Started process (PID=52798) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:27:11.921+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:27:11.922+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:27:11.922+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:27:11.959+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:27:11.958+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:27:11.959+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:27:12.575+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.655 seconds
+[2023-06-15T00:28:48.194+0700] {processor.py:157} INFO - Started process (PID=52939) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:28:48.194+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:28:48.195+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:28:48.195+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:28:48.231+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:28:48.230+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:28:48.231+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:28:48.853+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.660 seconds
+[2023-06-15T00:30:24.517+0700] {processor.py:157} INFO - Started process (PID=53160) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:30:24.517+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:30:24.518+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:30:24.518+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:30:24.554+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:30:24.553+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:30:24.554+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:30:25.164+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.648 seconds
+[2023-06-15T00:31:57.988+0700] {processor.py:157} INFO - Started process (PID=53296) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:31:57.988+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:31:57.989+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:31:57.988+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:31:58.025+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:31:58.024+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:31:58.025+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:31:58.643+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.656 seconds
+[2023-06-15T00:33:33.871+0700] {processor.py:157} INFO - Started process (PID=53507) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:33:33.872+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:33:33.872+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:33:33.872+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:33:33.909+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:33:33.908+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:33:33.909+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:33:34.533+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.662 seconds
+[2023-06-15T00:35:09.812+0700] {processor.py:157} INFO - Started process (PID=53725) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:35:09.812+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:35:09.812+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:35:09.812+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:35:09.850+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:35:09.849+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:35:09.850+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:35:10.479+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.668 seconds
+[2023-06-15T00:36:46.123+0700] {processor.py:157} INFO - Started process (PID=53891) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:36:46.123+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:36:46.124+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:36:46.123+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:36:46.160+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:36:46.160+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:36:46.161+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:36:46.851+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.729 seconds
+[2023-06-15T00:38:22.772+0700] {processor.py:157} INFO - Started process (PID=54101) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:38:22.772+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:38:22.773+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:38:22.772+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:38:22.812+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:38:22.811+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:38:22.813+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:38:23.441+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.670 seconds
+[2023-06-15T00:39:56.892+0700] {processor.py:157} INFO - Started process (PID=54247) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:39:56.893+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:39:56.893+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:39:56.893+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:39:56.929+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:39:56.928+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:39:56.929+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:39:57.544+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.652 seconds
+[2023-06-15T00:41:30.196+0700] {processor.py:157} INFO - Started process (PID=54454) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:41:30.196+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:41:30.197+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:41:30.197+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:41:30.233+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:41:30.232+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:41:30.233+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:41:30.850+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.655 seconds
+[2023-06-15T00:43:06.553+0700] {processor.py:157} INFO - Started process (PID=54644) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:43:06.553+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:43:06.554+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:43:06.554+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:43:06.589+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:43:06.588+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:43:06.590+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:43:07.209+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.657 seconds
+[2023-06-15T00:44:42.851+0700] {processor.py:157} INFO - Started process (PID=54807) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:44:42.852+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:44:42.852+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:44:42.852+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:44:42.899+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:44:42.898+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:44:42.899+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:44:43.527+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.677 seconds
+[2023-06-15T00:46:17.027+0700] {processor.py:157} INFO - Started process (PID=55022) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:46:17.028+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:46:17.028+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:46:17.028+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:46:17.066+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:46:17.065+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:46:17.066+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:46:17.698+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.671 seconds
+[2023-06-15T00:47:53.364+0700] {processor.py:157} INFO - Started process (PID=55163) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:47:53.365+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:47:53.365+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:47:53.365+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:47:53.402+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:47:53.401+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:47:53.402+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:47:54.023+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.660 seconds
+[2023-06-15T00:49:29.291+0700] {processor.py:157} INFO - Started process (PID=55392) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:49:29.292+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:49:29.292+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:49:29.292+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:49:29.329+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:49:29.328+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:49:29.329+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:49:29.957+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.666 seconds
+[2023-06-15T00:51:05.729+0700] {processor.py:157} INFO - Started process (PID=55589) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:51:05.730+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:51:05.730+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:51:05.730+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:51:05.767+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:51:05.766+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:51:05.768+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:51:06.390+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.661 seconds
+[2023-06-15T00:52:41.956+0700] {processor.py:157} INFO - Started process (PID=55746) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:52:41.956+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:52:41.957+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:52:41.957+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:52:41.994+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:52:41.993+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:52:41.994+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:52:42.610+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.655 seconds
+[2023-06-15T00:54:17.960+0700] {processor.py:157} INFO - Started process (PID=55956) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:54:17.961+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:54:17.961+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:54:17.961+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:54:17.999+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:54:17.998+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:54:17.999+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:54:18.625+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.665 seconds
+[2023-06-15T00:55:49.176+0700] {processor.py:157} INFO - Started process (PID=56100) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:55:49.177+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:55:49.177+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:55:49.177+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:55:49.218+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:55:49.217+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:55:49.218+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:55:49.863+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.688 seconds
+[2023-06-15T00:57:17.792+0700] {processor.py:157} INFO - Started process (PID=56309) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:57:17.792+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:57:17.793+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:57:17.792+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:57:17.829+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:57:17.828+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:57:17.830+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:57:18.455+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.664 seconds
+[2023-06-15T00:58:53.856+0700] {processor.py:157} INFO - Started process (PID=56453) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:58:53.857+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T00:58:53.857+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:58:53.857+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:58:53.895+0700] {logging_mixin.py:149} INFO - [2023-06-15T00:58:53.894+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T00:58:53.895+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T00:58:54.550+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.695 seconds
+[2023-06-15T01:00:30.111+0700] {processor.py:157} INFO - Started process (PID=56673) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:00:30.113+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:00:30.114+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:00:30.113+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:00:30.152+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:00:30.151+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T01:00:30.153+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:00:30.773+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.662 seconds
+[2023-06-15T01:02:06.586+0700] {processor.py:157} INFO - Started process (PID=56815) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:02:06.586+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:02:06.587+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:02:06.586+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:02:06.623+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:02:06.622+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T01:02:06.623+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:02:07.248+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.663 seconds
+[2023-06-15T01:03:42.738+0700] {processor.py:157} INFO - Started process (PID=57023) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:03:42.738+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:03:42.739+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:03:42.739+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:03:42.786+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:03:42.786+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T01:03:42.787+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:03:43.413+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.676 seconds
+[2023-06-15T01:05:19.375+0700] {processor.py:157} INFO - Started process (PID=57255) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:05:19.375+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:05:19.376+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:05:19.376+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:05:19.414+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:05:19.413+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T01:05:19.415+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:05:20.036+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.662 seconds
+[2023-06-15T01:06:55.600+0700] {processor.py:157} INFO - Started process (PID=57393) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:06:55.600+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:06:55.601+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:06:55.600+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:06:55.636+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:06:55.636+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T01:06:55.637+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:06:56.259+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.660 seconds
+[2023-06-15T01:08:32.926+0700] {processor.py:157} INFO - Started process (PID=57608) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:08:32.927+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:08:32.927+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:08:32.927+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:08:32.981+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:08:32.978+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T01:08:32.981+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:08:34.745+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.819 seconds
+[2023-06-15T01:10:12.548+0700] {processor.py:157} INFO - Started process (PID=57828) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:10:12.549+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:10:12.550+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:10:12.550+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:10:12.617+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:10:12.613+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T01:10:12.618+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:10:13.428+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.881 seconds
+[2023-06-15T01:11:51.188+0700] {processor.py:157} INFO - Started process (PID=58018) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:11:51.189+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:11:51.190+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:11:51.190+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:11:51.239+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:11:51.236+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T01:11:51.240+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:11:51.926+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.739 seconds
+[2023-06-15T01:13:27.452+0700] {processor.py:157} INFO - Started process (PID=58225) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:13:27.454+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:13:27.455+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:13:27.454+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:13:27.500+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:13:27.497+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 7, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T01:13:27.500+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:13:28.125+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.673 seconds
+[2023-06-15T01:14:59.360+0700] {processor.py:157} INFO - Started process (PID=58410) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:14:59.362+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:14:59.362+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:14:59.362+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:14:59.412+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:14:59.408+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 6, in <module>
+    from src import *
+  File "/Users/lap14202/.airflow/dags/src/__init__.py", line 4, in <module>
+    from .build_rst import build_rst
+  File "/Users/lap14202/.airflow/dags/src/build_rst.py", line 2, in <module>
+    from RstBuilder import RstBuilder
+ModuleNotFoundError: No module named 'RstBuilder'
+[2023-06-15T01:14:59.412+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:15:00.040+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.680 seconds
+[2023-06-15T01:16:36.105+0700] {processor.py:157} INFO - Started process (PID=58770) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:16:36.106+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:16:36.107+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:16:36.107+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:16:36.180+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:16:37.150+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:16:37.150+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:16:37.165+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:16:37.165+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-15T01:16:37.183+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.079 seconds
+[2023-06-15T01:18:17.044+0700] {processor.py:157} INFO - Started process (PID=59000) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:18:17.044+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:18:17.045+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:18:17.045+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:18:17.091+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:18:17.788+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:18:17.788+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:18:17.800+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:18:17.800+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-15T01:18:17.815+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.771 seconds
+[2023-06-15T01:19:56.037+0700] {processor.py:157} INFO - Started process (PID=59177) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:19:56.037+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:19:56.038+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:19:56.038+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:19:56.086+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:19:56.840+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:19:56.840+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:19:56.853+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:19:56.853+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-15T01:19:56.867+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.831 seconds
+[2023-06-15T01:21:36.864+0700] {processor.py:157} INFO - Started process (PID=59449) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:21:36.865+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:21:36.866+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:21:36.866+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:21:36.937+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:21:37.732+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:21:37.732+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:21:37.744+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:21:37.744+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-15T01:21:37.760+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.896 seconds
+[2023-06-15T01:23:14.544+0700] {processor.py:157} INFO - Started process (PID=59676) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:23:14.546+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:23:14.546+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:23:14.546+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:23:14.608+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:23:15.361+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:23:15.361+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:23:15.374+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:23:15.373+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-15T01:23:15.388+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.844 seconds
+[2023-06-15T01:24:58.296+0700] {processor.py:157} INFO - Started process (PID=59999) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:24:58.298+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:24:58.298+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:24:58.298+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:24:58.346+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:24:59.111+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:24:59.111+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:24:59.124+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:24:59.124+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-15T01:24:59.137+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.842 seconds
+[2023-06-15T01:26:42.504+0700] {processor.py:157} INFO - Started process (PID=60233) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:26:42.505+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:26:42.505+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:26:42.505+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:26:42.567+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:26:43.354+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:26:43.354+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:26:43.368+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:26:43.368+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-15T01:26:43.384+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.881 seconds
+[2023-06-15T01:28:25.627+0700] {processor.py:157} INFO - Started process (PID=60514) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:28:25.628+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:28:25.629+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:28:25.628+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:28:25.679+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:28:26.402+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:28:26.401+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:28:26.417+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:28:26.417+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-15T01:28:26.431+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.805 seconds
+[2023-06-15T01:30:04.928+0700] {processor.py:157} INFO - Started process (PID=60668) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:30:04.929+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:30:04.930+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:30:04.930+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:30:04.992+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:30:05.741+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:30:05.741+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:30:05.755+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:30:05.754+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-15T01:30:05.771+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.843 seconds
+[2023-06-15T01:31:42.897+0700] {processor.py:157} INFO - Started process (PID=60878) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:31:42.897+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:31:42.898+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:31:42.897+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:31:42.947+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:31:43.707+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:31:43.707+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:31:43.721+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:31:43.721+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-15T01:31:43.736+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.840 seconds
+[2023-06-15T01:33:24.031+0700] {processor.py:157} INFO - Started process (PID=61100) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:33:24.032+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:33:24.033+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:33:24.033+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:33:24.087+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:33:24.837+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:33:24.837+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:33:24.851+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:33:24.851+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T13:48:02.062605+00:00, run_after=2023-06-15T13:48:02.062605+00:00
+[2023-06-15T01:33:24.866+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.836 seconds
+[2023-06-15T01:35:07.383+0700] {processor.py:157} INFO - Started process (PID=61368) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:35:07.385+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:35:07.385+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:35:07.385+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:35:07.435+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:35:08.147+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:35:08.146+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:35:08.153+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:35:08.153+0700] {dag.py:2747} INFO - Creating ORM DAG for TheThree_airflow
+[2023-06-15T01:35:08.160+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:35:08.160+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-13T18:35:08.160299+00:00, run_after=2023-06-14T18:35:08.160299+00:00
+[2023-06-15T01:35:08.176+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.793 seconds
+[2023-06-15T01:36:50.415+0700] {processor.py:157} INFO - Started process (PID=61699) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:36:50.416+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:36:50.417+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:36:50.416+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:36:50.478+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:36:51.257+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:36:51.257+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:36:51.271+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:36:51.270+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-13T18:36:51.270805+00:00, run_after=2023-06-14T18:36:51.270805+00:00
+[2023-06-15T01:36:51.286+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.872 seconds
+[2023-06-15T01:38:34.745+0700] {processor.py:157} INFO - Started process (PID=61943) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:38:34.745+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:38:34.746+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:38:34.745+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:38:34.794+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:38:35.568+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:38:35.568+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:38:35.592+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:38:35.591+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T01:38:35.621+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.878 seconds
+[2023-06-15T01:40:13.426+0700] {processor.py:157} INFO - Started process (PID=62245) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:40:13.428+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:40:13.428+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:40:13.428+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:40:13.486+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:40:14.281+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:40:14.281+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:40:14.295+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:40:14.295+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T01:40:14.309+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.883 seconds
+[2023-06-15T01:41:52.243+0700] {processor.py:157} INFO - Started process (PID=62498) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:41:52.244+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:41:52.245+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:41:52.245+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:41:52.305+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:41:53.038+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:41:53.038+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:41:53.051+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:41:53.051+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T01:41:53.065+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.822 seconds
+[2023-06-15T01:43:29.298+0700] {processor.py:157} INFO - Started process (PID=62706) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:43:29.298+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:43:29.299+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:43:29.299+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:43:29.349+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:43:30.084+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:43:30.084+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:43:30.096+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:43:30.096+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T01:43:30.110+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.813 seconds
+[2023-06-15T01:45:07.625+0700] {processor.py:157} INFO - Started process (PID=62860) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:45:07.627+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:45:07.627+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:45:07.627+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:45:07.676+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:45:08.411+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:45:08.411+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:45:08.424+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:45:08.424+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T01:45:08.438+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.813 seconds
+[2023-06-15T01:46:46.166+0700] {processor.py:157} INFO - Started process (PID=63078) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:46:46.167+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:46:46.168+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:46:46.168+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:46:46.243+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:46:46.929+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:46:46.929+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:46:46.941+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:46:46.941+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T01:46:46.955+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.789 seconds
+[2023-06-15T01:48:21.477+0700] {processor.py:157} INFO - Started process (PID=63284) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:48:21.478+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:48:21.478+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:48:21.478+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:48:21.525+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:48:22.241+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:48:22.241+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:48:22.254+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:48:22.254+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T01:48:22.268+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.791 seconds
+[2023-06-15T01:49:55.857+0700] {processor.py:157} INFO - Started process (PID=63445) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:49:55.857+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:49:55.858+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:49:55.858+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:49:55.903+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:49:56.583+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:49:56.583+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:49:56.596+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:49:56.596+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T01:49:56.617+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.760 seconds
+[2023-06-15T01:51:33.585+0700] {processor.py:157} INFO - Started process (PID=63701) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:51:33.586+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:51:33.587+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:51:33.586+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:51:33.649+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:51:34.402+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:51:34.402+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:51:34.415+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:51:34.415+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T01:51:34.430+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.846 seconds
+[2023-06-15T01:53:24.314+0700] {processor.py:157} INFO - Started process (PID=63959) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:53:24.315+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:53:24.316+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:53:24.316+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:53:24.373+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:53:25.242+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:53:25.242+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:53:25.256+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:53:25.256+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T01:53:25.270+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.957 seconds
+[2023-06-15T01:55:11.778+0700] {processor.py:157} INFO - Started process (PID=64124) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:55:11.779+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:55:11.780+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:55:11.780+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:55:11.857+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:55:12.790+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:55:12.789+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:55:12.806+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:55:12.806+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T01:55:12.827+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.049 seconds
+[2023-06-15T01:57:02.856+0700] {processor.py:157} INFO - Started process (PID=64493) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:57:02.857+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:57:02.858+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:57:02.858+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:57:02.916+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:57:03.781+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:57:03.781+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:57:03.796+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:57:03.796+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T01:57:03.812+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.956 seconds
+[2023-06-15T01:59:30.159+0700] {processor.py:157} INFO - Started process (PID=64823) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:59:30.161+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T01:59:30.163+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:59:30.162+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:59:30.363+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T01:59:33.187+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:59:33.187+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T01:59:33.242+0700] {logging_mixin.py:149} INFO - [2023-06-15T01:59:33.242+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T01:59:33.294+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 3.137 seconds
+[2023-06-15T02:02:24.564+0700] {processor.py:157} INFO - Started process (PID=65182) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:02:24.565+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T02:02:24.565+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:02:24.565+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:02:24.625+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:02:25.378+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:02:25.378+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T02:02:25.391+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:02:25.391+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T02:02:25.406+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 0.842 seconds
+[2023-06-15T02:05:25.791+0700] {processor.py:157} INFO - Started process (PID=65510) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:05:25.792+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T02:05:25.794+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:05:25.793+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:05:25.912+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:05:27.631+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:05:27.630+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T02:05:27.664+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:05:27.663+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T02:05:27.697+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.907 seconds
+[2023-06-15T02:08:45.806+0700] {processor.py:157} INFO - Started process (PID=65840) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:08:45.807+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T02:08:45.808+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:08:45.808+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:08:45.938+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:08:47.792+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:08:47.791+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T02:08:47.824+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:08:47.824+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T02:08:47.858+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 2.054 seconds
+[2023-06-15T02:12:07.935+0700] {processor.py:157} INFO - Started process (PID=66181) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:12:07.936+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T02:12:07.938+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:12:07.937+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:12:08.045+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:12:09.618+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:12:09.617+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T02:12:09.647+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:12:09.647+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T02:12:09.676+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.742 seconds
+[2023-06-15T02:15:17.636+0700] {processor.py:157} INFO - Started process (PID=66519) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:15:17.637+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T02:15:17.639+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:15:17.638+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:15:17.754+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:15:19.418+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:15:19.417+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T02:15:19.446+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:15:19.446+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T02:15:19.475+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.840 seconds
+[2023-06-15T02:18:32.955+0700] {processor.py:157} INFO - Started process (PID=66927) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:18:32.956+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T02:18:32.957+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:18:32.957+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:18:33.074+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:18:34.673+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:18:34.673+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T02:18:34.703+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:18:34.703+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T02:18:34.733+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.779 seconds
+[2023-06-15T02:21:42.938+0700] {processor.py:157} INFO - Started process (PID=67258) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:21:42.939+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T02:21:42.941+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:21:42.941+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:21:43.055+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:21:44.776+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:21:44.776+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T02:21:44.807+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:21:44.807+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T02:21:44.840+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.903 seconds
+[2023-06-15T02:25:03.551+0700] {processor.py:157} INFO - Started process (PID=67595) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:25:03.552+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T02:25:03.553+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:25:03.553+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:25:03.656+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:25:05.113+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:25:05.112+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T02:25:05.142+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:25:05.141+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T02:25:05.170+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.620 seconds
+[2023-06-15T02:28:17.875+0700] {processor.py:157} INFO - Started process (PID=67931) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:28:17.876+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T02:28:17.877+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:28:17.877+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:28:17.993+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:28:19.721+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:28:19.720+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T02:28:19.753+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:28:19.753+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T02:28:19.787+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.913 seconds
+[2023-06-15T02:31:23.189+0700] {processor.py:157} INFO - Started process (PID=68275) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:31:23.190+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T02:31:23.190+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:31:23.190+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:31:23.243+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:31:24.312+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:31:24.312+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T02:31:24.330+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:31:24.330+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T02:31:24.349+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.160 seconds
+[2023-06-15T02:34:44.387+0700] {processor.py:157} INFO - Started process (PID=68699) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:34:44.388+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T02:34:44.389+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:34:44.389+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:34:44.550+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:34:46.547+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:34:46.547+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T02:34:46.583+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:34:46.582+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T02:34:46.617+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 2.232 seconds
+[2023-06-15T02:38:27.793+0700] {processor.py:157} INFO - Started process (PID=69046) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:38:27.794+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T02:38:27.795+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:38:27.795+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:38:27.974+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:38:30.494+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:38:30.493+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T02:38:30.540+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:38:30.539+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T02:38:30.587+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 2.797 seconds
+[2023-06-15T02:42:04.649+0700] {processor.py:157} INFO - Started process (PID=69464) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:42:04.650+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T02:42:04.651+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:42:04.651+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:42:04.758+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:42:06.410+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:42:06.410+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T02:42:06.439+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:42:06.438+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T02:42:06.469+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.822 seconds
+[2023-06-15T02:45:34.655+0700] {processor.py:157} INFO - Started process (PID=69805) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:45:34.656+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T02:45:34.657+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:45:34.657+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:45:34.779+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:45:36.582+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:45:36.581+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T02:45:36.615+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:45:36.615+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T02:45:36.648+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.994 seconds
+[2023-06-15T02:48:58.200+0700] {processor.py:157} INFO - Started process (PID=70213) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:48:58.200+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T02:48:58.201+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:48:58.201+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:48:58.306+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:48:59.816+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:48:59.816+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T02:48:59.844+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:48:59.843+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T02:48:59.871+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.673 seconds
+[2023-06-15T02:52:21.374+0700] {processor.py:157} INFO - Started process (PID=70551) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:52:21.375+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T02:52:21.376+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:52:21.376+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:52:21.494+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:52:23.316+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:52:23.316+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T02:52:23.347+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:52:23.346+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T02:52:23.379+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 2.006 seconds
+[2023-06-15T02:56:00.276+0700] {processor.py:157} INFO - Started process (PID=70965) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:56:00.277+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T02:56:00.278+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:56:00.278+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:56:00.398+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:56:02.148+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:56:02.147+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T02:56:02.178+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:56:02.178+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T02:56:02.211+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.937 seconds
+[2023-06-15T02:59:16.161+0700] {processor.py:157} INFO - Started process (PID=71315) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:59:16.162+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T02:59:16.163+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:59:16.163+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:59:16.278+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T02:59:17.981+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:59:17.980+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T02:59:18.011+0700] {logging_mixin.py:149} INFO - [2023-06-15T02:59:18.010+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T02:59:18.041+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.882 seconds
+[2023-06-15T03:02:50.800+0700] {processor.py:157} INFO - Started process (PID=71671) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:02:50.802+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T03:02:50.803+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:02:50.803+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:02:50.945+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:02:52.844+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:02:52.844+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T03:02:52.880+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:02:52.879+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T03:02:52.914+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 2.116 seconds
+[2023-06-15T03:05:45.279+0700] {processor.py:157} INFO - Started process (PID=72012) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:05:45.281+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T03:05:45.282+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:05:45.282+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:05:45.410+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:05:47.333+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:05:47.332+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T03:05:47.369+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:05:47.369+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T03:05:47.406+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 2.128 seconds
+[2023-06-15T03:09:46.166+0700] {processor.py:157} INFO - Started process (PID=72437) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:09:46.167+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T03:09:46.168+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:09:46.168+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:09:46.285+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:09:48.042+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:09:48.042+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T03:09:48.075+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:09:48.075+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T03:09:48.109+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.945 seconds
+[2023-06-15T03:13:35.301+0700] {processor.py:157} INFO - Started process (PID=72842) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:13:35.301+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T03:13:35.303+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:13:35.302+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:13:35.418+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:13:37.090+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:13:37.090+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T03:13:37.120+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:13:37.120+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T03:13:37.151+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.851 seconds
+[2023-06-15T03:17:10.433+0700] {processor.py:157} INFO - Started process (PID=73254) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:17:10.434+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T03:17:10.436+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:17:10.435+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:17:10.580+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:17:12.772+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:17:12.772+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T03:17:12.811+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:17:12.811+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T03:17:12.848+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 2.416 seconds
+[2023-06-15T03:20:54.274+0700] {processor.py:157} INFO - Started process (PID=73604) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:20:54.275+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T03:20:54.276+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:20:54.276+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:20:54.384+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:20:56.011+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:20:56.010+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T03:20:56.038+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:20:56.038+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T03:20:56.068+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.795 seconds
+[2023-06-15T03:24:10.562+0700] {processor.py:157} INFO - Started process (PID=73975) to work on /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:24:10.563+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
+[2023-06-15T03:24:10.564+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:24:10.564+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:24:10.676+0700] {processor.py:836} INFO - DAG(s) dict_keys(['TheThree_airflow']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
+[2023-06-15T03:24:12.380+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:24:12.379+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-15T03:24:12.410+0700] {logging_mixin.py:149} INFO - [2023-06-15T03:24:12.410+0700] {dag.py:3486} INFO - Setting next_dagrun for TheThree_airflow to 2023-06-14T18:36:51.270805+00:00, run_after=2023-06-15T18:36:51.270805+00:00
+[2023-06-15T03:24:12.442+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.881 seconds

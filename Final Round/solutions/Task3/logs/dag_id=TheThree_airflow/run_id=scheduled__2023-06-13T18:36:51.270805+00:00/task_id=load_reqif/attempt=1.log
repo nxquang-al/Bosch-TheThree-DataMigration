@@ -1,0 +1,29 @@
+[2023-06-15T01:36:56.407+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TheThree_airflow.load_reqif scheduled__2023-06-13T18:36:51.270805+00:00 [queued]>
+[2023-06-15T01:36:56.412+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TheThree_airflow.load_reqif scheduled__2023-06-13T18:36:51.270805+00:00 [queued]>
+[2023-06-15T01:36:56.412+0700] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2023-06-15T01:36:56.420+0700] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): load_reqif> on 2023-06-13 18:36:51.270805+00:00
+[2023-06-15T01:36:56.422+0700] {standard_task_runner.py:57} INFO - Started process 61707 to run task
+[2023-06-15T01:36:56.428+0700] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'TheThree_airflow', 'load_reqif', 'scheduled__2023-06-13T18:36:51.270805+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/mainflow.py', '--cfg-path', '/var/folders/v7/qsb_cvl92z92z6jf7g1jc0zr0000gn/T/tmpd5awxkow']
+[2023-06-15T01:36:56.429+0700] {standard_task_runner.py:85} INFO - Job 38: Subtask load_reqif
+[2023-06-15T01:36:56.473+0700] {task_command.py:410} INFO - Running <TaskInstance: TheThree_airflow.load_reqif scheduled__2023-06-13T18:36:51.270805+00:00 [running]> on host macbook-pro.local
+[2023-06-15T01:36:56.515+0700] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='TheThree_airflow' AIRFLOW_CTX_TASK_ID='load_reqif' AIRFLOW_CTX_EXECUTION_DATE='2023-06-13T18:36:51.270805+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-06-13T18:36:51.270805+00:00'
+[2023-06-15T01:36:56.517+0700] {mainflow.py:14} INFO - Loading reqif from None
+[2023-06-15T01:36:56.517+0700] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 15, in load_reqif_task
+    reqif = load_reqif(reqif_filepath)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lap14202/.airflow/dags/src/load_reqif.py", line 7, in load_reqif
+    return xmltodict.parse(open(filename).read())
+                           ^^^^^^^^^^^^^^
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+[2023-06-15T01:36:56.524+0700] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=TheThree_airflow, task_id=load_reqif, execution_date=20230613T183651, start_date=20230614T183656, end_date=20230614T183656
+[2023-06-15T01:36:56.531+0700] {standard_task_runner.py:104} ERROR - Failed to execute job 38 for task load_reqif (expected str, bytes or os.PathLike object, not NoneType; 61707)
+[2023-06-15T01:36:56.574+0700] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-15T01:36:56.606+0700] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check
