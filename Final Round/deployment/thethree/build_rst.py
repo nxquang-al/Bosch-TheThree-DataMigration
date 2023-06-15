@@ -1,6 +1,6 @@
 import copy
-from .RstBuilder import RstBuilder
-from .HTMLParser import MyHTMLParser
+from thethree.RstBuilder import RstBuilder
+from thethree.HTMLParser import MyHTMLParser
 
 NAME_TAG = "@LONG-NAME"
 
@@ -21,7 +21,7 @@ def listify(obj):
     return obj if isinstance(obj, list) else [obj]
 
 
-def get_directives_data(artifact: dict, directives: list):
+def get_directives_data(config, artifact: dict, directives: list):
     """
     Returns the directives data for the given artifact
     """
@@ -53,7 +53,7 @@ def get_directives_data(artifact: dict, directives: list):
         if "directives" in directive:
             # recursively, directive in directive
             directive["directives"] = get_directives_data(
-                artifact, directive["directives"]
+                config, artifact, directive["directives"]
             )
     return directives
 
@@ -84,7 +84,7 @@ def build_rst_artifacts(rst, artifacts: list, config: dict):
             directives_config = copy.deepcopy(
                 rst_config[rst_type].get("directives", [])
             )
-            directives = listify(get_directives_data(artifact, directives_config))
+            directives = listify(get_directives_data(config, artifact, directives_config))
             rst.directives(directives)
             rst.newline()
 

@@ -1,3 +1,6 @@
 [submodule "Final Round/solutions/Task2/Test-Sphinx"]
 	path = Final Round/solutions/Task2/Test-Sphinx
 	url = git@github.com:R2th/Test-Sphinx.git
+[submodule "Final Round/solutions/Task2/coderace2023_theThree"]
+	path = Final Round/solutions/Task2/coderace2023_theThree
+	url = git@github.com:nguyensn29/coderace2023_theThree.git

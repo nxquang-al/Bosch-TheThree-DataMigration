@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 import logging
-from src import *
+from thethree import load_reqif, load_config, build_json, build_rst
 
 log = logging.getLogger(__name__)
 
@@ -49,17 +49,17 @@ def update_index_rst_task(**context):
 
 
 default_args = {
-    "depends_on_past": True,
-    "retries": 1,
-    "retry_delay": timedelta(seconds=1),
+    "owner": "The Three",
+    "depends_on_past": False,
+    "retries": None
 }
 
 with DAG(
-    dag_id="TheThree_airflow",
+    dag_id="TheThree_reqif_to_rst",
     default_args=default_args,
     description="TheThree Reqif to Rst DAG",
-    schedule=timedelta(days=1),
     start_date=datetime(2023, 1, 1),
+    schedule=None,
     catchup=False,
     tags=["reqif", "rst", "TheThree", "Bosch"],
 ) as dag:
