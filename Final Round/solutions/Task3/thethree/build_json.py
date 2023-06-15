@@ -125,7 +125,7 @@ def get_module_type(reqif: dict) -> str:
     return find_ref_object(reqif['SPEC-TYPES']['SPECIFICATION-TYPE'], ref)[NAME_TAG]
 
 
-def get_artifact_definition(spec_object: dict) -> str:
+def get_artifact_definition(reqif, spec_object: dict) -> str:
     """
     Returns the artifact definition of the spec object
     """
@@ -135,7 +135,7 @@ def get_artifact_definition(spec_object: dict) -> str:
     return definition
 
 
-def find_enum_value(ref_value):
+def find_enum_value(reqif, ref_value):
     """
     The function finds the long name of an enum value given its identifier.
 
@@ -147,7 +147,7 @@ def find_enum_value(ref_value):
     """
 
     dt_def_enum = list(
-        find_keys(load_reqif('../Requirements.reqif'), 'DATATYPE-DEFINITION-ENUMERATION'))[0]
+        find_keys(reqif, 'DATATYPE-DEFINITION-ENUMERATION'))[0]
 
     values = []
     for dt in dt_def_enum:
@@ -159,7 +159,7 @@ def find_enum_value(ref_value):
             return value.get(NAME_TAG)
 
 
-def get_artifact_attributes(spec_object: dict, definition: dict, config: dict) -> dict:
+def get_artifact_attributes(reqif, spec_object: dict, definition: dict, config: dict) -> dict:
     """
     Returns the artifact attributes of the spec object
     """
@@ -179,7 +179,7 @@ def get_artifact_attributes(spec_object: dict, definition: dict, config: dict) -
             attr_name = find_ref_object(source, ref)[NAME_TAG]
 
             if type_name == 'enumeration'.upper():
-                attr_value = find_enum_value(attr['VALUES']['ENUM-VALUE-REF'])
+                attr_value = find_enum_value(reqif, attr['VALUES']['ENUM-VALUE-REF'])
             else:
                 attr_value = attr.get(
                     '@THE-VALUE', attr.get('THE-VALUE'))
@@ -199,17 +199,17 @@ def get_artifact_attributes(spec_object: dict, definition: dict, config: dict) -
     return attributes
 
 
-def get_artifact(spec_object: dict, config: dict) -> dict:
+def get_artifact(reqif, spec_object: dict, config: dict) -> dict:
     """
     Returns the artifact of the spec object
     """
     artifact = dict()
 
-    definition = get_artifact_definition(spec_object)
+    definition = get_artifact_definition(reqif, spec_object)
     artifact_type = definition[NAME_TAG]
     set_value(artifact, artifact_type, config['type'])
 
-    attributes = get_artifact_attributes(spec_object, definition, config)
+    attributes = get_artifact_attributes(reqif, spec_object, definition, config)
 
     artifact.update(dict(sorted(attributes.items())))
 
@@ -225,12 +225,12 @@ def get_artifacts(reqif: dict, config: dict) -> list:
     ref_hierarchy = get_spec_object_ref_hierarchy(
         list(find_keys(reqif, 'SPEC-HIERARCHY'))[0])
 
-    for idx in tqdm(range(len(ref_hierarchy))):
+    for idx in range(len(ref_hierarchy)):
         ref = ref_hierarchy[idx]
 
         for spec_object in reqif['SPEC-OBJECTS']['SPEC-OBJECT']:
             if ref == spec_object.get('@IDENTIFIER'):
-                artifacts.append(get_artifact(spec_object, config))
+                artifacts.append(get_artifact(reqif, spec_object, config))
 
     return artifacts
 
