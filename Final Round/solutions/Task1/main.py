@@ -33,7 +33,7 @@ def map_caption(filename: str):
     E.g. "MO_RS" -> "Software Requirements"
          "SC_RS" -> "System Requirements"
     """
-    return "Software Requirements"
+    return "System Requirements"
 
 
 def auto_upload(file_path, cfg_path="github_config.yml"):
