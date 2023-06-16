@@ -1,6 +1,4 @@
 import xmltodict
-import yaml
-import json
 
 NAME_TAG = '@LONG-NAME'
 

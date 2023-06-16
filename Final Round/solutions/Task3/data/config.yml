@@ -43,7 +43,6 @@ module:
       ReqIF.Description:
         key: Description
 
-
       Status:
         value_mapping:
           NEW/CHANGED: New/Changed
@@ -52,10 +51,10 @@ module:
 
       __rst__:
         heading:
-          atifact_type: Heading
+          artifact_type: Heading
           value: Title
         information:
-          atifact_type: Information
+          artifact_type: Information
           directives:
             name: sw_req
             attributes:

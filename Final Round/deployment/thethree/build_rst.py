@@ -28,7 +28,8 @@ def get_directives_data(config, artifact: dict, directives: list):
     for directive in listify(directives):
         # Attribute Value text
         for key, value in directive.get("attributes", {}).items():
-            attr = find_property_have_key(config["artifacts"]["artifact"], value)
+            attr = find_property_have_key(
+                config["artifacts"]["artifact"], value)
 
             directive["attributes"][key] = artifact.get(value, value)
 
@@ -43,7 +44,8 @@ def get_directives_data(config, artifact: dict, directives: list):
         # Sub_directive, at the end of the rst
         if "sub_directives" in directive.keys():
             for key, value in directive.get("sub_directives", {}).items():
-                attr = find_property_have_key(config["artifacts"]["artifact"], value)
+                attr = find_property_have_key(
+                    config["artifacts"]["artifact"], value)
 
                 # If "value: ..." does not set in config list artifacts,
                 # then the value works as the key in Json, query directly from Json
@@ -62,9 +64,9 @@ def get_rst_type(artifact_type, rst_config):
     """
     Returns the rst type for the given artifact type
     """
-    if artifact_type == rst_config["heading"]["atifact_type"]:
+    if artifact_type == rst_config["heading"]["artifact_type"]:
         return "heading"
-    if artifact_type == rst_config["information"]["atifact_type"]:
+    if artifact_type == rst_config["information"]["artifact_type"]:
         return "information"
     return "other"
 
@@ -84,7 +86,8 @@ def build_rst_artifacts(rst, artifacts: list, config: dict):
             directives_config = copy.deepcopy(
                 rst_config[rst_type].get("directives", [])
             )
-            directives = listify(get_directives_data(config, artifact, directives_config))
+            directives = listify(get_directives_data(
+                config, artifact, directives_config))
             rst.directives(directives)
             rst.newline()
 
