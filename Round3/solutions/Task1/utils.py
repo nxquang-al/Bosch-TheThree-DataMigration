@@ -1,8 +1,17 @@
 import argparse
 import os
 import platform
-
+import re
 import psutil
+
+
+def preprocess(content):
+    start = re.sub(r'<THE-VALUE><div',
+                   '<THE-VALUE><![CDATA[<div', content)
+    end = re.sub(r'</div></THE-VALUE>',
+                 '</div>]]></THE-VALUE>', start)
+    end = re.sub(r'/></THE-VALUE>', '></div>]]></THE-VALUE>', end)
+    return end
 
 
 def init_argument():

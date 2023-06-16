@@ -1,5 +1,6 @@
 import yaml
 import xmltodict
+import re
 
 from utils import is_locked
 
@@ -31,13 +32,15 @@ def format_value(config: dict, value):
     """
     value_type = config.get('value_type')
 
-    if isinstance(value, dict) and (value_type is None or value_type == 'string'):
+    if 'div' in value and (value_type is None or value_type == 'string'):
+        value = xmltodict.parse(value)
         value = value.get('div', {}).get('#text', '')
 
     if value_type == 'number':
         value = int(value)
     elif value_type == 'html_string':
-        value = xmltodict.unparse(value, pretty=True)[39:]
+        pass
+        # value = xmltodict.unparse(value, pretty=True)[39:]
 
     return value
 

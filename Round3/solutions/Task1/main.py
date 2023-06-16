@@ -222,7 +222,7 @@ def load_reqif(filename: str) -> dict:
     Loads the reqif file and returns the reqif content
     """
     if is_locked(filename) is not True:
-        return xmltodict.parse(open(filename).read())['REQ-IF']['CORE-CONTENT']['REQ-IF-CONTENT']
+        return xmltodict.parse(preprocess(open(filename).read()))['REQ-IF']['CORE-CONTENT']['REQ-IF-CONTENT']
     else:
         raise KeyError(
             'File %s is locked, please end to write the file and close the file' % filename)
@@ -239,7 +239,7 @@ if __name__ == '__main__':
 
     if is_locked(OUT_SRC) is not True:
         json.dump(build_json(reqif, config), open(
-            OUT_SRC, 'w'), indent=4)
+            OUT_SRC, 'w'), indent=2)
     else:
         raise KeyError(
             'File %s is locked, please end to write the file and close the file' % OUT_SRC)
