@@ -70,7 +70,6 @@ To execute the DAG, run the `thethree_reqif_to_rst` task in Airflow. Make sure t
 
 Note: The path to the files must start from root directory (`/`)
 
-
 Please ensure that the necessary dependencies and modules are installed in the Airflow environment to successfully execute the DAG.
 
 # Docker Compose for Airflow
@@ -87,9 +86,9 @@ To trigger the Airflow DAG, you need to provide the following configuration para
 
 ```json
 {
-    "reqif_file_path": "/opt/airflow/config/requirements.reqif",
-    "mapping_config_file_path": "/opt/airflow/config/mapping_config.yml",
-    "github_config_file_path": "/opt/airflow/config/github_config.yml"
+  "reqif_file_path": "/opt/airflow/config/requirements.reqif",
+  "mapping_config_file_path": "/opt/airflow/config/mapping_config.yml",
+  "github_config_file_path": "/opt/airflow/config/github_config.yml"
 }
 ```
 
@@ -101,7 +100,6 @@ Before running Airflow for the first time, you need to initialize the environmen
 
 ```bash
 echo -e "AIRFLOW_UID=$(id -u)" > .env
-docker compose up airflow-init
 ```
 
 This command sets up the necessary environment variables and initializes the Airflow database.
@@ -111,7 +109,7 @@ This command sets up the necessary environment variables and initializes the Air
 Once the initialization is complete, you can start running Airflow with the following command:
 
 ```bash
-docker compose up
+docker-compose up
 ```
 
 This command starts all the Airflow services defined in the Docker Compose configuration. Airflow will start executing the "thethree_reqif_to_rst" DAG based on the triggers or schedules you have set.
@@ -121,7 +119,7 @@ This command starts all the Airflow services defined in the Docker Compose confi
 To stop and remove all the Docker services created for Airflow, you can use the following command:
 
 ```bash
-docker compose down --volumes --rmi all
+docker-compose down --volumes --rmi all
 ```
 
 This command stops the services and removes the associated volumes and images.

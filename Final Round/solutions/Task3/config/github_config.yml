@@ -1,8 +1,8 @@
 AUTHENTICATION:
-  TOKEN: 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
-  USERNAME: nxquang-al
-MESSAGE: test-github-access-token
+  TOKEN: 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
+  USERNAME: R2th
+MESSAGE: abcs
 REPOSITORY:
   BRANCH: main
-  NAME: Test-github-api
-  OWNER: R2th
+  NAME: coderace2023_theThree
+  OWNER: nguyensn29
