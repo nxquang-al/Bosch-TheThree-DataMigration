@@ -1,0 +1,26 @@
+[2023-06-16T13:14:29.707+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: thethree_reqif_to_rst.upload_to_github manual__2023-06-16T06:14:00+00:00 [queued]>
+[2023-06-16T13:14:29.713+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: thethree_reqif_to_rst.upload_to_github manual__2023-06-16T06:14:00+00:00 [queued]>
+[2023-06-16T13:14:29.713+0700] {taskinstance.py:1308} INFO - Starting attempt 1 of 0
+[2023-06-16T13:14:29.731+0700] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): upload_to_github> on 2023-06-16 06:14:00+00:00
+[2023-06-16T13:14:29.735+0700] {standard_task_runner.py:57} INFO - Started process 7461 to run task
+[2023-06-16T13:14:29.742+0700] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'thethree_reqif_to_rst', 'upload_to_github', 'manual__2023-06-16T06:14:00+00:00', '--job-id', '332', '--raw', '--subdir', 'DAGS_FOLDER/mainflow.py', '--cfg-path', '/var/folders/v7/qsb_cvl92z92z6jf7g1jc0zr0000gn/T/tmpavudm5h0']
+[2023-06-16T13:14:29.744+0700] {standard_task_runner.py:85} INFO - Job 332: Subtask upload_to_github
+[2023-06-16T13:14:29.802+0700] {task_command.py:410} INFO - Running <TaskInstance: thethree_reqif_to_rst.upload_to_github manual__2023-06-16T06:14:00+00:00 [running]> on host macbook-pro.local
+[2023-06-16T13:14:29.872+0700] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='The Three' AIRFLOW_CTX_DAG_ID='thethree_reqif_to_rst' AIRFLOW_CTX_TASK_ID='upload_to_github' AIRFLOW_CTX_EXECUTION_DATE='2023-06-16T06:14:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-16T06:14:00+00:00'
+[2023-06-16T13:14:29.885+0700] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 50, in upload_to_github_task
+    upload_to_github(github_config, rst_filecontent, 'docs/src/abcde.rst')
+  File "/Users/lap14202/.airflow/thethree/upload_to_github.py", line 6, in upload_to_github
+    github.upload(
+TypeError: Github.upload() got an unexpected keyword argument 'file_content'
+[2023-06-16T13:14:29.892+0700] {taskinstance.py:1345} INFO - Marking task as FAILED. dag_id=thethree_reqif_to_rst, task_id=upload_to_github, execution_date=20230616T061400, start_date=20230616T061429, end_date=20230616T061429
+[2023-06-16T13:14:29.900+0700] {standard_task_runner.py:104} ERROR - Failed to execute job 332 for task upload_to_github (Github.upload() got an unexpected keyword argument 'file_content'; 7461)
+[2023-06-16T13:14:29.926+0700] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-16T13:14:29.956+0700] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

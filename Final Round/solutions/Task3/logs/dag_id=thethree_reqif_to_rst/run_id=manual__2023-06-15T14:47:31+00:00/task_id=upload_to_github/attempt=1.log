@@ -1,0 +1,21 @@
+[2023-06-15T21:48:04.727+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: thethree_reqif_to_rst.upload_to_github manual__2023-06-15T14:47:31+00:00 [queued]>
+[2023-06-15T21:48:04.734+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: thethree_reqif_to_rst.upload_to_github manual__2023-06-15T14:47:31+00:00 [queued]>
+[2023-06-15T21:48:04.734+0700] {taskinstance.py:1308} INFO - Starting attempt 1 of 0
+[2023-06-15T21:48:04.749+0700] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): upload_to_github> on 2023-06-15 14:47:31+00:00
+[2023-06-15T21:48:04.752+0700] {standard_task_runner.py:57} INFO - Started process 83112 to run task
+[2023-06-15T21:48:04.761+0700] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'thethree_reqif_to_rst', 'upload_to_github', 'manual__2023-06-15T14:47:31+00:00', '--job-id', '158', '--raw', '--subdir', 'DAGS_FOLDER/mainflow.py', '--cfg-path', '/var/folders/v7/qsb_cvl92z92z6jf7g1jc0zr0000gn/T/tmpp23n2rb3']
+[2023-06-15T21:48:04.763+0700] {standard_task_runner.py:85} INFO - Job 158: Subtask upload_to_github
+[2023-06-15T21:48:04.821+0700] {task_command.py:410} INFO - Running <TaskInstance: thethree_reqif_to_rst.upload_to_github manual__2023-06-15T14:47:31+00:00 [running]> on host macbook-pro.local
+[2023-06-15T21:48:04.893+0700] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='The Three' AIRFLOW_CTX_DAG_ID='thethree_reqif_to_rst' AIRFLOW_CTX_TASK_ID='upload_to_github' AIRFLOW_CTX_EXECUTION_DATE='2023-06-15T14:47:31+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-15T14:47:31+00:00'
+[2023-06-15T21:48:04.905+0700] {mainflow.py:48} INFO - {'AUTHENTICATION': {'TOKEN': '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', 'USERNAME': 'nxquang-al'}, 'MESSAGE': 'test-github-access-token', 'REPOSITORY': {'BRANCH': 'main', 'NAME': 'Test-github-api', 'OWNER': 'R2th'}}
+[2023-06-15T21:48:04.906+0700] {mainflow.py:49} INFO - /Users/lap14202/.airflow/data/Requirements.rst
+[2023-06-15T21:48:04.907+0700] {upload_to_github.py:21} INFO - https://api.github.com/repos/R2th/Test-github-api/contents/Users/lap14202/.airflow/data/Requirements.rst
+[2023-06-15T21:48:04.908+0700] {upload_to_github.py:22} INFO - {'Authorization': 'Bearer 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', 'Content-Type': 'application/vnd.github+json'}
+[2023-06-15T21:48:04.909+0700] {upload_to_github.py:23} INFO - main
+[2023-06-15T21:49:45.375+0700] {local_task_job_runner.py:291} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2023-06-15T21:49:45.401+0700] {process_utils.py:131} INFO - Sending 15 to group 83112. PIDs of all processes in the group: [83112]
+[2023-06-15T21:49:45.401+0700] {process_utils.py:86} INFO - Sending the signal 15 to group 83112
+[2023-06-15T21:50:45.426+0700] {process_utils.py:149} WARNING - process psutil.Process(pid=83112, name='Python', status='running', started='21:48:04') did not respond to SIGTERM. Trying SIGKILL
+[2023-06-15T21:50:45.427+0700] {process_utils.py:86} INFO - Sending the signal 9 to group 83112
+[2023-06-15T21:50:45.442+0700] {process_utils.py:79} INFO - Process psutil.Process(pid=83112, name='Python', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='21:48:04') (83112) terminated with exit code -9
+[2023-06-15T21:50:45.443+0700] {standard_task_runner.py:172} ERROR - Job 158 was killed before it finished (likely due to running out of memory)

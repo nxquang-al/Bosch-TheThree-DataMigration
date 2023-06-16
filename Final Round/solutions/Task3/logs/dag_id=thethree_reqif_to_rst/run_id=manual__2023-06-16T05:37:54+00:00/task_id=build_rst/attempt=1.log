@@ -1,0 +1,33 @@
+[2023-06-16T12:38:25.584+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: thethree_reqif_to_rst.build_rst manual__2023-06-16T05:37:54+00:00 [queued]>
+[2023-06-16T12:38:25.592+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: thethree_reqif_to_rst.build_rst manual__2023-06-16T05:37:54+00:00 [queued]>
+[2023-06-16T12:38:25.593+0700] {taskinstance.py:1308} INFO - Starting attempt 1 of 0
+[2023-06-16T12:38:25.608+0700] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): build_rst> on 2023-06-16 05:37:54+00:00
+[2023-06-16T12:38:25.612+0700] {standard_task_runner.py:57} INFO - Started process 2194 to run task
+[2023-06-16T12:38:25.620+0700] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'thethree_reqif_to_rst', 'build_rst', 'manual__2023-06-16T05:37:54+00:00', '--job-id', '293', '--raw', '--subdir', 'DAGS_FOLDER/mainflow.py', '--cfg-path', '/var/folders/v7/qsb_cvl92z92z6jf7g1jc0zr0000gn/T/tmpgd2fggxd']
+[2023-06-16T12:38:25.623+0700] {standard_task_runner.py:85} INFO - Job 293: Subtask build_rst
+[2023-06-16T12:38:25.688+0700] {task_command.py:410} INFO - Running <TaskInstance: thethree_reqif_to_rst.build_rst manual__2023-06-16T05:37:54+00:00 [running]> on host macbook-pro.local
+[2023-06-16T12:38:25.793+0700] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='The Three' AIRFLOW_CTX_DAG_ID='thethree_reqif_to_rst' AIRFLOW_CTX_TASK_ID='build_rst' AIRFLOW_CTX_EXECUTION_DATE='2023-06-16T05:37:54+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-16T05:37:54+00:00'
+[2023-06-16T12:38:25.809+0700] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 40, in build_rst_task
+    rst_file_content = build_rst(json_data, config)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lap14202/.airflow/thethree/build_rst.py", line 100, in build_rst
+    build_rst_artifacts(rst, artifacts, config["artifacts"]["artifact"])
+  File "/Users/lap14202/.airflow/thethree/build_rst.py", line 88, in build_rst_artifacts
+    rst.directives(directives)
+  File "/Users/lap14202/.airflow/thethree/RstBuilder.py", line 53, in directives
+    self.directive(
+  File "/Users/lap14202/.airflow/thethree/RstBuilder.py", line 34, in directive
+    self.content(content, indent)
+TypeError: 'str' object is not callable
+[2023-06-16T12:38:25.818+0700] {taskinstance.py:1345} INFO - Marking task as FAILED. dag_id=thethree_reqif_to_rst, task_id=build_rst, execution_date=20230616T053754, start_date=20230616T053825, end_date=20230616T053825
+[2023-06-16T12:38:25.826+0700] {standard_task_runner.py:104} ERROR - Failed to execute job 293 for task build_rst ('str' object is not callable; 2194)
+[2023-06-16T12:38:25.837+0700] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-16T12:38:25.867+0700] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

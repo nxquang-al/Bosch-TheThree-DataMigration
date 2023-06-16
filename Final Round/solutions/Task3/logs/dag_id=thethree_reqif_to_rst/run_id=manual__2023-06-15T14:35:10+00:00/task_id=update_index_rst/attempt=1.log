@@ -1,0 +1,13 @@
+[2023-06-15T21:37:37.442+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: thethree_reqif_to_rst.update_index_rst manual__2023-06-15T14:35:10+00:00 [queued]>
+[2023-06-15T21:37:37.452+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: thethree_reqif_to_rst.update_index_rst manual__2023-06-15T14:35:10+00:00 [queued]>
+[2023-06-15T21:37:37.452+0700] {taskinstance.py:1308} INFO - Starting attempt 1 of 0
+[2023-06-15T21:37:37.467+0700] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): update_index_rst> on 2023-06-15 14:35:10+00:00
+[2023-06-15T21:37:37.471+0700] {standard_task_runner.py:57} INFO - Started process 81875 to run task
+[2023-06-15T21:37:37.478+0700] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'thethree_reqif_to_rst', 'update_index_rst', 'manual__2023-06-15T14:35:10+00:00', '--job-id', '153', '--raw', '--subdir', 'DAGS_FOLDER/mainflow.py', '--cfg-path', '/var/folders/v7/qsb_cvl92z92z6jf7g1jc0zr0000gn/T/tmpop2bbets']
+[2023-06-15T21:37:37.480+0700] {standard_task_runner.py:85} INFO - Job 153: Subtask update_index_rst
+[2023-06-15T21:37:37.548+0700] {task_command.py:410} INFO - Running <TaskInstance: thethree_reqif_to_rst.update_index_rst manual__2023-06-15T14:35:10+00:00 [running]> on host macbook-pro.local
+[2023-06-15T21:37:37.623+0700] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='The Three' AIRFLOW_CTX_DAG_ID='thethree_reqif_to_rst' AIRFLOW_CTX_TASK_ID='update_index_rst' AIRFLOW_CTX_EXECUTION_DATE='2023-06-15T14:35:10+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-15T14:35:10+00:00'
+[2023-06-15T21:37:37.638+0700] {python.py:183} INFO - Done. Returned value was: None
+[2023-06-15T21:37:37.644+0700] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=thethree_reqif_to_rst, task_id=update_index_rst, execution_date=20230615T143510, start_date=20230615T143737, end_date=20230615T143737
+[2023-06-15T21:37:37.663+0700] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-15T21:37:37.681+0700] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

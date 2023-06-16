@@ -1,0 +1,25 @@
+[2023-06-16T13:01:26.425+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: thethree_reqif_to_rst.update_index_rst manual__2023-06-16T06:00:49+00:00 [queued]>
+[2023-06-16T13:01:26.435+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: thethree_reqif_to_rst.update_index_rst manual__2023-06-16T06:00:49+00:00 [queued]>
+[2023-06-16T13:01:26.436+0700] {taskinstance.py:1308} INFO - Starting attempt 1 of 0
+[2023-06-16T13:01:26.451+0700] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): update_index_rst> on 2023-06-16 06:00:49+00:00
+[2023-06-16T13:01:26.455+0700] {standard_task_runner.py:57} INFO - Started process 5521 to run task
+[2023-06-16T13:01:26.462+0700] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'thethree_reqif_to_rst', 'update_index_rst', 'manual__2023-06-16T06:00:49+00:00', '--job-id', '324', '--raw', '--subdir', 'DAGS_FOLDER/mainflow.py', '--cfg-path', '/var/folders/v7/qsb_cvl92z92z6jf7g1jc0zr0000gn/T/tmpj8izkslg']
+[2023-06-16T13:01:26.466+0700] {standard_task_runner.py:85} INFO - Job 324: Subtask update_index_rst
+[2023-06-16T13:01:26.532+0700] {task_command.py:410} INFO - Running <TaskInstance: thethree_reqif_to_rst.update_index_rst manual__2023-06-16T06:00:49+00:00 [running]> on host macbook-pro.local
+[2023-06-16T13:01:26.633+0700] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='The Three' AIRFLOW_CTX_DAG_ID='thethree_reqif_to_rst' AIRFLOW_CTX_TASK_ID='update_index_rst' AIRFLOW_CTX_EXECUTION_DATE='2023-06-16T06:00:49+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-16T06:00:49+00:00'
+[2023-06-16T13:01:26.653+0700] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lap14202/.airflow/dags/mainflow.py", line 57, in update_index_rst_task
+    update_index_rst(github_config, json_data[config['module']['type']])
+                                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'dict'
+[2023-06-16T13:01:26.665+0700] {taskinstance.py:1345} INFO - Marking task as FAILED. dag_id=thethree_reqif_to_rst, task_id=update_index_rst, execution_date=20230616T060049, start_date=20230616T060126, end_date=20230616T060126
+[2023-06-16T13:01:26.688+0700] {standard_task_runner.py:104} ERROR - Failed to execute job 324 for task update_index_rst (unhashable type: 'dict'; 5521)
+[2023-06-16T13:01:26.734+0700] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-16T13:01:26.756+0700] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,91 @@
+[2023-06-15T20:29:58.341+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: thethree_reqif_to_rst.upload_to_github manual__2023-06-15T13:29:37+00:00 [queued]>
+[2023-06-15T20:29:58.346+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: thethree_reqif_to_rst.upload_to_github manual__2023-06-15T13:29:37+00:00 [queued]>
+[2023-06-15T20:29:58.346+0700] {taskinstance.py:1308} INFO - Starting attempt 1 of 0
+[2023-06-15T20:29:58.355+0700] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): upload_to_github> on 2023-06-15 13:29:37+00:00
+[2023-06-15T20:29:58.358+0700] {standard_task_runner.py:57} INFO - Started process 73344 to run task
+[2023-06-15T20:29:58.363+0700] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'thethree_reqif_to_rst', 'upload_to_github', 'manual__2023-06-15T13:29:37+00:00', '--job-id', '100', '--raw', '--subdir', 'DAGS_FOLDER/mainflow.py', '--cfg-path', '/var/folders/v7/qsb_cvl92z92z6jf7g1jc0zr0000gn/T/tmpsltqojev']
+[2023-06-15T20:29:58.365+0700] {standard_task_runner.py:85} INFO - Job 100: Subtask upload_to_github
+[2023-06-15T20:29:58.409+0700] {task_command.py:410} INFO - Running <TaskInstance: thethree_reqif_to_rst.upload_to_github manual__2023-06-15T13:29:37+00:00 [running]> on host macbook-pro.local
+[2023-06-15T20:29:58.453+0700] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='The Three' AIRFLOW_CTX_DAG_ID='thethree_reqif_to_rst' AIRFLOW_CTX_TASK_ID='upload_to_github' AIRFLOW_CTX_EXECUTION_DATE='2023-06-15T13:29:37+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-15T13:29:37+00:00'
+[2023-06-15T20:29:58.462+0700] {logging_mixin.py:149} WARNING - --- Logging error ---
+[2023-06-15T20:29:58.465+0700] {logging_mixin.py:149} WARNING - Traceback (most recent call last):
+[2023-06-15T20:29:58.465+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/logging/__init__.py", line 1110, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+[2023-06-15T20:29:58.466+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/logging/__init__.py", line 953, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+[2023-06-15T20:29:58.466+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/logging/__init__.py", line 687, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+[2023-06-15T20:29:58.466+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/logging/__init__.py", line 377, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+[2023-06-15T20:29:58.467+0700] {logging_mixin.py:149} WARNING - TypeError: not all arguments converted during string formatting
+[2023-06-15T20:29:58.467+0700] {logging_mixin.py:149} WARNING - Call stack:
+[2023-06-15T20:29:58.477+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/bin/airflow", line 8, in <module>
+    sys.exit(main())
+[2023-06-15T20:29:58.477+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/__main__.py", line 48, in main
+    args.func(args)
+[2023-06-15T20:29:58.477+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 51, in command
+    return func(*args, **kwargs)
+[2023-06-15T20:29:58.477+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/utils/cli.py", line 112, in wrapper
+    return f(*args, **kwargs)
+[2023-06-15T20:29:58.478+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 425, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+[2023-06-15T20:29:58.478+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 203, in _run_task_by_selected_method
+    return _run_task_by_local_task_job(args, ti)
+[2023-06-15T20:29:58.478+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 265, in _run_task_by_local_task_job
+    ret = run_job(job=job_runner.job, execute_callable=job_runner._execute)
+[2023-06-15T20:29:58.478+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, session=session, **kwargs)
+[2023-06-15T20:29:58.479+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/jobs/job.py", line 284, in run_job
+    return execute_job(job, execute_callable=execute_callable)
+[2023-06-15T20:29:58.479+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/jobs/job.py", line 313, in execute_job
+    ret = execute_callable()
+[2023-06-15T20:29:58.480+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/jobs/local_task_job_runner.py", line 159, in _execute
+    self.task_runner.start()
+[2023-06-15T20:29:58.480+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 45, in start
+    self.process = self._start_by_fork()
+[2023-06-15T20:29:58.480+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/task/task_runner/standard_task_runner.py", line 97, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+[2023-06-15T20:29:58.480+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/cli/cli_config.py", line 51, in command
+    return func(*args, **kwargs)
+[2023-06-15T20:29:58.481+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/utils/cli.py", line 112, in wrapper
+    return f(*args, **kwargs)
+[2023-06-15T20:29:58.481+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 425, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+[2023-06-15T20:29:58.481+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 205, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+[2023-06-15T20:29:58.482+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 284, in _run_raw_task
+    return ti._run_raw_task(
+[2023-06-15T20:29:58.482+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, session=session, **kwargs)
+[2023-06-15T20:29:58.482+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 1407, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode)
+[2023-06-15T20:29:58.483+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 1558, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+[2023-06-15T20:29:58.483+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 1628, in _execute_task
+    result = execute_callable(context=context)
+[2023-06-15T20:29:58.483+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+[2023-06-15T20:29:58.484+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+[2023-06-15T20:29:58.484+0700] {logging_mixin.py:149} WARNING -   File "/Users/lap14202/.airflow/dags/mainflow.py", line 50, in upload_to_github_task
+    log.info(github_config, rst_filepath)
+[2023-06-15T20:29:58.484+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/logging/__init__.py", line 1489, in info
+    self._log(INFO, msg, args, **kwargs)
+[2023-06-15T20:29:58.484+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/logging/__init__.py", line 1634, in _log
+    self.handle(record)
+[2023-06-15T20:29:58.485+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/logging/__init__.py", line 1644, in handle
+    self.callHandlers(record)
+[2023-06-15T20:29:58.485+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/logging/__init__.py", line 1706, in callHandlers
+    hdlr.handle(record)
+[2023-06-15T20:29:58.485+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/logging/__init__.py", line 978, in handle
+    self.emit(record)
+[2023-06-15T20:29:58.485+0700] {logging_mixin.py:149} WARNING -   File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/utils/log/file_task_handler.py", line 211, in emit
+    self.handler.emit(record)
+[2023-06-15T20:29:58.486+0700] {logging_mixin.py:149} WARNING - Message: {'AUTHENTICATION': {'TOKEN': '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', 'USERNAME': 'nxquang-al'}, 'MESSAGE': 'test-github-access-token', 'REPOSITORY': {'BRANCH': 'main', 'NAME': 'Test-github-api', 'OWNER': 'R2th'}}
+Arguments: ('/Users/lap14202/.airflow/data/Requirements.rst',)
+[2023-06-15T20:31:34.022+0700] {process_utils.py:131} INFO - Sending 15 to group 73344. PIDs of all processes in the group: [73344]
+[2023-06-15T20:31:34.022+0700] {process_utils.py:86} INFO - Sending the signal 15 to group 73344
