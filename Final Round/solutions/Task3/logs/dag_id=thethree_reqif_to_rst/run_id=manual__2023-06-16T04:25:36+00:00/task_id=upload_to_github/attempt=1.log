@@ -1,0 +1,11 @@
+[2023-06-16T11:26:10.921+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: thethree_reqif_to_rst.upload_to_github manual__2023-06-16T04:25:36+00:00 [queued]>
+[2023-06-16T11:26:10.929+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: thethree_reqif_to_rst.upload_to_github manual__2023-06-16T04:25:36+00:00 [queued]>
+[2023-06-16T11:26:10.930+0700] {taskinstance.py:1308} INFO - Starting attempt 1 of 0
+[2023-06-16T11:26:10.946+0700] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): upload_to_github> on 2023-06-16 04:25:36+00:00
+[2023-06-16T11:26:10.950+0700] {standard_task_runner.py:57} INFO - Started process 91981 to run task
+[2023-06-16T11:26:10.956+0700] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'thethree_reqif_to_rst', 'upload_to_github', 'manual__2023-06-16T04:25:36+00:00', '--job-id', '217', '--raw', '--subdir', 'DAGS_FOLDER/mainflow.py', '--cfg-path', '/var/folders/v7/qsb_cvl92z92z6jf7g1jc0zr0000gn/T/tmpb_gog10i']
+[2023-06-16T11:26:10.958+0700] {standard_task_runner.py:85} INFO - Job 217: Subtask upload_to_github
+[2023-06-16T11:27:36.591+0700] {local_task_job_runner.py:291} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2023-06-16T11:27:36.615+0700] {process_utils.py:131} INFO - Sending 15 to group 91981. PIDs of all processes in the group: [91981]
+[2023-06-16T11:27:36.616+0700] {process_utils.py:86} INFO - Sending the signal 15 to group 91981
+[2023-06-16T11:27:36.620+0700] {process_utils.py:79} INFO - Process psutil.Process(pid=91981, status='terminated', exitcode=<Negsignal.SIGTERM: -15>, started='11:26:10') (91981) terminated with exit code -15

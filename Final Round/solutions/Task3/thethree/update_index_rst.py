@@ -1,22 +1,26 @@
-from thethree.upload_to_github import upload_to_github
+from thethree.utils.Github import Github
+import base64
 
-def map_caption(filename: str):
+
+def map_caption(file_name: str):
     """
-    Modify this function to map the filename or its module type to the corresponding toctree caption.
+    Modify this function to map the file_name or its module type to the corresponding toctree caption.
     E.g. "MO_RS" -> "Software Requirements"
          "SC_RS" -> "System Requirements"
     """
     return "System Requirements"
 
 
+def update_index_rst(github_config, rst_file_path, module_type):
+    index_rst_file_path = "docs/index.rst"
+    rst_file_path.replace("docs", "")
+    github = Github(github_config)
 
-def update_index_rst(github_config, index_file_path: str, new_file_path: str):
+    # Pull the latest index.rst from GitHub
+    content = github.pull(index_rst_file_path)
+
     # Define the file name and caption to update
-    caption = map_caption(new_file_path)
-
-    # Read in the contents of the index.rst file
-    with open(index_file_path, "r") as f:
-        content = f.read()
+    caption = map_caption(module_type)
 
     # Find the toctree directive with the caption we want to update
     start = content.find(f":caption: {caption}")
@@ -41,14 +45,14 @@ def update_index_rst(github_config, index_file_path: str, new_file_path: str):
     current_options = "\n".join(current_options[1:])
     # current_options now looks like: "   :maxdepth: 1\n  :caption: Software Requirement"
 
-    current_files = content[mid + 2 : end].split("\n")
+    current_files = content[mid + 2: end].split("\n")
     print(current_files)
     current_files = [e.strip() for e in current_files if e.startswith(" ")]
     # current_files now is a list of file paths in the toctree directive,
     # e.g. ["./sw_req.rst", "./sw_req_2.rst"]
 
     # Generate a new toctree directive with the updated file path
-    new_files = current_files + [new_file_path]
+    new_files = current_files + [rst_file_path]
     new_options = current_options + "\n" if current_options else ""
     new_directive = f".. toctree::\n{new_options}\n"
     new_directive += "\n".join(f"   {file}" for file in new_files)
@@ -56,9 +60,5 @@ def update_index_rst(github_config, index_file_path: str, new_file_path: str):
     # Replace the old toctree directive with the new one
     content = content[:start] + new_directive + content[end:]
 
-    # Write the updated content back to the index.rst file
-    with open(index_file_path, "w") as f:
-        f.write(content)
-
     # Automatically upload index.rst to GitHub if file is updated
-    upload_to_github(github_config, index_file_path)
+    github.upload(index_rst_file_path, content)
