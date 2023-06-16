@@ -1,5 +1,5 @@
 import argparse
-from github import retrieve_SHA, upload
+from github import Github
 from utils import load_config
 
 
@@ -10,24 +10,16 @@ def init_arguments():
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
-        "-i",
-        "--input_file",
-        default="index.rst",
-        help="Path to the index.rst.",
-    )
-
-    parser.add_argument(
-        "-n",
-        "--new_file_path",
-        default="new_file.rst",
-        help="Path to the new requirement file",
+        "-f",
+        "--file_path",
+        help="Path to the new rst file",
     )
 
     args = parser.parse_args()
-    return args.input_file, args.new_file_path
+    return args.file_path
 
 
-def map_caption(filename: str):
+def map_caption(module_type: str):
     """
     Modify this function to map the filename or its module type to the corresponding toctree caption.
     E.g. "MO_RS" -> "Software Requirements"
@@ -36,47 +28,27 @@ def map_caption(filename: str):
     return "System Requirements"
 
 
-def auto_upload(file_path, cfg_path="github_config.yml"):
+def update_index_rst(
+    github_config: dict, new_rst_file_path: str, module_type: str = "SC_RS"
+):
     """
-    Automatically upload the file to GitHub
+    Get the content of index.rst from GitHub, modify it, and finally upload it again.
+
     .. Args::
-        :file_path: path to the file to upload, in this case is the index.rst
-        :cfg_path: path to the GitHub config file, which contains all required information for pushing.
+        :github_config: config for GitHub api setup
+        :new_rst_file_path: path to the new rst file
+        :module_type: Module Type of this new rst file, used to map caption
+
     """
-    config = load_config(cfg_path)
-    assert config is not None  # To ensure INP_CONFIG is valid
-
-    api_url = f"https://api.github.com/repos/{config['REPOSITORY']['OWNER']}/{config['REPOSITORY']['NAME']}/contents/"
-    headers = {
-        "Authorization": f"""Bearer {config['AUTHENTICATION']['TOKEN']}""",
-        "Content-Type": "application/vnd.github+json",
-    }
-
-    # retreive file's SHA before upload
-    sha = retrieve_SHA(
-        api_url,
-        headers,
-        branch=config["REPOSITORY"]["BRANCH"],
-        filename=file_path,
-    )
-
-    upload(
-        api_url,
-        headers,
-        branch=config["REPOSITORY"]["BRANCH"],
-        message=config["MESSAGE"],
-        filename=file_path,
-        sha=sha,
-    )
-
-
-def main(index_file_path: str, new_file_path: str):
+    # index.rst path is fixed in Github
+    index_rst_file_path = "docs/index.rst"
+    new_rst_file_path = new_rst_file_path.replace("docs", "")
+    github = Github(github_config)
     # Define the file name and caption to update
-    caption = map_caption(new_file_path)
+    caption = map_caption(module_type)
 
     # Read in the contents of the index.rst file
-    with open(index_file_path, "r") as f:
-        content = f.read()
+    content = github.pull(index_rst_file_path)
 
     # Find the toctree directive with the caption we want to update
     start = content.find(f":caption: {caption}")
@@ -102,13 +74,12 @@ def main(index_file_path: str, new_file_path: str):
     # current_options now looks like: "   :maxdepth: 1\n  :caption: Software Requirement"
 
     current_files = content[mid + 2 : end].split("\n")
-    print(current_files)
     current_files = [e.strip() for e in current_files if e.startswith(" ")]
     # current_files now is a list of file paths in the toctree directive,
     # e.g. ["./sw_req.rst", "./sw_req_2.rst"]
 
     # Generate a new toctree directive with the updated file path
-    new_files = current_files + [new_file_path]
+    new_files = current_files + [new_rst_file_path]
     new_options = current_options + "\n" if current_options else ""
     new_directive = f".. toctree::\n{new_options}\n"
     new_directive += "\n".join(f"   {file}" for file in new_files)
@@ -116,14 +87,16 @@ def main(index_file_path: str, new_file_path: str):
     # Replace the old toctree directive with the new one
     content = content[:start] + new_directive + content[end:]
 
-    # Write the updated content back to the index.rst file
-    with open(index_file_path, "w") as f:
-        f.write(content)
-
     # Automatically upload index.rst to GitHub if file is updated
-    auto_upload(index_file_path)
+    github.upload(index_rst_file_path, content)
 
 
 if __name__ == "__main__":
-    IDX_PATH, NEW_FILE = init_arguments()
-    main(IDX_PATH, NEW_FILE)
+    github_config = load_config("./github_config.yml")
+    NEW_RST_PATH = init_arguments()
+
+    # Actually this module type is retreived from the json via the key: config["module"]["type"][key]
+    # We hardcode here but we handle it carefully in Airflow
+    module_type = "MO_RS"
+
+    update_index_rst(github_config, NEW_RST_PATH, module_type)
