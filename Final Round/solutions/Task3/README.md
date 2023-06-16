@@ -9,8 +9,8 @@ Trigger Airflow
 
 Initialize Docker
 ```bash
-docker compose up airflow-init
 echo -e "AIRFLOW_UID=$(id -u)" > .env
+docker compose up airflow-init
 ```
 
 Run Docker

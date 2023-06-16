@@ -22,7 +22,7 @@ def load_reqif_and_configs_task(**context):
 
     reqif_file_name = os.path.basename(reqif_file_path)
     rst_file_name = reqif_file_name.replace(".reqif", ".rst")
-    rst_file_path = f"docs/src/123{rst_file_name}"
+    rst_file_path = f"docs/src/{rst_file_name}"
 
     context['ti'].xcom_push(key='reqif', value=reqif)
     context['ti'].xcom_push(key='mapping_config', value=mapping_config)

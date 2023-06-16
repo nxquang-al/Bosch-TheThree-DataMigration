@@ -1,498 +1,126 @@
-[2023-06-16T09:38:05.581+0700] {processor.py:157} INFO - Started process (PID=88415) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T09:38:05.582+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T09:38:05.582+0700] {logging_mixin.py:149} INFO - [2023-06-16T09:38:05.582+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T09:38:05.819+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T09:38:06.563+0700] {logging_mixin.py:149} INFO - [2023-06-16T09:38:06.563+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T09:38:06.581+0700] {logging_mixin.py:149} INFO - [2023-06-16T09:38:06.581+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T09:38:06.597+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.016 seconds
-[2023-06-16T11:02:26.697+0700] {processor.py:157} INFO - Started process (PID=88988) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:02:26.697+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T11:02:26.698+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:02:26.698+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:02:26.986+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:02:28.057+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:02:28.057+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T11:02:28.079+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:02:28.079+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T11:02:28.100+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.404 seconds
-[2023-06-16T11:05:00.357+0700] {processor.py:157} INFO - Started process (PID=89344) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:05:00.358+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T11:05:00.359+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:05:00.358+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:05:00.432+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:05:01.522+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:05:01.522+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T11:05:01.545+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:05:01.544+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T11:05:01.568+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.211 seconds
-[2023-06-16T11:07:40.046+0700] {processor.py:157} INFO - Started process (PID=89650) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:07:40.047+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T11:07:40.047+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:07:40.047+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:07:40.129+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:07:41.411+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:07:41.411+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T11:07:41.427+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:07:41.427+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T11:07:41.450+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.405 seconds
-[2023-06-16T11:11:23.479+0700] {processor.py:157} INFO - Started process (PID=90107) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:11:23.481+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T11:11:23.482+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:11:23.482+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:11:23.589+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:11:24.790+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:11:24.790+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T11:11:24.822+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:11:24.821+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T11:11:24.846+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.368 seconds
-[2023-06-16T11:14:32.658+0700] {processor.py:157} INFO - Started process (PID=90504) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:14:32.658+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T11:14:32.659+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:14:32.659+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:14:32.739+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:14:33.837+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:14:33.836+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T11:14:33.864+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:14:33.864+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T11:14:33.885+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.228 seconds
-[2023-06-16T11:17:46.340+0700] {processor.py:157} INFO - Started process (PID=90860) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:17:46.340+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T11:17:46.341+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:17:46.341+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:17:46.427+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:17:47.587+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:17:47.587+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T11:17:47.606+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:17:47.606+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T11:17:47.629+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.291 seconds
-[2023-06-16T11:20:55.299+0700] {processor.py:157} INFO - Started process (PID=91306) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:20:55.300+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T11:20:55.301+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:20:55.301+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:20:55.385+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:20:56.627+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:20:56.627+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T11:20:56.650+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:20:56.649+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T11:20:56.672+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.374 seconds
-[2023-06-16T11:23:41.228+0700] {processor.py:157} INFO - Started process (PID=91701) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:23:41.228+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T11:23:41.229+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:23:41.229+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:23:41.321+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:23:42.529+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:23:42.528+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T11:23:42.549+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:23:42.549+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T11:23:42.566+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.339 seconds
-[2023-06-16T11:27:42.389+0700] {processor.py:157} INFO - Started process (PID=92233) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:27:42.389+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T11:27:42.390+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:27:42.390+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:27:42.480+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:27:43.838+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:27:43.838+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T11:27:43.861+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:27:43.861+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T11:27:43.884+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.496 seconds
-[2023-06-16T11:31:29.888+0700] {processor.py:157} INFO - Started process (PID=92662) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:31:29.890+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T11:31:29.890+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:31:29.890+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:31:29.967+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:31:31.246+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:31:31.246+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T11:31:31.265+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:31:31.265+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T11:31:31.286+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.398 seconds
-[2023-06-16T11:34:51.907+0700] {processor.py:157} INFO - Started process (PID=93119) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:34:51.908+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T11:34:51.909+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:34:51.909+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:34:51.981+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:34:53.739+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:34:53.738+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T11:34:53.775+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:34:53.775+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T11:34:53.820+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.914 seconds
-[2023-06-16T11:37:29.003+0700] {processor.py:157} INFO - Started process (PID=93787) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:37:29.004+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T11:37:29.005+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:37:29.005+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:37:29.109+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:37:30.271+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:37:30.271+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T11:37:30.293+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:37:30.292+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T11:37:30.310+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.308 seconds
-[2023-06-16T11:40:22.271+0700] {processor.py:157} INFO - Started process (PID=94144) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:40:22.272+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T11:40:22.273+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:40:22.273+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:40:22.384+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:40:23.659+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:40:23.658+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T11:40:23.680+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:40:23.680+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T11:40:23.705+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.435 seconds
-[2023-06-16T11:43:12.268+0700] {processor.py:157} INFO - Started process (PID=94492) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:43:12.269+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T11:43:12.270+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:43:12.270+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:43:12.367+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:43:14.007+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:43:14.006+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T11:43:14.029+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:43:14.029+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T11:43:14.050+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.783 seconds
-[2023-06-16T11:46:08.372+0700] {processor.py:157} INFO - Started process (PID=94893) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:46:08.373+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T11:46:08.374+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:46:08.374+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:46:08.449+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:46:09.558+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:46:09.558+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T11:46:09.581+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:46:09.580+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T11:46:09.602+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.231 seconds
-[2023-06-16T11:48:26.949+0700] {processor.py:157} INFO - Started process (PID=95133) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:48:26.953+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T11:48:26.953+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:48:26.953+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:48:27.067+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:48:28.379+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:48:28.378+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T11:48:28.403+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:48:28.403+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T11:48:28.424+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.476 seconds
-[2023-06-16T11:51:59.168+0700] {processor.py:157} INFO - Started process (PID=95582) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:51:59.169+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T11:51:59.169+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:51:59.169+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:51:59.244+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:52:00.515+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:52:00.514+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T11:52:00.554+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:52:00.554+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T11:52:00.593+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.425 seconds
-[2023-06-16T11:55:20.673+0700] {processor.py:157} INFO - Started process (PID=95978) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:55:20.675+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T11:55:20.676+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:55:20.676+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:55:20.747+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:55:21.867+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:55:21.866+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T11:55:21.886+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:55:21.886+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T11:55:21.907+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.235 seconds
-[2023-06-16T11:58:10.700+0700] {processor.py:157} INFO - Started process (PID=96341) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:58:10.701+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T11:58:10.702+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:58:10.702+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:58:10.781+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T11:58:11.982+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:58:11.982+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T11:58:12.004+0700] {logging_mixin.py:149} INFO - [2023-06-16T11:58:12.004+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T11:58:12.022+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.323 seconds
-[2023-06-16T12:01:06.412+0700] {processor.py:157} INFO - Started process (PID=96698) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:01:06.414+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:01:06.415+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:01:06.414+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:01:06.500+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:01:07.725+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:01:07.718+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:01:07.778+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:01:07.777+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:01:07.882+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.471 seconds
-[2023-06-16T12:03:43.518+0700] {processor.py:157} INFO - Started process (PID=97079) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:03:43.519+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:03:43.520+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:03:43.520+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:03:43.611+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:03:44.922+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:03:44.922+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:03:44.951+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:03:44.950+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:03:44.978+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.461 seconds
-[2023-06-16T12:06:22.522+0700] {processor.py:157} INFO - Started process (PID=97422) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:06:22.524+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:06:22.525+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:06:22.525+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:06:22.611+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:06:23.676+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:06:23.676+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:06:23.694+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:06:23.694+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:06:23.714+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.193 seconds
-[2023-06-16T12:08:39.006+0700] {processor.py:157} INFO - Started process (PID=97687) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:08:39.007+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:08:39.008+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:08:39.008+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:08:39.100+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:08:40.164+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:08:40.164+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:08:40.189+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:08:40.189+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:08:40.209+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.204 seconds
-[2023-06-16T12:11:04.267+0700] {processor.py:157} INFO - Started process (PID=98061) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:11:04.269+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:11:04.269+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:11:04.269+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:11:04.357+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:11:05.427+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:11:05.426+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:11:05.444+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:11:05.444+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:11:05.470+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.203 seconds
-[2023-06-16T12:13:35.446+0700] {processor.py:157} INFO - Started process (PID=98349) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:13:35.448+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:13:35.449+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:13:35.449+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:13:35.553+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:13:37.139+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:13:37.138+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:13:37.165+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:13:37.165+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:13:37.191+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.748 seconds
-[2023-06-16T12:16:06.878+0700] {processor.py:157} INFO - Started process (PID=98678) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:16:06.880+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:16:06.880+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:16:06.880+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:16:06.989+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:16:08.221+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:16:08.220+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:16:08.239+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:16:08.239+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:16:08.263+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.386 seconds
-[2023-06-16T12:18:35.811+0700] {processor.py:157} INFO - Started process (PID=98968) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:18:35.812+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:18:35.813+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:18:35.813+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:18:35.922+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:18:37.159+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:18:37.158+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:18:37.177+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:18:37.177+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:18:37.198+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.388 seconds
-[2023-06-16T12:21:05.713+0700] {processor.py:157} INFO - Started process (PID=99317) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:21:05.714+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:21:05.714+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:21:05.714+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:21:05.807+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:21:06.843+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:21:06.843+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:21:06.868+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:21:06.867+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:21:06.888+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.175 seconds
-[2023-06-16T12:24:20.512+0700] {processor.py:157} INFO - Started process (PID=99738) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:24:20.513+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:24:20.514+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:24:20.513+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:24:20.598+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:24:21.860+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:24:21.859+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:24:21.881+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:24:21.881+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:24:21.908+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.397 seconds
-[2023-06-16T12:27:06.293+0700] {processor.py:157} INFO - Started process (PID=307) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:27:06.295+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:27:06.295+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:27:06.295+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:27:06.378+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:27:07.600+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:27:07.599+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:27:07.621+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:27:07.621+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:27:07.640+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.347 seconds
-[2023-06-16T12:29:39.547+0700] {processor.py:157} INFO - Started process (PID=874) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:29:39.549+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:29:39.551+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:29:39.551+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:29:39.643+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:29:40.778+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:29:40.777+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:29:40.799+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:29:40.799+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:29:40.817+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.271 seconds
-[2023-06-16T12:32:19.315+0700] {processor.py:157} INFO - Started process (PID=1235) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:32:19.316+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:32:19.317+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:32:19.317+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:32:19.401+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:32:20.709+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:32:20.708+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:32:20.739+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:32:20.739+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:32:20.763+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.449 seconds
-[2023-06-16T12:34:54.179+0700] {processor.py:157} INFO - Started process (PID=1604) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:34:54.179+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:34:54.180+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:34:54.180+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:34:54.273+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:34:55.506+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:34:55.504+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:34:55.538+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:34:55.538+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:34:55.562+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.384 seconds
-[2023-06-16T12:37:28.656+0700] {processor.py:157} INFO - Started process (PID=2022) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:37:28.657+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:37:28.657+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:37:28.657+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:37:28.747+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:37:30.105+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:37:30.105+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:37:30.124+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:37:30.124+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:37:30.144+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.490 seconds
-[2023-06-16T12:40:35.586+0700] {processor.py:157} INFO - Started process (PID=2495) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:40:35.587+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:40:35.588+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:40:35.588+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:40:35.669+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:40:37.034+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:40:37.034+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:40:37.056+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:40:37.055+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:40:37.079+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.494 seconds
-[2023-06-16T12:43:42.868+0700] {processor.py:157} INFO - Started process (PID=2968) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:43:42.869+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:43:42.870+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:43:42.870+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:43:42.954+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:43:44.116+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:43:44.116+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:43:44.137+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:43:44.137+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:43:44.162+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.295 seconds
-[2023-06-16T12:46:50.704+0700] {processor.py:157} INFO - Started process (PID=3428) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:46:50.705+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:46:50.706+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:46:50.706+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:46:50.797+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:46:52.193+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:46:52.193+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:46:52.216+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:46:52.216+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:46:52.246+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.543 seconds
-[2023-06-16T12:50:02.298+0700] {processor.py:157} INFO - Started process (PID=3837) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:50:02.300+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:50:02.300+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:50:02.300+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:50:02.410+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:50:03.704+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:50:03.703+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:50:03.737+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:50:03.737+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:50:03.767+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.470 seconds
-[2023-06-16T12:52:33.650+0700] {processor.py:157} INFO - Started process (PID=4192) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:52:33.651+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:52:33.651+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:52:33.651+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:52:33.735+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:52:35.328+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:52:35.327+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T12:52:35.351+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:52:35.351+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T12:52:35.376+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.727 seconds
-[2023-06-16T12:55:09.962+0700] {processor.py:157} INFO - Started process (PID=4523) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:55:09.964+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:55:09.964+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:55:09.964+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:55:10.035+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:55:10.032+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
-    loader.exec_module(new_module)
-  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
-  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-  File "/Users/lap14202/.airflow/dags/mainflow.py", line 5, in <module>
-    from thethree import *
-  File "/Users/lap14202/.airflow/thethree/__init__.py", line 4, in <module>
-    from thethree.build_rst import build_rst
-  File "/Users/lap14202/.airflow/thethree/build_rst.py", line 2, in <module>
-    from thethree.RstBuilder import RstBuilder
-ModuleNotFoundError: No module named 'thethree.RstBuilder'
-[2023-06-16T12:55:10.035+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:55:11.075+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.115 seconds
-[2023-06-16T12:57:44.088+0700] {processor.py:157} INFO - Started process (PID=4937) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:57:44.089+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T12:57:44.089+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:57:44.089+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:57:44.166+0700] {logging_mixin.py:149} INFO - [2023-06-16T12:57:44.165+0700] {dagbag.py:350} ERROR - Failed to import: /Users/lap14202/.airflow/dags/mainflow.py
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
-    loader.exec_module(new_module)
-  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
-  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-  File "/Users/lap14202/.airflow/dags/mainflow.py", line 5, in <module>
-    from thethree import *
-  File "/Users/lap14202/.airflow/thethree/__init__.py", line 4, in <module>
-    from thethree.build_rst import build_rst
-  File "/Users/lap14202/.airflow/thethree/build_rst.py", line 2, in <module>
-    from thethree.RstBuilder import RstBuilder
-ModuleNotFoundError: No module named 'thethree.RstBuilder'
-[2023-06-16T12:57:44.167+0700] {processor.py:838} WARNING - No viable dags retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T12:57:45.394+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.307 seconds
-[2023-06-16T13:00:24.730+0700] {processor.py:157} INFO - Started process (PID=5394) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:00:24.731+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:00:24.731+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:00:24.731+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:00:24.829+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:00:26.227+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:00:26.227+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:00:26.246+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:00:26.246+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:00:26.284+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.555 seconds
-[2023-06-16T13:03:21.149+0700] {processor.py:157} INFO - Started process (PID=5816) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:03:21.150+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:03:21.150+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:03:21.150+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:03:21.258+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:03:22.504+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:03:22.504+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:03:22.521+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:03:22.521+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:03:22.543+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.395 seconds
-[2023-06-16T13:05:58.831+0700] {processor.py:157} INFO - Started process (PID=6179) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:05:58.833+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:05:58.833+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:05:58.833+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:05:58.924+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:06:00.150+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:06:00.150+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:06:00.172+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:06:00.172+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:06:00.198+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.367 seconds
-[2023-06-16T13:08:37.738+0700] {processor.py:157} INFO - Started process (PID=6527) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:08:37.739+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:08:37.740+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:08:37.740+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:08:37.824+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:08:39.103+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:08:39.102+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:08:39.125+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:08:39.125+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:08:39.145+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.409 seconds
-[2023-06-16T13:11:10.698+0700] {processor.py:157} INFO - Started process (PID=6922) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:11:10.699+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:11:10.701+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:11:10.701+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:11:10.791+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:11:11.946+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:11:11.945+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:11:11.965+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:11:11.964+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:11:11.986+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.289 seconds
-[2023-06-16T13:13:56.538+0700] {processor.py:157} INFO - Started process (PID=7367) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:13:56.540+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:13:56.540+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:13:56.540+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:13:56.616+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:13:58.019+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:13:58.017+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:13:58.058+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:13:58.058+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:13:58.096+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.559 seconds
-[2023-06-16T13:17:04.189+0700] {processor.py:157} INFO - Started process (PID=7803) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:17:04.190+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:17:04.191+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:17:04.191+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:17:04.282+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:17:05.581+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:17:05.580+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:17:05.604+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:17:05.604+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:17:05.628+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.440 seconds
-[2023-06-16T13:20:09.813+0700] {processor.py:157} INFO - Started process (PID=8210) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:20:09.814+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:20:09.814+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:20:09.814+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:20:09.925+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:20:11.212+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:20:11.212+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:20:11.234+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:20:11.233+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:20:11.257+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.445 seconds
-[2023-06-16T13:23:10.950+0700] {processor.py:157} INFO - Started process (PID=8604) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:23:10.951+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:23:10.951+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:23:10.951+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:23:11.037+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:23:12.109+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:23:12.109+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:23:12.125+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:23:12.125+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:23:12.145+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.196 seconds
-[2023-06-16T13:25:29.869+0700] {processor.py:157} INFO - Started process (PID=8949) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:25:29.869+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:25:29.870+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:25:29.870+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:25:29.952+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:25:31.028+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:25:31.028+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:25:31.046+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:25:31.046+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:25:31.072+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.204 seconds
-[2023-06-16T13:27:59.659+0700] {processor.py:157} INFO - Started process (PID=9225) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:27:59.660+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:27:59.662+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:27:59.661+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:27:59.760+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:28:00.999+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:28:00.999+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:28:01.023+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:28:01.023+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:28:01.052+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.394 seconds
-[2023-06-16T13:30:28.270+0700] {processor.py:157} INFO - Started process (PID=9644) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:30:28.270+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:30:28.271+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:30:28.271+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:30:28.355+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:30:29.460+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:30:29.460+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:30:29.485+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:30:29.485+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:30:29.506+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.237 seconds
-[2023-06-16T13:33:00.937+0700] {processor.py:157} INFO - Started process (PID=10095) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:33:00.938+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:33:00.938+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:33:00.938+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:33:01.013+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:33:02.182+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:33:02.182+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:33:02.201+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:33:02.201+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:33:02.228+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.292 seconds
-[2023-06-16T13:35:56.373+0700] {processor.py:157} INFO - Started process (PID=10569) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:35:56.374+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:35:56.375+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:35:56.375+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:35:56.450+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:35:57.573+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:35:57.572+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:35:57.595+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:35:57.594+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:35:57.620+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.248 seconds
-[2023-06-16T13:38:38.098+0700] {processor.py:157} INFO - Started process (PID=10929) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:38:38.099+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:38:38.100+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:38:38.100+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:38:38.212+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:38:39.384+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:38:39.384+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:38:39.410+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:38:39.409+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:38:39.437+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.341 seconds
-[2023-06-16T13:41:11.056+0700] {processor.py:157} INFO - Started process (PID=11260) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:41:11.057+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:41:11.058+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:41:11.058+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:41:11.147+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:41:12.265+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:41:12.265+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:41:12.283+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:41:12.282+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:41:12.306+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.251 seconds
-[2023-06-16T13:43:55.455+0700] {processor.py:157} INFO - Started process (PID=11588) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:43:55.456+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:43:55.457+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:43:55.457+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:43:55.537+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:43:56.784+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:43:56.784+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:43:56.808+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:43:56.808+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:43:56.827+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.373 seconds
-[2023-06-16T13:46:42.660+0700] {processor.py:157} INFO - Started process (PID=11947) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:46:42.661+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:46:42.662+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:46:42.662+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:46:42.751+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:46:44.202+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:46:44.201+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:46:44.226+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:46:44.225+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:46:44.252+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.593 seconds
-[2023-06-16T13:49:08.349+0700] {processor.py:157} INFO - Started process (PID=12209) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:49:08.351+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:49:08.351+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:49:08.351+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:49:08.436+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:49:09.653+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:49:09.653+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:49:09.693+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:49:09.693+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:49:09.716+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.368 seconds
-[2023-06-16T13:53:34.136+0700] {processor.py:157} INFO - Started process (PID=12656) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:53:34.138+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:53:34.139+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:53:34.139+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:53:34.234+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:53:35.499+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:53:35.499+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:53:35.517+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:53:35.517+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:53:35.534+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.399 seconds
-[2023-06-16T13:56:18.610+0700] {processor.py:157} INFO - Started process (PID=13057) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:56:18.610+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:56:18.611+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:56:18.611+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:56:18.678+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:56:19.757+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:56:19.757+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:56:19.778+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:56:19.778+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:56:19.797+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.188 seconds
-[2023-06-16T13:58:56.765+0700] {processor.py:157} INFO - Started process (PID=13357) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:58:56.766+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T13:58:56.767+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:58:56.767+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:58:56.849+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T13:58:57.974+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:58:57.974+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T13:58:57.993+0700] {logging_mixin.py:149} INFO - [2023-06-16T13:58:57.993+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T13:58:58.024+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.259 seconds
-[2023-06-16T14:01:26.681+0700] {processor.py:157} INFO - Started process (PID=13668) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T14:01:26.682+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T14:01:26.683+0700] {logging_mixin.py:149} INFO - [2023-06-16T14:01:26.682+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T14:01:26.768+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T14:01:28.050+0700] {logging_mixin.py:149} INFO - [2023-06-16T14:01:28.048+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T14:01:28.075+0700] {logging_mixin.py:149} INFO - [2023-06-16T14:01:28.075+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T14:01:28.100+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.419 seconds
-[2023-06-16T14:03:51.675+0700] {processor.py:157} INFO - Started process (PID=13971) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T14:03:51.676+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T14:03:51.677+0700] {logging_mixin.py:149} INFO - [2023-06-16T14:03:51.677+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T14:03:51.754+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T14:03:52.923+0700] {logging_mixin.py:149} INFO - [2023-06-16T14:03:52.923+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T14:03:52.941+0700] {logging_mixin.py:149} INFO - [2023-06-16T14:03:52.941+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T14:03:52.960+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.285 seconds
-[2023-06-16T14:06:34.763+0700] {processor.py:157} INFO - Started process (PID=14372) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T14:06:34.764+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T14:06:34.765+0700] {logging_mixin.py:149} INFO - [2023-06-16T14:06:34.764+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T14:06:34.855+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T14:06:35.960+0700] {logging_mixin.py:149} INFO - [2023-06-16T14:06:35.960+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T14:06:35.981+0700] {logging_mixin.py:149} INFO - [2023-06-16T14:06:35.981+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T14:06:36.012+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.250 seconds
-[2023-06-16T14:09:17.560+0700] {processor.py:157} INFO - Started process (PID=14917) to work on /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T14:09:17.562+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/mainflow.py for tasks to queue
-[2023-06-16T14:09:17.562+0700] {logging_mixin.py:149} INFO - [2023-06-16T14:09:17.562+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T14:09:17.649+0700] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /Users/lap14202/.airflow/dags/mainflow.py
-[2023-06-16T14:09:18.661+0700] {logging_mixin.py:149} INFO - [2023-06-16T14:09:18.661+0700] {dag.py:2726} INFO - Sync 1 DAGs
-[2023-06-16T14:09:18.678+0700] {logging_mixin.py:149} INFO - [2023-06-16T14:09:18.678+0700] {dag.py:3486} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
-[2023-06-16T14:09:18.699+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/mainflow.py took 1.140 seconds
+[2023-06-16T18:46:32.089+0000] {processor.py:157} INFO - Started process (PID=258) to work on /opt/airflow/dags/mainflow.py
+[2023-06-16T18:46:32.092+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/mainflow.py for tasks to queue
+[2023-06-16T18:46:32.095+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:46:32.095+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:46:32.117+0000] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:46:32.189+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:46:32.189+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-16T18:46:32.261+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:46:32.261+0000] {dag.py:3490} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
+[2023-06-16T18:46:32.312+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mainflow.py took 0.234 seconds
+[2023-06-16T18:47:02.667+0000] {processor.py:157} INFO - Started process (PID=315) to work on /opt/airflow/dags/mainflow.py
+[2023-06-16T18:47:02.672+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/mainflow.py for tasks to queue
+[2023-06-16T18:47:02.676+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:47:02.675+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:47:02.700+0000] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:47:02.755+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:47:02.755+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-16T18:47:02.811+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:47:02.811+0000] {dag.py:3490} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
+[2023-06-16T18:47:02.851+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mainflow.py took 0.192 seconds
+[2023-06-16T18:47:33.769+0000] {processor.py:157} INFO - Started process (PID=372) to work on /opt/airflow/dags/mainflow.py
+[2023-06-16T18:47:33.773+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/mainflow.py for tasks to queue
+[2023-06-16T18:47:33.777+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:47:33.776+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:47:33.796+0000] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:47:33.858+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:47:33.858+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-16T18:47:33.924+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:47:33.924+0000] {dag.py:3490} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
+[2023-06-16T18:47:33.971+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mainflow.py took 0.214 seconds
+[2023-06-16T18:48:04.334+0000] {processor.py:157} INFO - Started process (PID=429) to work on /opt/airflow/dags/mainflow.py
+[2023-06-16T18:48:04.339+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/mainflow.py for tasks to queue
+[2023-06-16T18:48:04.343+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:48:04.342+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:48:04.364+0000] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:48:04.423+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:48:04.422+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-16T18:48:04.486+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:48:04.486+0000] {dag.py:3490} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
+[2023-06-16T18:48:04.535+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mainflow.py took 0.211 seconds
+[2023-06-16T18:48:35.000+0000] {processor.py:157} INFO - Started process (PID=486) to work on /opt/airflow/dags/mainflow.py
+[2023-06-16T18:48:35.005+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/mainflow.py for tasks to queue
+[2023-06-16T18:48:35.011+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:48:35.010+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:48:35.032+0000] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:48:35.092+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:48:35.092+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-16T18:48:35.149+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:48:35.149+0000] {dag.py:3490} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
+[2023-06-16T18:48:35.190+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mainflow.py took 0.198 seconds
+[2023-06-16T18:49:05.572+0000] {processor.py:157} INFO - Started process (PID=543) to work on /opt/airflow/dags/mainflow.py
+[2023-06-16T18:49:05.577+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/mainflow.py for tasks to queue
+[2023-06-16T18:49:05.580+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:49:05.580+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:49:05.600+0000] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:49:05.667+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:49:05.666+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-16T18:49:05.733+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:49:05.732+0000] {dag.py:3490} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
+[2023-06-16T18:49:05.776+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mainflow.py took 0.213 seconds
+[2023-06-16T18:49:35.854+0000] {processor.py:157} INFO - Started process (PID=600) to work on /opt/airflow/dags/mainflow.py
+[2023-06-16T18:49:35.861+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/mainflow.py for tasks to queue
+[2023-06-16T18:49:35.866+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:49:35.865+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:49:35.889+0000] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:49:35.944+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:49:35.943+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-16T18:49:35.997+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:49:35.997+0000] {dag.py:3490} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
+[2023-06-16T18:49:36.037+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mainflow.py took 0.194 seconds
+[2023-06-16T18:50:07.045+0000] {processor.py:157} INFO - Started process (PID=656) to work on /opt/airflow/dags/mainflow.py
+[2023-06-16T18:50:07.051+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/mainflow.py for tasks to queue
+[2023-06-16T18:50:07.057+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:50:07.056+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:50:07.087+0000] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:50:07.157+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:50:07.157+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-16T18:50:07.231+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:50:07.231+0000] {dag.py:3490} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
+[2023-06-16T18:50:07.288+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mainflow.py took 0.251 seconds
+[2023-06-16T18:50:37.599+0000] {processor.py:157} INFO - Started process (PID=713) to work on /opt/airflow/dags/mainflow.py
+[2023-06-16T18:50:37.605+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/mainflow.py for tasks to queue
+[2023-06-16T18:50:37.608+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:50:37.608+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:50:37.632+0000] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:50:37.695+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:50:37.695+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-16T18:50:37.757+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:50:37.757+0000] {dag.py:3490} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
+[2023-06-16T18:50:37.816+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mainflow.py took 0.227 seconds
+[2023-06-16T18:51:08.225+0000] {processor.py:157} INFO - Started process (PID=771) to work on /opt/airflow/dags/mainflow.py
+[2023-06-16T18:51:08.228+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/mainflow.py for tasks to queue
+[2023-06-16T18:51:08.231+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:51:08.231+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:51:08.251+0000] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:51:08.306+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:51:08.305+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-16T18:51:08.361+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:51:08.361+0000] {dag.py:3490} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
+[2023-06-16T18:51:08.402+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mainflow.py took 0.186 seconds
+[2023-06-16T18:51:39.008+0000] {processor.py:157} INFO - Started process (PID=828) to work on /opt/airflow/dags/mainflow.py
+[2023-06-16T18:51:39.012+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/mainflow.py for tasks to queue
+[2023-06-16T18:51:39.018+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:51:39.018+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:51:39.045+0000] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:51:39.103+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:51:39.103+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-16T18:51:39.173+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:51:39.173+0000] {dag.py:3490} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
+[2023-06-16T18:51:39.215+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mainflow.py took 0.218 seconds
+[2023-06-16T18:52:09.457+0000] {processor.py:157} INFO - Started process (PID=886) to work on /opt/airflow/dags/mainflow.py
+[2023-06-16T18:52:09.486+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/mainflow.py for tasks to queue
+[2023-06-16T18:52:09.507+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:52:09.506+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:52:09.555+0000] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:52:09.755+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:52:09.755+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-16T18:52:09.898+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:52:09.898+0000] {dag.py:3490} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
+[2023-06-16T18:52:09.954+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mainflow.py took 0.508 seconds
+[2023-06-16T18:52:40.250+0000] {processor.py:157} INFO - Started process (PID=943) to work on /opt/airflow/dags/mainflow.py
+[2023-06-16T18:52:40.254+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/mainflow.py for tasks to queue
+[2023-06-16T18:52:40.259+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:52:40.259+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:52:40.289+0000] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:52:40.367+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:52:40.366+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-16T18:52:40.449+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:52:40.448+0000] {dag.py:3490} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
+[2023-06-16T18:52:40.595+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mainflow.py took 0.358 seconds
+[2023-06-16T18:53:11.112+0000] {processor.py:157} INFO - Started process (PID=1001) to work on /opt/airflow/dags/mainflow.py
+[2023-06-16T18:53:11.118+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/mainflow.py for tasks to queue
+[2023-06-16T18:53:11.125+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:53:11.124+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:53:11.148+0000] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:53:11.212+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:53:11.211+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-16T18:53:11.274+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:53:11.274+0000] {dag.py:3490} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
+[2023-06-16T18:53:11.318+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mainflow.py took 0.213 seconds
+[2023-06-16T18:53:41.408+0000] {processor.py:157} INFO - Started process (PID=1059) to work on /opt/airflow/dags/mainflow.py
+[2023-06-16T18:53:41.412+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/mainflow.py for tasks to queue
+[2023-06-16T18:53:41.417+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:53:41.416+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:53:41.450+0000] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:53:41.534+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:53:41.534+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-16T18:53:41.622+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:53:41.621+0000] {dag.py:3490} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
+[2023-06-16T18:53:41.679+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mainflow.py took 0.283 seconds
+[2023-06-16T18:54:09.677+0000] {processor.py:157} INFO - Started process (PID=1116) to work on /opt/airflow/dags/mainflow.py
+[2023-06-16T18:54:09.681+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/mainflow.py for tasks to queue
+[2023-06-16T18:54:09.687+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:54:09.686+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:54:09.749+0000] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:54:09.884+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:54:09.884+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-16T18:54:10.065+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:54:10.065+0000] {dag.py:3490} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
+[2023-06-16T18:54:10.130+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mainflow.py took 0.463 seconds
+[2023-06-16T18:54:40.956+0000] {processor.py:157} INFO - Started process (PID=1173) to work on /opt/airflow/dags/mainflow.py
+[2023-06-16T18:54:40.961+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/mainflow.py for tasks to queue
+[2023-06-16T18:54:40.965+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:54:40.965+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:54:40.991+0000] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:54:41.066+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:54:41.066+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-16T18:54:41.142+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:54:41.141+0000] {dag.py:3490} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
+[2023-06-16T18:54:41.195+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mainflow.py took 0.248 seconds
+[2023-06-16T18:55:11.331+0000] {processor.py:157} INFO - Started process (PID=1232) to work on /opt/airflow/dags/mainflow.py
+[2023-06-16T18:55:11.335+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/mainflow.py for tasks to queue
+[2023-06-16T18:55:11.341+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:55:11.341+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:55:11.369+0000] {processor.py:836} INFO - DAG(s) dict_keys(['thethree_reqif_to_rst']) retrieved from /opt/airflow/dags/mainflow.py
+[2023-06-16T18:55:11.449+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:55:11.448+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-16T18:55:11.517+0000] {logging_mixin.py:149} INFO - [2023-06-16T18:55:11.517+0000] {dag.py:3490} INFO - Setting next_dagrun for thethree_reqif_to_rst to None, run_after=None
+[2023-06-16T18:55:11.566+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/mainflow.py took 0.245 seconds

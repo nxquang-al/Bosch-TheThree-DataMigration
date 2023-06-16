@@ -1,0 +1,24 @@
+[2023-06-16T18:52:07.982+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: thethree_reqif_to_rst.load_reqif_and_configs manual__2023-06-16T18:51:49+00:00 [queued]>
+[2023-06-16T18:52:08.007+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: thethree_reqif_to_rst.load_reqif_and_configs manual__2023-06-16T18:51:49+00:00 [queued]>
+[2023-06-16T18:52:08.011+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 0
+[2023-06-16T18:52:08.058+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): load_reqif_and_configs> on 2023-06-16 18:51:49+00:00
+[2023-06-16T18:52:08.076+0000] {standard_task_runner.py:57} INFO - Started process 182 to run task
+[2023-06-16T18:52:08.096+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'thethree_reqif_to_rst', 'load_reqif_and_configs', 'manual__2023-06-16T18:51:49+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/mainflow.py', '--cfg-path', '/tmp/tmpdgqn2js1']
+[2023-06-16T18:52:08.117+0000] {standard_task_runner.py:85} INFO - Job 10: Subtask load_reqif_and_configs
+[2023-06-16T18:52:08.321+0000] {task_command.py:410} INFO - Running <TaskInstance: thethree_reqif_to_rst.load_reqif_and_configs manual__2023-06-16T18:51:49+00:00 [running]> on host 6ef88ccef8b9
+[2023-06-16T18:52:08.653+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='The Three' AIRFLOW_CTX_DAG_ID='thethree_reqif_to_rst' AIRFLOW_CTX_TASK_ID='load_reqif_and_configs' AIRFLOW_CTX_EXECUTION_DATE='2023-06-16T18:51:49+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-16T18:51:49+00:00'
+[2023-06-16T18:52:08.668+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/mainflow.py", line 19, in load_reqif_and_configs_task
+    reqif = load_reqif(reqif_file_path)
+  File "/opt/airflow/plugins/thethree/load_reqif.py", line 7, in load_reqif
+    return xmltodict.parse(open(file_name).read())
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/config/requirement.reqif'
+[2023-06-16T18:52:08.809+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=thethree_reqif_to_rst, task_id=load_reqif_and_configs, execution_date=20230616T185149, start_date=20230616T185207, end_date=20230616T185208
+[2023-06-16T18:52:08.862+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 10 for task load_reqif_and_configs ([Errno 2] No such file or directory: '/opt/airflow/config/requirement.reqif'; 182)
+[2023-06-16T18:52:08.912+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-16T18:52:09.061+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check
