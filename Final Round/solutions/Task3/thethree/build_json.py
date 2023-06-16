@@ -59,7 +59,6 @@ def get_spec_object_ref_hierarchy(data, hierarchy=None):
     return hierarchy
 
 
-
 def listify(obj):
     """
     Returns a list of the object if it is not a list
@@ -90,13 +89,14 @@ def format_value(config: dict, value):
     """
     value_type = config.get('value_type')
 
-    if isinstance(value, dict) and (value_type is None or value_type == 'string'):
+    if 'div' in value and (value_type is None or value_type == 'string'):
+        value = xmltodict.parse(value)
         value = value.get('div', {}).get('#text', '')
 
     if value_type == 'number':
         value = int(value)
     elif value_type == 'html_string':
-        value = xmltodict.unparse(value, pretty=True)[39:]
+        pass
 
     return value
 
@@ -179,7 +179,8 @@ def get_artifact_attributes(reqif, spec_object: dict, definition: dict, config: 
             attr_name = find_ref_object(source, ref)[NAME_TAG]
 
             if type_name == 'enumeration'.upper():
-                attr_value = find_enum_value(reqif, attr['VALUES']['ENUM-VALUE-REF'])
+                attr_value = find_enum_value(
+                    reqif, attr['VALUES']['ENUM-VALUE-REF'])
             else:
                 attr_value = attr.get(
                     '@THE-VALUE', attr.get('THE-VALUE'))
@@ -209,7 +210,8 @@ def get_artifact(reqif, spec_object: dict, config: dict) -> dict:
     artifact_type = definition[NAME_TAG]
     set_value(artifact, artifact_type, config['type'])
 
-    attributes = get_artifact_attributes(reqif, spec_object, definition, config)
+    attributes = get_artifact_attributes(
+        reqif, spec_object, definition, config)
 
     artifact.update(dict(sorted(attributes.items())))
 
