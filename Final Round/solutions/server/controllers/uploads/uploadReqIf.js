@@ -1,8 +1,8 @@
 const multer = require("multer");
 
-const storage = multer.diskStorage({
+const storageReqIf = multer.diskStorage({
   destination(req, file, cb) {
-    cb(null, "reqif_file");
+    cb(null, "reqif_files");
   },
   filename(req, file, cb) {
     cb(null, file.originalname);
@@ -10,13 +10,13 @@ const storage = multer.diskStorage({
 });
 
 const uploadReqIf = multer({
-  storage,
+  storage: storageReqIf,
   limits: {
     fileSize: 2000000, // 2MB
   },
 });
 
-const uploadFile = async (req, res) => {
+const uploadFileReqIF = async (req, res) => {
   try {
     if (!req.file) {
       throw new Error();
@@ -34,5 +34,5 @@ const uploadFile = async (req, res) => {
 
 module.exports = {
   uploadReqIf,
-  uploadFile,
+  uploadFileReqIF,
 };
