@@ -1,0 +1,256 @@
+[2023-06-14T19:19:18.749+0700] {processor.py:157} INFO - Started process (PID=17366) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:19:18.750+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:19:18.751+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:19:18.750+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:19:18.768+0700] {processor.py:836} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:19:19.557+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:19:19.556+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:19:19.571+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:19:19.571+0700] {dag.py:3486} INFO - Setting next_dagrun for tutorial to 2023-06-13T12:19:19.571439+00:00, run_after=2023-06-14T12:19:19.571439+00:00
+[2023-06-14T19:19:19.587+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.838 seconds
+[2023-06-14T19:20:53.705+0700] {processor.py:157} INFO - Started process (PID=17644) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:20:53.706+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:20:53.706+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:20:53.706+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:20:53.728+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:20:54.644+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:20:54.644+0700] {manager.py:504} INFO - Created Permission View: can read on DAG:my_dag
+[2023-06-14T19:20:54.650+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:20:54.650+0700] {manager.py:504} INFO - Created Permission View: can edit on DAG:my_dag
+[2023-06-14T19:20:54.655+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:20:54.655+0700] {manager.py:504} INFO - Created Permission View: can delete on DAG:my_dag
+[2023-06-14T19:20:54.656+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:20:54.655+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:20:54.665+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:20:54.665+0700] {dag.py:2747} INFO - Creating ORM DAG for my_dag
+[2023-06-14T19:20:54.673+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:20:54.673+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:20:54.689+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.984 seconds
+[2023-06-14T19:22:03.310+0700] {processor.py:157} INFO - Started process (PID=17832) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:22:03.312+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:22:03.312+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:22:03.312+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:22:03.330+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:22:03.374+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:22:03.374+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:22:04.175+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:22:04.174+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:22:04.191+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.881 seconds
+[2023-06-14T19:22:36.753+0700] {processor.py:157} INFO - Started process (PID=17905) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:22:36.755+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:22:36.756+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:22:36.755+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:22:36.772+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:22:37.521+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:22:37.521+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:22:37.535+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:22:37.535+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:22:37.549+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.796 seconds
+[2023-06-14T19:24:19.714+0700] {processor.py:157} INFO - Started process (PID=18307) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:24:19.715+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:24:19.715+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:24:19.715+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:24:19.733+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:24:20.548+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:24:20.548+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:24:20.567+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:24:20.567+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:24:20.585+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.872 seconds
+[2023-06-14T19:26:04.637+0700] {processor.py:157} INFO - Started process (PID=18722) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:26:04.638+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:26:04.639+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:26:04.639+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:26:04.656+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:26:04.700+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:26:04.700+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:26:05.422+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:26:05.422+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:26:05.439+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.803 seconds
+[2023-06-14T19:27:05.594+0700] {processor.py:157} INFO - Started process (PID=18905) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:27:05.596+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:27:05.596+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:27:05.596+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:27:05.613+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:27:05.657+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:27:05.657+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:27:06.359+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:27:06.359+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:27:06.383+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.789 seconds
+[2023-06-14T19:29:21.127+0700] {processor.py:157} INFO - Started process (PID=19190) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:29:21.129+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:29:21.130+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:29:21.130+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:29:21.147+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:29:21.924+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:29:21.924+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:29:21.939+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:29:21.939+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:29:21.953+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.827 seconds
+[2023-06-14T19:31:05.634+0700] {processor.py:157} INFO - Started process (PID=19409) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:31:05.635+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:31:05.636+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:31:05.636+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:31:05.653+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:31:06.417+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:31:06.417+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:31:06.432+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:31:06.432+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:31:06.445+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.812 seconds
+[2023-06-14T19:32:47.790+0700] {processor.py:157} INFO - Started process (PID=19632) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:32:47.791+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:32:47.791+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:32:47.791+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:32:47.808+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:32:48.538+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:32:48.538+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:32:48.552+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:32:48.552+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:32:48.568+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.779 seconds
+[2023-06-14T19:33:40.113+0700] {processor.py:157} INFO - Started process (PID=19699) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:33:40.115+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:33:40.115+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:33:40.115+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:33:40.132+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:33:40.949+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:33:40.949+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:33:40.967+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:33:40.967+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:33:40.983+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.870 seconds
+[2023-06-14T19:34:34.069+0700] {processor.py:157} INFO - Started process (PID=19870) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:34:34.070+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:34:34.071+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:34:34.071+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:34:34.088+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:34:34.881+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:34:34.881+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:34:34.901+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:34:34.901+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:34:34.918+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.849 seconds
+[2023-06-14T19:36:17.955+0700] {processor.py:157} INFO - Started process (PID=20177) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:36:17.955+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:36:17.956+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:36:17.956+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:36:17.973+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:36:18.741+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:36:18.741+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:36:18.755+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:36:18.755+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:36:18.770+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.815 seconds
+[2023-06-14T19:38:04.996+0700] {processor.py:157} INFO - Started process (PID=20543) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:38:04.998+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:38:04.998+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:38:04.998+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:38:05.017+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:38:05.845+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:38:05.845+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:38:05.860+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:38:05.860+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:38:05.875+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.879 seconds
+[2023-06-14T19:39:51.904+0700] {processor.py:157} INFO - Started process (PID=20869) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:39:51.905+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:39:51.906+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:39:51.906+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:39:51.923+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:39:52.669+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:39:52.668+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:39:52.682+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:39:52.682+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:39:52.697+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.794 seconds
+[2023-06-14T19:41:34.463+0700] {processor.py:157} INFO - Started process (PID=21091) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:41:34.465+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:41:34.466+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:41:34.466+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:41:34.484+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:41:35.245+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:41:35.245+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:41:35.261+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:41:35.261+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:41:35.274+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.812 seconds
+[2023-06-14T19:43:36.996+0700] {processor.py:157} INFO - Started process (PID=21367) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:43:36.997+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:43:36.998+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:43:36.998+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:43:37.014+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:43:37.811+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:43:37.811+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:43:37.829+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:43:37.828+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:43:37.844+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.848 seconds
+[2023-06-14T19:45:20.000+0700] {processor.py:157} INFO - Started process (PID=21573) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:45:20.001+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:45:20.002+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:45:20.002+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:45:20.021+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:45:20.784+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:45:20.783+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:45:20.799+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:45:20.799+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:45:20.813+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.815 seconds
+[2023-06-14T19:47:05.654+0700] {processor.py:157} INFO - Started process (PID=21767) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:47:05.656+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:47:05.656+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:47:05.656+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:47:05.674+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:47:06.439+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:47:06.439+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:47:06.454+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:47:06.454+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:47:06.468+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.814 seconds
+[2023-06-14T19:48:51.721+0700] {processor.py:157} INFO - Started process (PID=21991) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:48:51.722+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:48:51.723+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:48:51.723+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:48:51.740+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:48:52.467+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:48:52.466+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:48:52.486+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:48:52.486+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:48:52.500+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.780 seconds
+[2023-06-14T19:50:33.601+0700] {processor.py:157} INFO - Started process (PID=22200) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:50:33.601+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:50:33.602+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:50:33.602+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:50:33.622+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:50:34.519+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:50:34.518+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:50:34.537+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:50:34.537+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:50:34.554+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.954 seconds
+[2023-06-14T19:52:11.495+0700] {processor.py:157} INFO - Started process (PID=22418) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:52:11.495+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:52:11.496+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:52:11.496+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:52:11.512+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:52:12.254+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:52:12.254+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:52:12.268+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:52:12.268+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:52:12.290+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.796 seconds
+[2023-06-14T19:53:53.360+0700] {processor.py:157} INFO - Started process (PID=22586) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:53:53.361+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:53:53.361+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:53:53.361+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:53:53.377+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:53:54.116+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:53:54.116+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:53:54.129+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:53:54.129+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:53:54.143+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.783 seconds
+[2023-06-14T19:55:35.920+0700] {processor.py:157} INFO - Started process (PID=22810) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:55:35.921+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:55:35.922+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:55:35.922+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:55:35.938+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:55:36.673+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:55:36.673+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:55:36.687+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:55:36.687+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:55:36.701+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.782 seconds
+[2023-06-14T19:57:14.050+0700] {processor.py:157} INFO - Started process (PID=23012) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:57:14.052+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:57:14.052+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:57:14.052+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:57:14.069+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:57:14.811+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:57:14.811+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:57:14.825+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:57:14.825+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:57:14.839+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.789 seconds
+[2023-06-14T19:58:57.924+0700] {processor.py:157} INFO - Started process (PID=23222) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:58:57.926+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T19:58:57.927+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:58:57.927+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:58:57.946+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T19:58:58.803+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:58:58.803+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T19:58:58.818+0700] {logging_mixin.py:149} INFO - [2023-06-14T19:58:58.818+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T19:58:58.831+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.908 seconds
+[2023-06-14T20:00:44.873+0700] {processor.py:157} INFO - Started process (PID=23456) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:00:44.874+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T20:00:44.874+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:00:44.874+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:00:44.892+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:00:45.643+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:00:45.643+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T20:00:45.658+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:00:45.658+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T20:00:45.672+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.801 seconds
+[2023-06-14T20:02:33.853+0700] {processor.py:157} INFO - Started process (PID=23723) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:02:33.854+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T20:02:33.855+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:02:33.855+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:02:33.872+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:02:34.774+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:02:34.774+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T20:02:34.791+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:02:34.791+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T20:02:34.811+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.959 seconds
+[2023-06-14T20:04:23.062+0700] {processor.py:157} INFO - Started process (PID=23994) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:04:23.064+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T20:04:23.064+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:04:23.064+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:04:23.086+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:04:23.987+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:04:23.987+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T20:04:24.002+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:04:24.002+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T20:04:24.020+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.959 seconds
+[2023-06-14T20:06:10.273+0700] {processor.py:157} INFO - Started process (PID=24167) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:06:10.274+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T20:06:10.275+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:06:10.275+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:06:10.293+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:06:11.112+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:06:11.112+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T20:06:11.133+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:06:11.133+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T20:06:11.154+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.882 seconds
+[2023-06-14T20:08:00.456+0700] {processor.py:157} INFO - Started process (PID=24421) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:08:00.457+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T20:08:00.459+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:08:00.458+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:08:00.484+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:08:01.357+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:08:01.357+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T20:08:01.373+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:08:01.373+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T20:08:01.389+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.933 seconds
+[2023-06-14T20:09:48.983+0700] {processor.py:157} INFO - Started process (PID=24693) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:09:48.984+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T20:09:48.985+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:09:48.985+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:09:49.003+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:09:49.777+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:09:49.776+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T20:09:49.791+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:09:49.791+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T20:09:49.804+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.822 seconds
+[2023-06-14T20:11:37.169+0700] {processor.py:157} INFO - Started process (PID=25053) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:11:37.170+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T20:11:37.171+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:11:37.171+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:11:37.188+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:11:37.960+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:11:37.960+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T20:11:37.975+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:11:37.975+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T20:11:37.989+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.821 seconds
+[2023-06-14T20:13:26.714+0700] {processor.py:157} INFO - Started process (PID=25443) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:13:26.715+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T20:13:26.716+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:13:26.716+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:13:26.744+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:13:27.552+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:13:27.551+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T20:13:27.566+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:13:27.566+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T20:13:27.579+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.866 seconds
+[2023-06-14T20:15:37.836+0700] {processor.py:157} INFO - Started process (PID=25732) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:15:37.837+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T20:15:37.838+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:15:37.837+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:15:37.856+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:15:38.626+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:15:38.625+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T20:15:38.639+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:15:38.639+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T20:15:38.654+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.819 seconds
+[2023-06-14T20:17:34.212+0700] {processor.py:157} INFO - Started process (PID=26073) to work on /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:17:34.214+0700] {processor.py:826} INFO - Processing file /Users/lap14202/.airflow/dags/example.py for tasks to queue
+[2023-06-14T20:17:34.214+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:17:34.214+0700] {dagbag.py:541} INFO - Filling up the DagBag from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:17:34.234+0700] {processor.py:836} INFO - DAG(s) dict_keys(['my_dag']) retrieved from /Users/lap14202/.airflow/dags/example.py
+[2023-06-14T20:17:35.028+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:17:35.028+0700] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T20:17:35.043+0700] {logging_mixin.py:149} INFO - [2023-06-14T20:17:35.042+0700] {dag.py:3486} INFO - Setting next_dagrun for my_dag to 2023-06-14T00:00:00+00:00, run_after=2023-06-15T00:00:00+00:00
+[2023-06-14T20:17:35.056+0700] {processor.py:179} INFO - Processing /Users/lap14202/.airflow/dags/example.py took 0.845 seconds

@@ -1,0 +1,24 @@
+[2023-06-14T20:30:16.114+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Reqif_airflow.convert_json_to_rst manual__2023-06-14T13:24:59.244947+00:00 [queued]>
+[2023-06-14T20:30:16.129+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Reqif_airflow.convert_json_to_rst manual__2023-06-14T13:24:59.244947+00:00 [queued]>
+[2023-06-14T20:30:16.129+0700] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2023-06-14T20:30:16.139+0700] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): convert_json_to_rst> on 2023-06-14 13:24:59.244947+00:00
+[2023-06-14T20:30:16.142+0700] {standard_task_runner.py:57} INFO - Started process 28006 to run task
+[2023-06-14T20:30:16.148+0700] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Reqif_airflow', 'convert_json_to_rst', 'manual__2023-06-14T13:24:59.244947+00:00', '--job-id', '34', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/var/folders/v7/qsb_cvl92z92z6jf7g1jc0zr0000gn/T/tmp8afq9ivp']
+[2023-06-14T20:30:16.150+0700] {standard_task_runner.py:85} INFO - Job 34: Subtask convert_json_to_rst
+[2023-06-14T20:30:16.188+0700] {task_command.py:410} INFO - Running <TaskInstance: Reqif_airflow.convert_json_to_rst manual__2023-06-14T13:24:59.244947+00:00 [running]> on host macbook-pro.local
+[2023-06-14T20:30:16.237+0700] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Reqif_airflow' AIRFLOW_CTX_TASK_ID='convert_json_to_rst' AIRFLOW_CTX_EXECUTION_DATE='2023-06-14T13:24:59.244947+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-14T13:24:59.244947+00:00'
+[2023-06-14T20:30:16.247+0700] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lap14202/.airflow/dags/test.py", line 23, in convert_json_to_rst
+    os.chdir()
+TypeError: chdir() missing required argument 'path' (pos 1)
+[2023-06-14T20:30:16.257+0700] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=Reqif_airflow, task_id=convert_json_to_rst, execution_date=20230614T132459, start_date=20230614T133016, end_date=20230614T133016
+[2023-06-14T20:30:16.273+0700] {standard_task_runner.py:104} ERROR - Failed to execute job 34 for task convert_json_to_rst (chdir() missing required argument 'path' (pos 1); 28006)
+[2023-06-14T20:30:16.290+0700] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-14T20:30:16.316+0700] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

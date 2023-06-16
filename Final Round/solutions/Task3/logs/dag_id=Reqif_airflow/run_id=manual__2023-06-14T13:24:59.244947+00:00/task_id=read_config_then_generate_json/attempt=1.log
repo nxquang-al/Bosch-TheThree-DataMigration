@@ -1,0 +1,26 @@
+[2023-06-14T20:25:07.041+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Reqif_airflow.read_config_then_generate_json manual__2023-06-14T13:24:59.244947+00:00 [queued]>
+[2023-06-14T20:25:07.047+0700] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Reqif_airflow.read_config_then_generate_json manual__2023-06-14T13:24:59.244947+00:00 [queued]>
+[2023-06-14T20:25:07.047+0700] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2023-06-14T20:25:07.055+0700] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): read_config_then_generate_json> on 2023-06-14 13:24:59.244947+00:00
+[2023-06-14T20:25:07.058+0700] {standard_task_runner.py:57} INFO - Started process 27206 to run task
+[2023-06-14T20:25:07.063+0700] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'Reqif_airflow', 'read_config_then_generate_json', 'manual__2023-06-14T13:24:59.244947+00:00', '--job-id', '32', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/var/folders/v7/qsb_cvl92z92z6jf7g1jc0zr0000gn/T/tmpqdo5mhxk']
+[2023-06-14T20:25:07.065+0700] {standard_task_runner.py:85} INFO - Job 32: Subtask read_config_then_generate_json
+[2023-06-14T20:25:07.106+0700] {task_command.py:410} INFO - Running <TaskInstance: Reqif_airflow.read_config_then_generate_json manual__2023-06-14T13:24:59.244947+00:00 [running]> on host macbook-pro.local
+[2023-06-14T20:25:07.149+0700] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='airflow@example.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Reqif_airflow' AIRFLOW_CTX_TASK_ID='read_config_then_generate_json' AIRFLOW_CTX_EXECUTION_DATE='2023-06-14T13:24:59.244947+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-14T13:24:59.244947+00:00'
+[2023-06-14T20:25:07.156+0700] {test.py:17} INFO - Current working directory: /Users/lap14202
+[2023-06-14T20:25:07.156+0700] {test.py:18} INFO - my_value
+[2023-06-14T20:25:07.157+0700] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lap14202/.airflow/dags/test.py", line 19, in read_config_then_generate_json
+    os.chdir('$AIRFLOW_HOME/dags')
+FileNotFoundError: [Errno 2] No such file or directory: '$AIRFLOW_HOME/dags'
+[2023-06-14T20:25:07.162+0700] {taskinstance.py:1345} INFO - Marking task as UP_FOR_RETRY. dag_id=Reqif_airflow, task_id=read_config_then_generate_json, execution_date=20230614T132459, start_date=20230614T132507, end_date=20230614T132507
+[2023-06-14T20:25:07.169+0700] {standard_task_runner.py:104} ERROR - Failed to execute job 32 for task read_config_then_generate_json ([Errno 2] No such file or directory: '$AIRFLOW_HOME/dags'; 27206)
+[2023-06-14T20:25:07.206+0700] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-14T20:25:07.235+0700] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check
