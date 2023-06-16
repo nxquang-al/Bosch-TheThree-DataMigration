@@ -2,7 +2,7 @@ from thethree.utils.Github import Github
 import base64
 
 
-def map_caption(file_name: str):
+def map_caption(module_type: str):
     """
     Modify this function to map the file_name or its module type to the corresponding toctree caption.
     E.g. "MO_RS" -> "Software Requirements"
@@ -12,14 +12,23 @@ def map_caption(file_name: str):
 
 
 def update_index_rst(github_config, rst_file_path, module_type):
+    """
+    Get the content of index.rst from GitHub, modify it, and finally upload it again.
+
+    .. Args::
+        :github_config: config for GitHub api setup
+        :new_rst_file_path: path to the new rst file
+        :module_type: Module Type of this new rst file, used to map caption
+
+    """
     index_rst_file_path = "docs/index.rst"
-    rst_file_path.replace("docs", "")
+    rst_file_path = rst_file_path.replace("docs", "")
     github = Github(github_config)
 
     # Pull the latest index.rst from GitHub
     content = github.pull(index_rst_file_path)
 
-    # Define the file name and caption to update
+    # Define the caption to update
     caption = map_caption(module_type)
 
     # Find the toctree directive with the caption we want to update
@@ -45,8 +54,7 @@ def update_index_rst(github_config, rst_file_path, module_type):
     current_options = "\n".join(current_options[1:])
     # current_options now looks like: "   :maxdepth: 1\n  :caption: Software Requirement"
 
-    current_files = content[mid + 2: end].split("\n")
-    print(current_files)
+    current_files = content[mid + 2 : end].split("\n")
     current_files = [e.strip() for e in current_files if e.startswith(" ")]
     # current_files now is a list of file paths in the toctree directive,
     # e.g. ["./sw_req.rst", "./sw_req_2.rst"]

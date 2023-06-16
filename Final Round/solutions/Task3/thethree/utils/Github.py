@@ -15,19 +15,25 @@ class Github:
         self.headers = {
             "Authorization": f"Bearer {self.token}",
             "Content-Type": "application/vnd.github+json",
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
         }
 
     def get_sha(self, file_path):
+        """
+        Query GitHub to retrieve SHA for file.
+        If file exists on the branch, then return its current SHA
+        If file does note exist, the SHA will be None
+        """
         try:
-            body = json.dumps({'branch': self.branch}).encode('utf-8')
+            body = json.dumps({"branch": self.branch}).encode("utf-8")
 
             conn = http.client.HTTPSConnection(self.host, timeout=10)
-            conn.request('GET', self.base_url + file_path,
-                         headers=self.headers, body=body)
+            conn.request(
+                "GET", self.base_url + file_path, headers=self.headers, body=body
+            )
             response = conn.getresponse()
             status = response.status
-            body = response.read().decode('utf-8')
+            body = response.read().decode("utf-8")
             conn.close()
             if status == 200:
                 print("Retrieve SHA successfully!")
@@ -35,13 +41,23 @@ class Github:
                 return body["sha"]
             else:
                 print("File does not exist, no need SHA!")
+                return None
         except Exception as e:
             print(e)
             print("Retrieve SHA fail!")
 
     def upload(self, file_path: str, file_content: str):
-        file_content = base64.b64encode(
-            file_content.encode('utf-8')).decode('utf-8')
+        """
+        Push file to Github or overwrite file if it already exists
+
+        .. Args::
+            :file_path: relative path to the file
+            :file_content: content of the pushed file
+
+        .. Output::
+            <status_code> - <message>
+        """
+        file_content = base64.b64encode(file_content.encode("utf-8")).decode("utf-8")
         data = {
             "branch": self.branch,
             "message": self.message,
@@ -54,9 +70,10 @@ class Github:
 
         try:
             conn = http.client.HTTPSConnection(self.host, timeout=10)
-            body = json.dumps(data).encode('utf-8')
-            conn.request('PUT', self.base_url + file_path,
-                         headers=self.headers, body=body)
+            body = json.dumps(data).encode("utf-8")
+            conn.request(
+                "PUT", self.base_url + file_path, headers=self.headers, body=body
+            )
             response = conn.getresponse()
             status = response.status
             conn.close()
@@ -72,12 +89,19 @@ class Github:
             print("Overwrite fail!")
 
     def pull(self, file_path: str):
+        """
+        Pull the content of file at file_path, used for pulling index.rst
+
+        .. Args::
+            :file_path: relative path to the file
+
+        .. Return:: content (text) of the pulled file, not save to any file in local.
+        """
         conn = http.client.HTTPSConnection(self.host, timeout=10)
         body = json.dumps({"branch": self.branch}).encode("utf-8")
-        conn.request("GET", self.base_url +
-                     file_path, headers=self.headers, body=body)
+        conn.request("GET", self.base_url + file_path, headers=self.headers, body=body)
         response = conn.getresponse()
-        body = response.read().decode('utf-8')
+        body = response.read().decode("utf-8")
         conn.close()
         body = json.loads(body)
-        return base64.b64decode(body['content']).decode('utf-8')
+        return base64.b64decode(body["content"]).decode("utf-8")
