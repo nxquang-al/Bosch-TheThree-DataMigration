@@ -60,7 +60,9 @@ def update_index_rst(github_config, rst_file_path, module_type):
     # e.g. ["./sw_req.rst", "./sw_req_2.rst"]
 
     # Generate a new toctree directive with the updated file path
-    new_files = current_files + [rst_file_path]
+    new_files = current_files
+    if rst_file_path not in current_files:
+        new_files.append(rst_file_path)
     new_options = current_options + "\n" if current_options else ""
     new_directive = f".. toctree::\n{new_options}\n"
     new_directive += "\n".join(f"   {file}" for file in new_files)
