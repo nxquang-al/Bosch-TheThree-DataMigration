@@ -1,5 +1,6 @@
 import xmltodict
 import re
+import http.client
 
 
 def preprocess(content):
@@ -15,4 +16,12 @@ def load_reqif(file_name: str) -> dict:
     """
     Loads the reqif file and returns the reqif content
     """
-    return xmltodict.parse(preprocess(open(file_name).read()))
+    if 'opt/airflow' in file_name:
+        return xmltodict.parse(preprocess(open(file_name).read()))
+    else:
+        conn = http.client.HTTPConnection('127.0.0.1:2023')
+        conn.request('GET', file_name)
+        response = conn.getresponse()
+        body = response.read().decode('utf-8')
+        print(body)
+        return xmltodict.parse(preprocess(body))
