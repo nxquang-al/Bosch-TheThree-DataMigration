@@ -105,10 +105,12 @@ class MyHTMLParser(HTMLParser):
         """
         self.stringBuffer.write(text)
 
-    def merge_with_newline(self, text=""):
+    def merge_with_newline(self, text="", block=False):
         """
         Writeline: Write with an extra endline
         """
+        if block:
+            return self.merge(text + "\n| ")
         return self.merge(text + "\n")
 
     def merge(self, text=""):
@@ -236,7 +238,7 @@ class MyHTMLParser(HTMLParser):
     def handle_start_p(self):
         """Handle the <p> tag"""
         if not self.inblock:
-            self.merge_with_newline()
+            self.merge_with_newline(block=True)
 
     def handle_end_p(self):
         """Handle the </p> tag"""
@@ -299,7 +301,7 @@ class MyHTMLParser(HTMLParser):
         """<br> tag, just a line break"""
         if not self.inblock:
             self.merge_with_newline()
-            # self.merge('| ')
+            self.merge("| ")
         else:
             self.write_to_buffer(" ")
 

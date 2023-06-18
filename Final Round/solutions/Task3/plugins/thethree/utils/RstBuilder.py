@@ -3,7 +3,7 @@ import typing
 
 class RstBuilder:
     def __init__(self) -> None:
-        self._content = ''
+        self._content = ""
 
     def _add(self, content: str, indent=0) -> None:
         self._content += " " * indent + content + "\n"
@@ -23,18 +23,20 @@ class RstBuilder:
     def directive(
         self,
         name: str,
+        title: str,
         attributes: dict,
         content: str = "",
         sub_directives: dict = {},
         indent=0,
     ) -> None:
-        self._add(f".. {name}::", indent)
+        self._add(f".. {name}:: {title}", indent)
         for k, v in attributes.items():
             self._add(f"   :{k}: {v}", indent)
         self.content(content, indent)
         for k, v in sub_directives.items():
-            self._add(f"   .. {k}::")
-            self._add(v)
+            self._add(f"   .. {k}:: {v['title']}")
+            self._add("")
+            self._add(v["content"])
 
     def directives(
         self,
@@ -52,6 +54,7 @@ class RstBuilder:
                 sub_directives = {}
             self.directive(
                 directive["name"],
+                directive["title"],
                 directive["attributes"],
                 html_content,
                 sub_directives,

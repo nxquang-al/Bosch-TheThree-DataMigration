@@ -1,4 +1,5 @@
 import copy
+import re
 from thethree.utils.RstBuilder import RstBuilder
 from thethree.utils.HTMLParser import MyHTMLParser
 
@@ -21,41 +22,63 @@ def listify(obj):
     return obj if isinstance(obj, list) else [obj]
 
 
+def postprocess(content):
+    lines = re.split("\n", content)
+    print(lines)
+    for i, line in enumerate(lines):
+        if line == "":
+            continue
+        elif line.startswith("|"):
+            lines[i] = "   " + line
+        else:
+            lines[i] = "     " + line
+    return "\n".join(lines)
+
+
 def get_directives_data(config, artifact: dict, directives: list):
     """
     Returns the directives data for the given artifact
     """
+    directives_data = []
     for directive in listify(directives):
+        directive_data = {}
+        directive_data["title"] = artifact.get("Title", "Title")
         # Attribute Value text
         for key, value in directive.get("attributes", {}).items():
             attr = find_property_have_key(config, value)
-
-            directive["attributes"][key] = artifact.get(value, value)
+            if attr is not None:
+                directive_data["attributes"][key] = artifact.get(value, value)
 
         # HTML Content
         content = directive.get("html_content", "")
         attr = find_property_have_key(config, content)
         if attr is not None:
             parser = MyHTMLParser()
-            parser.feed(artifact.get(content, content))
-            directive["html_content"] = parser.get_rst()
+            parser.feed(artifact.get(content, content).replace("\u00a0", ""))
+            directive_data["html_content"] = postprocess(parser.get_rst())
 
         # Sub_directive, at the end of the rst
         if "sub_directives" in directive.keys():
             for key, value in directive.get("sub_directives", {}).items():
                 attr = find_property_have_key(config, value)
-
-                # If "value: ..." does not set in config list artifacts,
-                # then the value works as the key in Json, query directly from Json
-                directive["sub_directives"][key] = artifact.get(value, value)
+                if attr is not None:
+                    directive_data["sub_directives"][key] = {}
+                    directive_data["sub_directives"][key]["content"] = postprocess(
+                        artifact.get(value, "")
+                    )
+                    # get ID to generate unique title for subdirective, e.g. 'verify' + 68019 -> 'verify68019'
+                    directive_data["sub_directives"][key]["title"] = key + str(
+                        artifact.get("Identifier", "")
+                    )
 
         # In case there are directives in directive
         if "directives" in directive:
             # recursively, directive in directive
-            directive["directives"] = get_directives_data(
+            directive_data["directives"] = get_directives_data(
                 config, artifact, directive["directives"]
             )
-    return directives
+        directives_data.append(directive_data)
+    return directives_data
 
 
 def get_rst_type(artifact_type, rst_config):
@@ -84,13 +107,15 @@ def build_rst_artifacts(rst, artifacts: list, config: dict):
             directives_config = copy.deepcopy(
                 rst_config[rst_type].get("directives", [])
             )
-            directives = listify(get_directives_data(config, artifact, directives_config))
+            directives = listify(
+                get_directives_data(config, artifact, directives_config)
+            )
             rst.directives(directives)
             rst.newline()
 
 
 def build_rst(data: dict, config: dict):
-    config = config['module']
+    config = config["module"]
 
     rst = RstBuilder()
     rst.newline()
