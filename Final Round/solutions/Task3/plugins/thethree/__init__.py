@@ -4,6 +4,7 @@ from thethree.build_json import build_json
 from thethree.build_rst import build_rst
 from thethree.upload_to_github import upload_to_github
 from thethree.update_index_rst import update_index_rst
+from thethree.server.main import start_server
 
 __all__ = [
     'load_reqif',
@@ -11,5 +12,6 @@ __all__ = [
     'build_json',
     'build_rst',
     'upload_to_github',
-    'update_index_rst'
+    'update_index_rst',
+    'start_server'
 ]
