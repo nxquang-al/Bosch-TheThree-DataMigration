@@ -1,8 +1,8 @@
 AUTHENTICATION:
-  TOKEN: <GitHub-Access-Token>
-  USERNAME: <username>
+  TOKEN: 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
+  USERNAME: nxquang-al
 MESSAGE: test-github-access-token
 REPOSITORY:
   BRANCH: main
-  NAME: Bosch_CodeRace_TheThree
-  OWNER: nlthanhcse
+  NAME: Test-github-api
+  OWNER: R2th
