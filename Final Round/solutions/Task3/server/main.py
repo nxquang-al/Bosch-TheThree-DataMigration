@@ -23,25 +23,6 @@ def save_files(file_data):
 
 
 class HTTPRequestHandler(SimpleHTTPRequestHandler):
-    def do_GET(self):
-        if self.path == '/':
-            self.path = '/index.html'
-        try:
-            current_path = os.path.abspath(__file__)
-            file = self.path[1:]
-            file_path = os.path.join(os.path.dirname(current_path), file)
-
-            with open(file_path, 'rb') as file:
-                # Set response code and headers
-                self.send_response(200)
-                self.send_header('Content-type', 'text/html')
-                self.end_headers()
-
-                # Read the file content and send as the response
-                self.wfile.write(file.read())
-        except FileNotFoundError:
-            self.send_error(404, 'File not found')
-
     def do_POST(self):
         content_length = int(self.headers['Content-Length'])
         body = self.rfile.read(content_length)
