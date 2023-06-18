@@ -294,6 +294,11 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
-
+  thethree-server:
+    build:
+      context: ./server/
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
 volumes:
   postgres-db-volume:

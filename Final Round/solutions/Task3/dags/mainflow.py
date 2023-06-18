@@ -1,10 +1,9 @@
-
-from datetime import datetime
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from thethree import *
+from datetime import datetime
 import logging
 import os
+from thethree import *
 
 log = logging.getLogger(__name__)
 

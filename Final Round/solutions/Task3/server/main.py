@@ -1,33 +1,14 @@
 from http.server import HTTPServer, SimpleHTTPRequestHandler
-from http.client import HTTPConnection
 from datetime import datetime
 import os
 import json
-
-HOST_NAME = 'localhost'
-PORT = 8000
-
-
-def trigger_airflow(config):
-    dag_id = 'thethree_reqif_to_rst'
-    conn = HTTPConnection('localhost', 8080)
-    payload = {
-        "dag_run_id": "thethree_reqif_to_rst",
-        "conf": config
-    }
-
-    conn.request('POST', f'/api/v1/dags/{dag_id}/dagRuns', body=json.dumps(
-        payload), headers={'Content-Type': 'application/json'})
-    response = conn.getresponse()
-    conn.close()
-    print(response.status, response.reason)
 
 
 def save_files(file_data):
     config = {}
 
-    # base_dir = '/opt/airflow/config/'
-    base_dir = './'
+    base_dir = '/opt/airflow/config/'
+    # base_dir = './'
     base_dir += datetime.now().strftime('%Y-%m-%d_%H-%M-%S') + '/'
     os.makedirs(base_dir)
     for name, filename, content in file_data:
@@ -38,14 +19,33 @@ def save_files(file_data):
         config[name] = filepath
 
         open(filepath, 'wb').write(content)
-    trigger_airflow(config)
+    return config
 
 
 class HTTPRequestHandler(SimpleHTTPRequestHandler):
+    def do_GET(self):
+        if self.path == '/':
+            self.path = '/index.html'
+        try:
+            current_path = os.path.abspath(__file__)
+            file = self.path[1:]
+            file_path = os.path.join(os.path.dirname(current_path), file)
+
+            with open(file_path, 'rb') as file:
+                # Set response code and headers
+                self.send_response(200)
+                self.send_header('Content-type', 'text/html')
+                self.end_headers()
+
+                # Read the file content and send as the response
+                self.wfile.write(file.read())
+        except FileNotFoundError:
+            self.send_error(404, 'File not found')
+
     def do_POST(self):
         content_length = int(self.headers['Content-Length'])
         body = self.rfile.read(content_length)
-    
+
         file_data = []
         lines = body.split(b'\r\n')
         for i in range(len(lines)):
@@ -62,19 +62,20 @@ class HTTPRequestHandler(SimpleHTTPRequestHandler):
                 content = lines[i + 3].rstrip()
 
                 file_data.append((name, filename, content))
-                
-        save_files(file_data)
+
+        config = save_files(file_data)
 
         self.send_response(200)
-        self.send_header('Content-type', 'text/html')
+        self.send_header('Content-type', 'application/json')
         self.end_headers()
-        self.wfile.write(b'Files received and processed successfully.')
+
+        self.wfile.write(json.dumps(config).encode())
 
 
-httpd = HTTPServer((HOST_NAME, PORT), HTTPRequestHandler)
-print("Server Starts - %s:%s" % (HOST_NAME, PORT))
-
-try:
-    httpd.serve_forever()
-except KeyboardInterrupt:
-    pass
+def start_server(HOST_NAME='localhost', PORT=8000):
+    httpd = HTTPServer((HOST_NAME, PORT), HTTPRequestHandler)
+    print("Server Starts - %s:%s" % (HOST_NAME, PORT))
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        pass
