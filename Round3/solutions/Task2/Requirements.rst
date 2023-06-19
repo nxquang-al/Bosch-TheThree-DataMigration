@@ -43,7 +43,7 @@ showing the different possibilities of the requirements structure
 ECU 1st Requirement
 *******************
 
-.. sw_req::
+.. sw_req:: 
    :id: 629015
    :artifact_type: 
    :crq: crq
@@ -60,7 +60,7 @@ target")>
 <Optional: description of possible cross-functional impact of the
 requirement, or impact on other components>
 **INFO**
-<Optional: additional informations about the requirement:
+<Optional: additional information about the requirement:
 - know-how
 - background
 - HW dependencies related to the system requirement
@@ -71,13 +71,12 @@ requirement, or impact on other components>
 
 
 
-   .. verify::
+   .. verify:: 
 Test Environment:
 Test Bench/Lab-car with hardware setup
 
 Success Criteria: Verify whether the signal value is correct or not
-   .. safety_level::
-ASIL A
+   .. safety_level:: ASIL A
 
 System Non Fonctional Requirements
 **********************************
@@ -96,6 +95,5 @@ Non Func Test Environment:
 Test Bench/Lab-car with hardware setup
 
 Success Criteria: Verify whether the signal value is correct or not
-   .. safety_level::
-ASIL B
+   .. safety_level:: ASIL B
 

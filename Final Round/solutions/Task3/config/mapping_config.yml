@@ -43,7 +43,6 @@ module:
       ReqIF.Description:
         key: Description
 
-
       Status:
         value_mapping:
           NEW/CHANGED: New/Changed
@@ -70,7 +69,7 @@ module:
                 artifact_type: Description
                 crq: crq
                 createdOn: Created On
+                safety_level: Safety Classification
               html_content: ReqIF.Text
               sub_directives:
                 verify: Verification Criteria
-                safety_level: Safety Classification

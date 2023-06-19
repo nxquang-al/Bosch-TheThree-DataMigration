@@ -39,15 +39,13 @@ def get_directives_data(config, artifact: dict, directives: list):
     """
     Returns the directives data for the given artifact
     """
-    directives_data = []
     for directive in listify(directives):
-        directive_data = {}
-        directive_data["title"] = artifact.get("Title", "Title")
+        directive["title"] = artifact.get("Title", "Title")
         # Attribute Value text
         for key, value in directive.get("attributes", {}).items():
             attr = find_property_have_key(config, value)
             if attr is not None:
-                directive_data["attributes"][key] = artifact.get(value, value)
+                directive["attributes"][key] = artifact.get(value, value)
 
         # HTML Content
         content = directive.get("html_content", "")
@@ -55,30 +53,27 @@ def get_directives_data(config, artifact: dict, directives: list):
         if attr is not None:
             parser = MyHTMLParser()
             parser.feed(artifact.get(content, content).replace("\u00a0", ""))
-            directive_data["html_content"] = postprocess(parser.get_rst())
+            directive["html_content"] = postprocess(parser.get_rst())
 
         # Sub_directive, at the end of the rst
         if "sub_directives" in directive.keys():
-            for key, value in directive.get("sub_directives", {}).items():
+            for key, value in directive["sub_directives"].items():
                 attr = find_property_have_key(config, value)
-                if attr is not None:
-                    directive_data["sub_directives"][key] = {}
-                    directive_data["sub_directives"][key]["content"] = postprocess(
-                        artifact.get(value, "")
-                    )
-                    # get ID to generate unique title for subdirective, e.g. 'verify' + 68019 -> 'verify68019'
-                    directive_data["sub_directives"][key]["title"] = key + str(
-                        artifact.get("Identifier", "")
-                    )
-
+                directive["sub_directives"][key] = {}
+                directive["sub_directives"][key]["content"] = postprocess(
+                    artifact.get(value, "")
+                )
+                # get ID to generate unique title for subdirective, e.g. 'verify' + 68019 -> 'verify68019'
+                directive["sub_directives"][key]["title"] = key + str(
+                    artifact.get("Identifier", "")
+                )
         # In case there are directives in directive
         if "directives" in directive:
             # recursively, directive in directive
-            directive_data["directives"] = get_directives_data(
+            directive["directives"] = get_directives_data(
                 config, artifact, directive["directives"]
             )
-        directives_data.append(directive_data)
-    return directives_data
+    return directives
 
 
 def get_rst_type(artifact_type, rst_config):
