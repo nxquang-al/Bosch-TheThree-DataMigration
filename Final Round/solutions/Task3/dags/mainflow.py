@@ -9,15 +9,29 @@ log = logging.getLogger(__name__)
 
 
 def load_reqif_and_configs_task(**context):
-    reqif_file_path = context['dag_run'].conf.get('reqif_file_path')
-    mapping_config_file_path = context['dag_run'].conf.get(
-        'mapping_config_file_path')
-    github_config_file_path = context['dag_run'].conf.get(
-        'github_config_file_path')
+    default_reqif_file_path = "/opt/airflow/config/ECU_Requirement.reqif"
+    default_mapping_config_file_path = "/opt/airflow/config/mapping_config.yaml"
+    default_github_config_file_path = "/opt/airflow/config/github_config.yaml"
 
-    reqif = load_reqif(reqif_file_path)
-    mapping_config = load_config(mapping_config_file_path)
-    github_config = load_config(github_config_file_path)
+    reqif_file_path = context['dag_run'].conf.get(
+        'reqif_file_path', default_reqif_file_path)
+    mapping_config_file_path = context['dag_run'].conf.get(
+        'mapping_config_file_path', default_mapping_config_file_path)
+    github_config_file_path = context['dag_run'].conf.get(
+        'github_config_file_path', default_github_config_file_path)
+
+    reqif_file = context['dag_run'].conf.get('reqif_file', None)
+    mapping_config_file = context['dag_run'].conf.get(
+        'mapping_config_file', None)
+    github_config_file = context['dag_run'].conf.get(
+        'github_config_file', None)
+
+    reqif = reqif_file if reqif_file is not None else load_reqif(
+        reqif_file_path)
+    mapping_config = mapping_config_file if mapping_config_file is not None else load_config(
+        mapping_config_file_path)
+    github_config = github_config_file if github_config_file is not None else load_config(
+        github_config_file_path)
 
     reqif_file_name = os.path.basename(reqif_file_path)
     rst_file_name = reqif_file_name.replace(".reqif", ".rst")
@@ -68,7 +82,7 @@ def update_index_rst_task(**context):
 default_args = {
     "owner": "The Three",
     "depends_on_past": False,
-    "retries": None
+    "retries": 5
 }
 
 with DAG(
